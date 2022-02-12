@@ -1,0 +1,20 @@
+- name: Getting Started
+  topicHref: intro.md
+- name: Features
+  items:
+    - name: UI
+      items:
+        - name: Overview
+          href: features/ui.md
+        - name: Controls
+          items:
+            - name: DropDownList
+              href: features/ui-controls-dropdownlist.md
+            - name: FilePicker
+              href: features/ui-controls-filepicker.md
+            - name: Validator
+              href: features/ui-controls-validator.md
+        - name: Styling
+          href: features/ui-styling.md
+        - name: View Management
+          href: features/ui-view-management.md
