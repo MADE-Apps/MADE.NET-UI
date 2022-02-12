@@ -1,0 +1,16 @@
+{
+  "solution": {
+    "path": "MADE-Uno.sln",
+    "projects": [
+      "src\\MADE.UI\\MADE.UI.csproj",
+      "src\\MADE.UI.Controls.DropDownList\\MADE.UI.Controls.DropDownList.csproj",
+      "src\\MADE.UI.Controls.FilePicker\\MADE.UI.Controls.FilePicker.csproj",
+      "src\\MADE.UI.Controls.Validator\\MADE.UI.Controls.Validator.csproj",
+      "src\\MADE.UI.Styling\\MADE.UI.Styling.csproj",
+      "src\\MADE.UI.ViewManagement\\MADE.UI.ViewManagement.csproj",
+      "src\\MADE.UI.Views.Dialogs\\MADE.UI.Views.Dialogs.csproj",
+      "src\\MADE.UI.Views.Navigation.Mvvm\\MADE.UI.Views.Navigation.Mvvm.csproj",
+      "src\\MADE.UI.Views.Navigation\\MADE.UI.Views.Navigation.csproj",
+    ]
+  }
+}
