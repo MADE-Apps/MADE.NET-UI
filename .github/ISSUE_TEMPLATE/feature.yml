@@ -1,7 +1,7 @@
 name: Feature
 description: Suggest a new feature or idea
 title: "[Feature] "
-labels: [feature-request]
+labels: [enhancement]
 body:
   - type: textarea
     validations:
@@ -19,6 +19,13 @@ body:
     attributes:
       label: Scope of the feature
       description: Please describe a list of must, should, could, and won't capabilities for the feature.
+      value: |
+        | Capability | Priority |
+        | --- | --- |
+        | Ability to... | Must |
+        | Ability for... | Should |
+        | Ability to... | Could |
+        | Ability for... | Won't |
   - type: textarea
     attributes:
       label: Open questions
