@@ -41,8 +41,8 @@
     <AssemblyName>MADE.Samples</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion>10.0.19041.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <TargetPlatformVersion>10.0.22000.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.19041.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -143,6 +143,10 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <ProjectReference Include="..\..\..\src\MADE.UI.Controls.ChipBox\MADE.UI.Controls.ChipBox.csproj">
+      <Project>{d1a16208-5a34-4cc1-b175-01b5ac99e69e}</Project>
+      <Name>MADE.UI.Controls.ChipBox</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\src\MADE.UI.Controls.DropDownList\MADE.UI.Controls.DropDownList.csproj">
       <Project>{347cdc37-e140-42fa-8710-a0f3297d2b6b}</Project>
       <Name>MADE.UI.Controls.DropDownList</Name>
