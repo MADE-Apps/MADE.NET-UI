@@ -10,7 +10,7 @@
     </Description>
     <PackageTags>MADE UI Views Controls UWP Chips ChipBox TextBox</PackageTags>
     <GenerateLibraryLayout>true</GenerateLibraryLayout>
-    <RootNamespace>MADE.UI.Controls.ChipBox</RootNamespace>
+    <RootNamespace>MADE.UI.Controls.ChipBoxControl</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFrameworkIdentifier)' == 'MonoAndroid' or '$(TargetFrameworkIdentifier)' == 'Xamarin.iOS' or '$(TargetFrameworkIdentifier)' == '.NETStandard' or '$(TargetFrameworkIdentifier)' == 'Xamarin.Mac'">

@@ -33,6 +33,10 @@ namespace MADE.Samples.Features.Home.ViewModels
                 Samples =
                 {
                     new Sample(
+                        "ChipBox",
+                        typeof(ChipBoxPage),
+                        "/Features/Samples/Assets/ChipBox/ChipBox.png"),
+                    new Sample(
                         "FilePicker",
                         typeof(FilePickerPage),
                         "/Features/Samples/Assets/FilePicker/FilePicker.png"),

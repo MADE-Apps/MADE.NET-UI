@@ -61,6 +61,7 @@
     <PackageReference Include="Uno.Wasm.Bootstrap.DevServer" Version="3.2.0" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\src\MADE.UI.Controls.ChipBox\MADE.UI.Controls.ChipBox.csproj" />
     <ProjectReference Include="..\..\..\src\MADE.UI.Controls.FilePicker\MADE.UI.Controls.FilePicker.csproj" />
     <ProjectReference Include="..\..\..\src\MADE.UI.Controls.Validator\MADE.UI.Controls.Validator.csproj" />
     <ProjectReference Include="..\..\..\src\MADE.UI.Styling\MADE.UI.Styling.csproj" />

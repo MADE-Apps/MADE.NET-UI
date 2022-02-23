@@ -27,6 +27,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\Pages\AppDialogPage.xaml.cs">
       <DependentUpon>AppDialogPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\Pages\ChipBoxPage.xaml.cs">
+      <DependentUpon>ChipBoxPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\Pages\FilePickerPage.xaml.cs">
       <DependentUpon>FilePickerPage.xaml</DependentUpon>
     </Compile>
@@ -37,6 +40,7 @@
       <DependentUpon>WindowManagerPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\ViewModels\AppDialogPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\ViewModels\ChipBoxPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\ViewModels\FilePickerPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\ViewModels\InputValidatorPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\ViewModels\WindowManagerPageViewModel.cs" />
@@ -54,6 +58,17 @@
       </Generator>
     </Content>
     <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\DropDownList\DropDownList.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\ChipBox\ChipBox.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\ChipBox\ChipBoxCode.txt">
+      <SubType>Designer</SubType>
+      <Generator>
+      </Generator>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\ChipBox\ChipBoxXaml.txt">
+      <SubType>Designer</SubType>
+      <Generator>
+      </Generator>
+    </Content>
     <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\FilePicker\FilePickerCode.txt">
       <SubType>Designer</SubType>
       <Generator>
@@ -95,6 +110,10 @@
       </Generator>
     </Content>
     <Page Include="$(MSBuildThisFileDirectory)Features\Samples\Pages\AppDialogPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Features\Samples\Pages\ChipBoxPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

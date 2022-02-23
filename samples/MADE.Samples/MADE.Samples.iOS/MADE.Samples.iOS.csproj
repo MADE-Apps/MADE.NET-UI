@@ -169,6 +169,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\..\..\src\MADE.UI.Controls.ChipBox\MADE.UI.Controls.ChipBox.csproj">
+      <Project>{d1a16208-5a34-4cc1-b175-01b5ac99e69e}</Project>
+      <Name>MADE.UI.Controls.ChipBox</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\src\MADE.UI.Controls.FilePicker\MADE.UI.Controls.FilePicker.csproj">
       <Project>{774fd8d5-ccc1-4eed-aa14-f7069bfae5ce}</Project>
       <Name>MADE.UI.Controls.FilePicker</Name>
