@@ -42,6 +42,16 @@ Taking advantage of the Uno Platform, the UI packages provide extensible feature
 
 </span>
 
+#### UI.Controls.ChipBox
+
+The UI Controls ChipBox library contains a cross-platform UI element that provides a multi value input for a text box with auto-suggest capabilities. Values added are displayed as removable chips.
+
+<span class="button">
+
+[Discover UI.Controls.ChipBox](features/ui-controls-chipbox.md)
+
+</span>
+
 #### UI.Controls.DropDownList
 
 The UI Controls DropDownList library contains a Windows UI element that provides a selection user experience, allowing a user to select one or multiple items from a list.
