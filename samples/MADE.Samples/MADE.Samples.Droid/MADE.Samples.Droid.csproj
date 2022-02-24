@@ -78,10 +78,10 @@
       <Version>2.1.0-uno.32</Version>
     </PackageReference>
     <PackageReference Include="Uno.Microsoft.Toolkit.Uwp.UI.Controls.Primitives">
-      <Version>7.1.10</Version>
+      <Version>7.1.11</Version>
     </PackageReference>
-    <PackageReference Include="Uno.UI" Version="4.0.11" />
-    <PackageReference Include="Uno.UI.RemoteControl" Version="4.0.11" Condition="'$(Configuration)'=='Debug'" />
+    <PackageReference Include="Uno.UI" Version="4.0.13" />
+    <PackageReference Include="Uno.UI.RemoteControl" Version="4.0.13" Condition="'$(Configuration)'=='Debug'" />
     <PackageReference Include="Uno.UniversalImageLoader" Version="1.9.35" />
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +107,10 @@
     <AndroidResource Include="Resources\values\Styles.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\src\MADE.UI.Controls.ChipBox\MADE.UI.Controls.ChipBox.csproj">
+      <Project>{d1a16208-5a34-4cc1-b175-01b5ac99e69e}</Project>
+      <Name>MADE.UI.Controls.ChipBox</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\src\MADE.UI.Controls.FilePicker\MADE.UI.Controls.FilePicker.csproj">
       <Project>{774fd8d5-ccc1-4eed-aa14-f7069bfae5ce}</Project>
       <Name>MADE.UI.Controls.FilePicker</Name>

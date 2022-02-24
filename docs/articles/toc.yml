@@ -8,6 +8,8 @@
           href: features/ui.md
         - name: Controls
           items:
+            - name: ChipBox
+              href: features/ui-controls-chipbox.md
             - name: DropDownList
               href: features/ui-controls-dropdownlist.md
             - name: FilePicker

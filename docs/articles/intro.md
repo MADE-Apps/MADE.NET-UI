@@ -20,6 +20,7 @@ dotnet add package MADE.UI
 | Package | Version |
 | --- | --- |
 | MADE.UI | [![NuGet](https://img.shields.io/nuget/v/MADE.UI)](https://www.nuget.org/packages/MADE.UI/) |
+| MADE.UI.Controls.ChipBox | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Controls.ChipBox)](https://www.nuget.org/packages/MADE.UI.Controls.ChipBox/) |
 | MADE.UI.Controls.DropDownList | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Controls.DropDownList)](https://www.nuget.org/packages/MADE.UI.Controls.DropDownList/) |
 | MADE.UI.Controls.FilePicker | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Controls.FilePicker)](https://www.nuget.org/packages/MADE.UI.Controls.FilePicker/) |
 | MADE.UI.Controls.Validator | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Controls.Validator)](https://www.nuget.org/packages/MADE.UI.Controls.Validator/) |
@@ -39,6 +40,16 @@ Taking advantage of the Uno Platform, the UI packages provide extensible feature
 <span class="button">
 
 [Discover UI](features/ui.md)
+
+</span>
+
+#### UI.Controls.ChipBox
+
+The UI Controls ChipBox library contains a cross-platform UI element that provides a multi value input for a text box with auto-suggest capabilities. Values added are displayed as removable chips.
+
+<span class="button">
+
+[Discover UI.Controls.ChipBox](features/ui-controls-chipbox.md)
 
 </span>
 

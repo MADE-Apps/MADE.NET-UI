@@ -3,19 +3,23 @@
   <PropertyGroup>
     <TargetFrameworks>uap10.0.19041;MonoAndroid10.0;xamarinios10;netstandard2.0;xamarinmac20</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Product>MADE.NET UI</Product>
+    <Product>MADE.NET UI Chip Input Control</Product>
     <Description>
       This package includes UI components for Windows and Uno Platform applications such as:
-      - ContentControl for simplifying visibility and retrieving child elements.
-      - Control for simplifying visibility and retrieving child elements.
-      - ViewExtensions for extending UIElement objects with helper methods, such as updating the visiblity based on a boolean including child elements.
+      - ChipBox for providing a chip input control that allows users to enter multiple values into an input.
+      - Chip for providing a single chip control instance that can be used to display values as chips.
     </Description>
-    <PackageTags>MADE UI Views Controls UWP Uno</PackageTags>
+    <PackageTags>MADE UI Views Controls UWP Chips ChipBox TextBox AutoSuggest</PackageTags>
     <GenerateLibraryLayout>true</GenerateLibraryLayout>
+    <RootNamespace>MADE.UI.Controls.ChipBoxControl</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFrameworkIdentifier)' == 'MonoAndroid' or '$(TargetFrameworkIdentifier)' == 'Xamarin.iOS' or '$(TargetFrameworkIdentifier)' == '.NETStandard' or '$(TargetFrameworkIdentifier)' == 'Xamarin.Mac'">
     <PackageReference Include="Uno.UI" Version="4.0.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MADE.Collections" Version="1.4.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,4 +29,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Page>
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MADE.UI\MADE.UI.csproj" />
+  </ItemGroup>
+
 </Project>
