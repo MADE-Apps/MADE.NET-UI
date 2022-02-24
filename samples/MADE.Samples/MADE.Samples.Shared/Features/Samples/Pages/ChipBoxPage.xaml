@@ -45,7 +45,7 @@
                 Grid.Row="1"
                 Margin="0,0,0,48"
                 Style="{StaticResource BaseTextBlockStyle}"
-                Text="The FilePicker is a custom-built UI element that provides a file selection user experience. The control works in a similar way to the file input element in web applications." />
+                Text="The ChipBox is a custom-built UI element that provides multi value input for a text box with auto-suggest capabilities. Values added are displayed as removable chips." />
 
             <ScrollViewer Grid.Row="2">
                 <Grid>
@@ -54,11 +54,21 @@
                         SampleName="A multi-value input control using chips"
                         XamlSource="ChipBox/ChipBoxXaml.txt">
                         <samples:SampleControl.Sample>
-                            <made:ChipBox
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+
+                                <made:ChipBox
                                 x:Name="ChipBoxControl"
                                 Header="ChipBox"
                                 Suggestions="{x:Bind ViewModel.ChipSuggestions}"
-                                Chips="{x:Bind ViewModel.SelectedChips}"/>
+                                Chips="{x:Bind ViewModel.SelectedChips}"
+                                TextChangeCommand="{x:Bind ViewModel.SuggestionTextChangeCommand}"/>
+
+                                <Button Grid.Row="1" Command="{x:Bind ViewModel.AddChipCommand}">Add New Chip</Button>
+                            </Grid>
                         </samples:SampleControl.Sample>
                     </samples:SampleControl>
                 </Grid>

@@ -29,7 +29,7 @@ namespace MADE.UI.Controls
         /// <returns>The control type.</returns>
         protected override AutomationControlType GetAutomationControlTypeCore()
         {
-            return AutomationControlType.Text;
+            return AutomationControlType.List;
         }
 
         /// <summary>
@@ -65,22 +65,6 @@ namespace MADE.UI.Controls
             }
 
             return name;
-        }
-
-        /// <summary>
-        /// Provides the interaction patterns associated with the <see cref="ChipBox"/> when a Microsoft UI Automation client calls GetPattern or an equivalent Microsoft UI Automation client API.
-        /// </summary>
-        /// <param name="patternInterface">A value from the PatternInterface enumeration.</param>
-        /// <returns>This if it supports the pattern interface; otherwise, null.</returns>
-        protected override object GetPatternCore(PatternInterface patternInterface)
-        {
-            switch (patternInterface)
-            {
-                case PatternInterface.Text:
-                    return this;
-            }
-
-            return base.GetPatternCore(patternInterface);
         }
     }
 }

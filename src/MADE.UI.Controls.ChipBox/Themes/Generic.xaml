@@ -4,7 +4,7 @@
     xmlns:local="using:MADE.UI.Controls">
 
     <Style TargetType="local:Chip">
-        <Setter Property="Background" Value="LightGray" />
+        <Setter Property="Background" Value="{ThemeResource ButtonBackground}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="local:Chip">
@@ -64,7 +64,7 @@
                                                     </VisualStateGroup>
                                                 </VisualStateManager.VisualStateGroups>
                                                 <TextBlock x:Name="GlyphElement"
-                                                    Foreground="{ThemeResource TextControlButtonForeground}"
+                                                    Foreground="{ThemeResource ButtonForeground}"
                                                     VerticalAlignment="Center"
                                                     HorizontalAlignment="Center"
                                                     FontStyle="Normal"
@@ -103,19 +103,27 @@
 
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
                             <RowDefinition />
                         </Grid.RowDefinitions>
 
+                        <ContentPresenter
+                            x:Name="FilePickerHeaderPresenter"
+                            Margin="0,0,0,4"
+                            Content="{TemplateBinding Header}"
+                            ContentTemplate="{TemplateBinding HeaderTemplate}" />
+
                         <AutoSuggestBox
+                            Grid.Row="1"
                             x:Name="ChipBoxTextBox"
-                            Header="{TemplateBinding Header}"
+                            Margin="0,0,0,8"
                             ItemsSource="{TemplateBinding Suggestions}"
                             ItemTemplate="{TemplateBinding SuggestionsItemTemplate}" />
 
                         <ItemsControl
                             x:Name="ChipBoxItemsView"
-                            Grid.Row="1"
-                            Margin="0,8,0,0"
+                            Grid.Row="2"
+                            Margin="0,0,0,4"
                             Style="{TemplateBinding ChipItemsViewStyle}">
                             <ItemsControl.ItemsPanel>
                                 <ItemsPanelTemplate>

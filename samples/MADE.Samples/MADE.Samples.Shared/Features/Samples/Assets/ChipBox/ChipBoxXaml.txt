@@ -12,6 +12,9 @@
     <Grid>
         <made:ChipBox
             x:Name="ChipBoxControl"
-            Header="ChipBox" />
+            Header="ChipBox"
+            Suggestions="{x:Bind ViewModel.ChipSuggestions}"
+            Chips="{x:Bind ViewModel.SelectedChips}"
+            TextChangeCommand="{x:Bind ViewModel.SuggestionTextChangeCommand}"/>
     </Grid>
 </Page>

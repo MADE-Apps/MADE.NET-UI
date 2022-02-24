@@ -8,5 +8,5 @@ namespace MADE.UI.Controls
     /// </summary>
     /// <param name="sender">The <see cref="Chip"/>.</param>
     /// <param name="args">The event argument.</param>
-    public delegate void ChipRemoveEventHandler(object sender, ChipRemoveEventArgs args);
+    public delegate void ChipRemovedEventHandler(object sender, ChipRemovedEventArgs args);
 }

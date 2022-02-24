@@ -7,8 +7,9 @@
     <Description>
       This package includes UI components for Windows and Uno Platform applications such as:
       - ChipBox for providing a chip input control that allows users to enter multiple values into an input.
+      - Chip for providing a single chip control instance that can be used to display values as chips.
     </Description>
-    <PackageTags>MADE UI Views Controls UWP Chips ChipBox TextBox</PackageTags>
+    <PackageTags>MADE UI Views Controls UWP Chips ChipBox TextBox AutoSuggest</PackageTags>
     <GenerateLibraryLayout>true</GenerateLibraryLayout>
     <RootNamespace>MADE.UI.Controls.ChipBoxControl</RootNamespace>
   </PropertyGroup>
