@@ -6,6 +6,7 @@ namespace MADE.UI.Controls
     using System.Windows.Input;
     using MADE.UI.Extensions;
     using Windows.UI.Xaml;
+    using Windows.UI.Xaml.Automation.Peers;
     using Windows.UI.Xaml.Controls;
 
     /// <summary>
@@ -71,6 +72,15 @@ namespace MADE.UI.Controls
         /// Gets the view representing the remove chip button.
         /// </summary>
         public Button RemoveButton { get; private set; }
+
+        /// <summary>
+        /// Provides the class-specific <see cref="ChipAutomationPeer"/> implementation for the Microsoft UI Automation infrastructure.
+        /// </summary>
+        /// <returns>The class-specific <see cref="ChipAutomationPeer"/> instance.</returns>
+        protected override AutomationPeer OnCreateAutomationPeer()
+        {
+            return new ChipAutomationPeer(this);
+        }
 
         /// <summary>
         /// Loads the relevant control template so that it's parts can be referenced.
