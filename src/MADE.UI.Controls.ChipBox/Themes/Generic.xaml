@@ -10,7 +10,7 @@
                 <ControlTemplate TargetType="local:Chip">
                     <Border x:Name="LayoutRoot">
                         <Border.Resources>
-                            <Style x:Name="ChipDeleteButtonStyle" TargetType="Button">
+                            <Style x:Name="ChipRemoveButtonStyle" TargetType="Button">
                                 <Setter Property="Template">
                                     <Setter.Value>
                                         <ControlTemplate TargetType="Button">
@@ -84,8 +84,8 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="Auto" />
                             </Grid.ColumnDefinitions>
-                            <ContentPresenter VerticalContentAlignment="Center" />
-                            <Button Grid.Column="1" x:Name="ChipRemoveButton" Style="{StaticResource ChipDeleteButtonStyle}"></Button>
+                            <ContentPresenter x:Name="ChipContent" VerticalContentAlignment="Center" />
+                            <Button Grid.Column="1" x:Name="ChipRemoveButton" Style="{StaticResource ChipRemoveButtonStyle}"></Button>
                         </Grid>
                     </Border>
                 </ControlTemplate>
@@ -106,11 +106,28 @@
                             <RowDefinition />
                         </Grid.RowDefinitions>
 
-                        <AutoSuggestBox x:Name="ChipBoxTextBox" Header="{TemplateBinding Header}" />
+                        <AutoSuggestBox
+                            x:Name="ChipBoxTextBox"
+                            Header="{TemplateBinding Header}"
+                            ItemsSource="{TemplateBinding Suggestions}"
+                            ItemTemplate="{TemplateBinding SuggestionsItemTemplate}" />
 
-                        <local:Chip Grid.Row="1">
-                            <TextBlock Text="Hello, World!" />
-                        </local:Chip>
+                        <ItemsControl
+                            x:Name="ChipBoxItemsView"
+                            Grid.Row="1"
+                            Margin="0,8,0,0"
+                            Style="{TemplateBinding ChipItemsViewStyle}">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <local:WrapPanel Orientation="Horizontal" />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemContainerStyle>
+                                <Style TargetType="Control">
+                                    <Setter Property="Margin" Value="4,0, 4, 4" />
+                                </Style>
+                            </ItemsControl.ItemContainerStyle>
+                        </ItemsControl>
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>

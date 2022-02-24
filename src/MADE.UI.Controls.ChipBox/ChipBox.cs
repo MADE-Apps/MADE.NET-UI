@@ -4,17 +4,17 @@
 namespace MADE.UI.Controls
 {
     using System.Collections.Generic;
-    using Windows.Foundation;
+    using System.Collections.ObjectModel;
+    using System.Linq;
     using Windows.UI.Xaml;
     using Windows.UI.Xaml.Automation.Peers;
     using Windows.UI.Xaml.Controls;
-    using Windows.UI.Xaml.Controls.Primitives;
-    using Windows.UI.Xaml.Media;
 
     /// <summary>
     /// Defines a control for providing multi value input for a text box.
     /// </summary>
     [TemplatePart(Name = ChipBoxTextBoxPart, Type = typeof(AutoSuggestBox))]
+    [TemplatePart(Name = ChipBoxItemsViewPart, Type = typeof(ItemsControl))]
     public partial class ChipBox : Control, IChipBox
     {
         /// <summary>
@@ -27,42 +27,44 @@ namespace MADE.UI.Controls
             new PropertyMetadata(default));
 
         /// <summary>
-        /// Identifies the <see cref="ItemsSource"/> dependency property.
+        /// Identifies the <see cref="Chips"/> dependency property.
         /// </summary>
-        public static readonly DependencyProperty ItemsSourceProperty = DependencyProperty.Register(
-            nameof(ItemsSource),
+        public static readonly DependencyProperty ChipsProperty = DependencyProperty.Register(
+            nameof(Chips),
+            typeof(IList<ChipItem>),
+            typeof(ChipBox),
+            new PropertyMetadata(new ObservableCollection<ChipItem>()));
+
+        /// <summary>
+        /// Identifies the <see cref="ChipItemsViewStyle"/> dependency property.
+        /// </summary>
+        public static readonly DependencyProperty ChipItemsViewStyleProperty = DependencyProperty.Register(
+            nameof(ChipItemsViewStyle),
+            typeof(Style),
+            typeof(ChipBox),
+            new PropertyMetadata(default(Style)));
+
+        public static readonly DependencyProperty SuggestionsProperty = DependencyProperty.Register(
+            nameof(Suggestions),
             typeof(object),
             typeof(ChipBox),
             new PropertyMetadata(default));
 
-        /// <summary>
-        /// Identifies the <see cref="ItemTemplate"/> dependency property.
-        /// </summary>
-        public static readonly DependencyProperty ItemTemplateProperty = DependencyProperty.Register(
-            nameof(ItemTemplate),
+        public static readonly DependencyProperty SuggestionsItemTemplateProperty = DependencyProperty.Register(
+            nameof(SuggestionsItemTemplate),
             typeof(DataTemplate),
             typeof(ChipBox),
             new PropertyMetadata(default(DataTemplate)));
 
-        /// <summary>
-        /// Identifies the <see cref="ItemTemplateSelector"/> dependency property.
-        /// </summary>
-        public static readonly DependencyProperty ItemTemplateSelectorProperty = DependencyProperty.Register(
-            nameof(ItemTemplateSelector),
-            typeof(DataTemplateSelector),
+        public static readonly DependencyProperty AllowDuplicatesProperty = DependencyProperty.Register(
+            nameof(AllowDuplicates),
+            typeof(bool),
             typeof(ChipBox),
-            new PropertyMetadata(default(DataTemplateSelector)));
-
-        /// <summary>
-        /// Identifies the <see cref="ItemsPanel"/> dependency property.
-        /// </summary>
-        public static readonly DependencyProperty ItemsPanelProperty = DependencyProperty.Register(
-            nameof(ItemsPanel),
-            typeof(ItemsPanelTemplate),
-            typeof(ChipBox),
-            new PropertyMetadata(default(ItemsPanelTemplate)));
+            new PropertyMetadata(default(bool)));
 
         private const string ChipBoxTextBoxPart = "ChipBoxTextBox";
+
+        private const string ChipBoxItemsViewPart = "ChipBoxItemsView";
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ChipBox"/> class.
@@ -82,42 +84,39 @@ namespace MADE.UI.Controls
         }
 
         /// <summary>
-        /// Gets or sets an object source used to generate the content of the control.
+        /// Gets or sets an object source used to generate the chip content of the control.
         /// </summary>
-        public object ItemsSource
+        public IList<ChipItem> Chips
         {
-            get => this.GetValue(ItemsSourceProperty);
-            set => this.SetValue(ItemsSourceProperty, value);
+            get => (IList<ChipItem>)this.GetValue(ChipsProperty);
+            set => this.SetValue(ChipsProperty, value);
         }
 
         /// <summary>
-        /// Gets or sets the DataTemplate used to display each item.
+        /// Gets or sets the style of the items view.
         /// </summary>
-        public DataTemplate ItemTemplate
+        public Style ChipItemsViewStyle
         {
-            get => (DataTemplate)this.GetValue(ItemTemplateProperty);
-            set => this.SetValue(ItemTemplateProperty, value);
+            get => (Style)this.GetValue(ChipItemsViewStyleProperty);
+            set => this.SetValue(ChipItemsViewStyleProperty, value);
         }
 
-        /// <summary>
-        /// Gets or sets a reference to a custom DataTemplateSelector logic class.
-        /// <para>
-        /// The DataTemplateSelector referenced by this property returns a template to apply to items.
-        /// </para>
-        /// </summary>
-        public DataTemplateSelector ItemTemplateSelector
+        public object Suggestions
         {
-            get => (DataTemplateSelector)this.GetValue(ItemTemplateSelectorProperty);
-            set => this.SetValue(ItemTemplateSelectorProperty, value);
+            get => GetValue(SuggestionsProperty);
+            set => SetValue(SuggestionsProperty, value);
         }
 
-        /// <summary>
-        /// Gets or sets the template that defines the panel that controls the layout of items.
-        /// </summary>
-        public ItemsPanelTemplate ItemsPanel
+        public DataTemplate SuggestionsItemTemplate
         {
-            get => (ItemsPanelTemplate)this.GetValue(ItemsPanelProperty);
-            set => this.SetValue(ItemsPanelProperty, value);
+            get => (DataTemplate)GetValue(SuggestionsItemTemplateProperty);
+            set => SetValue(SuggestionsItemTemplateProperty, value);
+        }
+
+        public bool AllowDuplicates
+        {
+            get => (bool)GetValue(AllowDuplicatesProperty);
+            set => SetValue(AllowDuplicatesProperty, value);
         }
 
         /// <summary>
@@ -125,14 +124,27 @@ namespace MADE.UI.Controls
         /// </summary>
         public AutoSuggestBox TextBox { get; private set; }
 
+        public ItemsControl ChipItemsView { get; private set; }
+
         /// <summary>
         /// Loads the relevant control template so that it's parts can be referenced.
         /// </summary>
         protected override void OnApplyTemplate()
         {
+            if (this.TextBox != null)
+            {
+                this.TextBox.QuerySubmitted -= OnChipSuggestionChosen;
+            }
+
             base.OnApplyTemplate();
 
             this.TextBox = this.GetChildView<AutoSuggestBox>(ChipBoxTextBoxPart);
+            this.ChipItemsView = this.GetChildView<ItemsControl>(ChipBoxItemsViewPart);
+
+            if (this.TextBox != null)
+            {
+                this.TextBox.QuerySubmitted += this.OnChipSuggestionChosen;
+            }
         }
 
         /// <summary>
@@ -142,6 +154,75 @@ namespace MADE.UI.Controls
         protected override AutomationPeer OnCreateAutomationPeer()
         {
             return new ChipBoxAutomationPeer(this);
+        }
+
+        private void OnChipSuggestionChosen(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
+        {
+            this.AddChip(args.QueryText);
+            if (sender != null)
+            {
+                sender.Text = string.Empty;
+            }
+        }
+
+        private void AddChip(object content)
+        {
+            if (content == null || string.IsNullOrWhiteSpace(content.ToString()))
+            {
+                return;
+            }
+
+            if (this.ValidateDuplicates(content))
+            {
+                return;
+            }
+
+            var chipItem = new ChipItem { Content = content };
+
+            if (this.ChipItemsView is { Items: { } })
+            {
+                var chip = new Chip { Content = chipItem.Content };
+                this.ChipItemsView.Items.Add(chip);
+                chip.Removed += OnChipRemoved;
+            }
+
+            this.Chips?.Add(chipItem);
+        }
+
+        private bool ValidateDuplicates(object content)
+        {
+            if (this.AllowDuplicates)
+            {
+                return false;
+            }
+
+            // Check the actual chip view item first
+            if (this.ChipItemsView is { Items: { } })
+            {
+                var existingChip = this.ChipItemsView.Items.Cast<Chip>().FirstOrDefault(x => x.Content != null && x.Content.Equals(content));
+                if (existingChip != null)
+                {
+                    return true;
+                }
+            }
+
+            var existingChipItem = this.Chips?.FirstOrDefault(x => x.Content.Equals(content));
+            return existingChipItem != null;
+        }
+
+        private void OnChipRemoved(object sender, ChipRemoveEventArgs args)
+        {
+            var chipItem = this.Chips?.FirstOrDefault(x => x.Content.Equals(args.Item));
+            if (chipItem != null)
+            {
+                this.Chips.Remove(chipItem);
+            }
+
+            if (sender is Chip chip)
+            {
+                chip.Removed -= this.OnChipRemoved;
+                this.ChipItemsView?.Items?.Remove(chip);
+            }
         }
     }
 }

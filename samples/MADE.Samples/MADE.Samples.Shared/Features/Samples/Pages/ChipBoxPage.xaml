@@ -56,7 +56,9 @@
                         <samples:SampleControl.Sample>
                             <made:ChipBox
                                 x:Name="ChipBoxControl"
-                                Header="ChipBox" />
+                                Header="ChipBox"
+                                Suggestions="{x:Bind ViewModel.ChipSuggestions}"
+                                Chips="{x:Bind ViewModel.SelectedChips}"/>
                         </samples:SampleControl.Sample>
                     </samples:SampleControl>
                 </Grid>

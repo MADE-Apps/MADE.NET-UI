@@ -13,8 +13,11 @@ namespace MADE.UI.Controls
         /// <summary>
         /// Initializes a new instance of the <see cref="ChipRemoveEventArgs"/> class.
         /// </summary>
-        public ChipRemoveEventArgs()
+        public ChipRemoveEventArgs(object item)
         {
+            this.Item = item;
         }
+
+        public object Item { get; }
     }
 }

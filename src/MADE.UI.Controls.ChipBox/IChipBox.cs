@@ -3,6 +3,8 @@
 
 namespace MADE.UI.Controls
 {
+    using System.Collections;
+    using System.Collections.Generic;
     using Windows.UI.Xaml;
     using Windows.UI.Xaml.Controls;
 
@@ -17,26 +19,17 @@ namespace MADE.UI.Controls
         object Header { get; set; }
 
         /// <summary>
-        /// Gets or sets an object source used to generate the content of the control.
+        /// Gets or sets an object source used to generate the chip content of the control.
         /// </summary>
-        object ItemsSource { get; set; }
+        IList<ChipItem> Chips { get; set; }
 
         /// <summary>
-        /// Gets or sets the DataTemplate used to display each item.
+        /// Gets or sets the style of the items view.
         /// </summary>
-        DataTemplate ItemTemplate { get; set; }
+        Style ChipItemsViewStyle { get; set; }
 
-        /// <summary>
-        /// Gets or sets a reference to a custom DataTemplateSelector logic class.
-        /// <para>
-        /// The DataTemplateSelector referenced by this property returns a template to apply to items.
-        /// </para>
-        /// </summary>
-        DataTemplateSelector ItemTemplateSelector { get; set; }
+        object Suggestions { get; set; }
 
-        /// <summary>
-        /// Gets or sets the template that defines the panel that controls the layout of items.
-        /// </summary>
-        ItemsPanelTemplate ItemsPanel { get; set; }
+        DataTemplate SuggestionsItemTemplate { get; set; }
     }
 }

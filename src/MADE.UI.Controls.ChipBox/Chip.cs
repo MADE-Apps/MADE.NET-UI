@@ -5,6 +5,7 @@ namespace MADE.UI.Controls
     using Windows.UI.Xaml;
     using Windows.UI.Xaml.Controls;
 
+    [TemplatePart(Name = ChipContentPart, Type = typeof(ContentPresenter))]
     [TemplatePart(Name = ChipRemoveButtonPart, Type = typeof(Button))]
     public sealed partial class Chip : ContentControl, IChip
     {
@@ -20,6 +21,7 @@ namespace MADE.UI.Controls
             typeof(Chip),
             new PropertyMetadata(true, (o, args) => ((Chip)o).SetRemoveButtonVisibility()));
 
+        private const string ChipContentPart = "ChipContent";
         private const string ChipRemoveButtonPart = "ChipRemoveButton";
 
         public Chip()
@@ -67,8 +69,8 @@ namespace MADE.UI.Controls
 
         private void OnRemoveClick(object sender, RoutedEventArgs e)
         {
-            this.RemoveCommand?.Execute(this);
-            this.Removed?.Invoke(this, new ChipRemoveEventArgs());
+            this.RemoveCommand?.Execute(this.Content);
+            this.Removed?.Invoke(this, new ChipRemoveEventArgs(this.Content));
         }
 
         private void SetRemoveButtonVisibility()
