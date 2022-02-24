@@ -20,6 +20,7 @@ dotnet add package MADE.UI
 | Package | Version |
 | --- | --- |
 | MADE.UI | [![NuGet](https://img.shields.io/nuget/v/MADE.UI)](https://www.nuget.org/packages/MADE.UI/) |
+| MADE.UI.Controls.ChipBox | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Controls.ChipBox)](https://www.nuget.org/packages/MADE.UI.Controls.ChipBox/) |
 | MADE.UI.Controls.DropDownList | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Controls.DropDownList)](https://www.nuget.org/packages/MADE.UI.Controls.DropDownList/) |
 | MADE.UI.Controls.FilePicker | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Controls.FilePicker)](https://www.nuget.org/packages/MADE.UI.Controls.FilePicker/) |
 | MADE.UI.Controls.Validator | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Controls.Validator)](https://www.nuget.org/packages/MADE.UI.Controls.Validator/) |
