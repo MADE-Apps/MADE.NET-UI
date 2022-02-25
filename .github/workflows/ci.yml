@@ -29,8 +29,8 @@ jobs:
   build:
 
     env:
-      BUILD_CONFIG: 'Release'
-      SOLUTION: 'MADE-Uno.NoSamples.slnf'
+      BUILD_CONFIG: 'Package'
+      SOLUTION: 'MADE-Uno.sln'
 
     runs-on: windows-latest
 
