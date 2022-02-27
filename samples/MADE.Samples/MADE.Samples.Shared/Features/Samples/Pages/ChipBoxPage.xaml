@@ -43,7 +43,7 @@
 
             <TextBlock
                 Grid.Row="1"
-                Margin="0,0,0,48"
+                Margin="0,0,0,24"
                 Style="{StaticResource BaseTextBlockStyle}"
                 Text="The ChipBox is a custom-built UI element that provides multi value input for a text box with auto-suggest capabilities. Values added are displayed as removable chips." />
 
@@ -66,8 +66,6 @@
                                 Suggestions="{x:Bind ViewModel.ChipSuggestions}"
                                 Chips="{x:Bind ViewModel.SelectedChips}"
                                 TextChangeCommand="{x:Bind ViewModel.SuggestionTextChangeCommand}"/>
-
-                                <Button Grid.Row="1" Command="{x:Bind ViewModel.AddChipCommand}">Add New Chip</Button>
                             </Grid>
                         </samples:SampleControl.Sample>
                     </samples:SampleControl>

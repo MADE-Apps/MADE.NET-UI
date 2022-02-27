@@ -50,8 +50,6 @@ namespace MADE.Samples.Features.Samples.ViewModels
         {
         }
 
-        public ICommand AddChipCommand => new RelayCommand(this.AddChip);
-
         public ICommand SuggestionTextChangeCommand => new RelayCommand<string>(this.OnSuggestionTextChanged);
 
         public ObservableCollection<ChipItem> SelectedChips { get; } = new()
@@ -64,11 +62,6 @@ namespace MADE.Samples.Features.Samples.ViewModels
         private void OnSuggestionTextChanged(string obj)
         {
             ChipSuggestions.MakeEqualTo(Places.Where(x => x.Contains(obj, StringComparison.CurrentCultureIgnoreCase)));
-        }
-
-        private void AddChip()
-        {
-            this.SelectedChips.Add(new ChipItem("Global"));
         }
     }
 }

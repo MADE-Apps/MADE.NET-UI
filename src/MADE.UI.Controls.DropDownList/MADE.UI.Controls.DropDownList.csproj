@@ -1,17 +1,21 @@
 <Project Sdk="MSBuild.Sdk.Extras">
 
   <PropertyGroup>
-    <TargetFramework>uap10.0.19041</TargetFramework>
+    <TargetFrameworks>uap10.0.19041;MonoAndroid10.0;xamarinios10;netstandard2.0;xamarinmac20</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Product>MADE.NET UI DropDownList Control</Product>
     <Description>
-      This package includes UI components for Windows applications such as:
+      This package includes UI components for Windows and Uno Platform applications such as:
       - DropDownList for providing a selection control that provides a drop-down combo box that allows users to select one or multiple items from a list.
     </Description>
     <PackageTags>MADE UI Views Controls UWP DropDown List Multiselect ComboBox</PackageTags>
     <GenerateLibraryLayout>true</GenerateLibraryLayout>
     <RootNamespace>MADE.UI.Controls.DropDownListControl</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFrameworkIdentifier)' == 'MonoAndroid' or '$(TargetFrameworkIdentifier)' == 'Xamarin.iOS' or '$(TargetFrameworkIdentifier)' == '.NETStandard' or '$(TargetFrameworkIdentifier)' == 'Xamarin.Mac'">
+    <PackageReference Include="Uno.UI" Version="4.0.13" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MADE.Collections" Version="1.4.0" />

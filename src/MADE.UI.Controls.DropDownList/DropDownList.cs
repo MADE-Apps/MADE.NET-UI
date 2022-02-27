@@ -5,6 +5,7 @@ namespace MADE.UI.Controls
 {
     using System;
     using System.Collections.Generic;
+    using System.Windows.Input;
     using MADE.Collections;
     using MADE.Data.Validation.Extensions;
     using Windows.Foundation;
@@ -21,7 +22,7 @@ namespace MADE.UI.Controls
     [TemplatePart(Name = DropDownPart, Type = typeof(Popup))]
     [TemplatePart(Name = DropDownBorderPart, Type = typeof(Border))]
     [TemplatePart(Name = DropDownContentPart, Type = typeof(ListView))]
-    public class DropDownList : Control, IDropDownList
+    public partial class DropDownList : Control, IDropDownList, IDropDownList2
     {
         /// <summary>
         /// Identifies the <see cref="Header"/> dependency property.
@@ -49,6 +50,15 @@ namespace MADE.UI.Controls
             typeof(object),
             typeof(DropDownList),
             new PropertyMetadata(default));
+
+        /// <summary>
+        /// Identifies the <see cref="ContentDelimiter"/> dependency property.
+        /// </summary>
+        public static readonly DependencyProperty ContentDelimiterProperty = DependencyProperty.Register(
+            nameof(ContentDelimiter),
+            typeof(string),
+            typeof(DropDownList),
+            new PropertyMetadata(", "));
 
         /// <summary>
         /// Identifies the <see cref="ContentTemplate"/> dependency property.
@@ -140,6 +150,42 @@ namespace MADE.UI.Controls
             typeof(DropDownList),
             new PropertyMetadata(248D));
 
+        /// <summary>
+        /// Identifies the <see cref="DropDownOpenCommand"/> dependency property.
+        /// </summary>
+        public static readonly DependencyProperty DropDownOpenCommandProperty = DependencyProperty.Register(
+            nameof(DropDownOpenCommand),
+            typeof(ICommand),
+            typeof(DropDownList),
+            new PropertyMetadata(default(ICommand)));
+
+        /// <summary>
+        /// Identifies the <see cref="DropDownCloseCommand"/> dependency property.
+        /// </summary>
+        public static readonly DependencyProperty DropDownCloseCommandProperty = DependencyProperty.Register(
+            nameof(DropDownCloseCommand),
+            typeof(ICommand),
+            typeof(DropDownList),
+            new PropertyMetadata(default(ICommand)));
+
+        /// <summary>
+        /// Identifies the <see cref="SelectionChangeCommand"/> dependency property.
+        /// </summary>
+        public static readonly DependencyProperty SelectionChangeCommandProperty = DependencyProperty.Register(
+            nameof(SelectionChangeCommand),
+            typeof(ICommand),
+            typeof(DropDownList),
+            new PropertyMetadata(default(ICommand)));
+
+        /// <summary>
+        /// Identifies the <see cref="SelectedItemsUpdateCommand"/> dependency property.
+        /// </summary>
+        public static readonly DependencyProperty SelectedItemsUpdateCommandProperty = DependencyProperty.Register(
+            nameof(SelectedItemsUpdateCommand),
+            typeof(ICommand),
+            typeof(DropDownList),
+            new PropertyMetadata(default(ICommand)));
+
         private const string DropDownButtonPart = "DropDownButton";
 
         private const string DropDownPart = "DropDown";
@@ -176,6 +222,47 @@ namespace MADE.UI.Controls
         public event SelectionChangedEventHandler SelectionChanged;
 
         /// <summary>
+        /// Occurs when the selected items has updated.
+        /// </summary>
+        public event DropDownListSelectedItemsUpdatedEventHandler SelectedItemsUpdated;
+
+        /// <summary>
+        /// Gets or sets the <see cref="ICommand"/> associated with when the currently selected item changes.
+        /// </summary>
+        public ICommand SelectionChangeCommand
+        {
+            get => (ICommand)GetValue(SelectionChangeCommandProperty);
+            set => SetValue(SelectionChangeCommandProperty, value);
+        }
+
+        /// <summary>
+        /// Gets or sets the <see cref="ICommand"/> associated with when the selected items has updated.
+        /// </summary>
+        public ICommand SelectedItemsUpdateCommand
+        {
+            get => (ICommand)GetValue(SelectedItemsUpdateCommandProperty);
+            set => SetValue(SelectedItemsUpdateCommandProperty, value);
+        }
+
+        /// <summary>
+        /// Gets or sets the <see cref="ICommand"/> associated with when the drop-down closes.
+        /// </summary>
+        public ICommand DropDownCloseCommand
+        {
+            get => (ICommand)GetValue(DropDownCloseCommandProperty);
+            set => SetValue(DropDownCloseCommandProperty, value);
+        }
+
+        /// <summary>
+        /// Gets or sets the <see cref="ICommand"/> associated with when the drop-down opens.
+        /// </summary>
+        public ICommand DropDownOpenCommand
+        {
+            get => (ICommand)GetValue(DropDownOpenCommandProperty);
+            set => SetValue(DropDownOpenCommandProperty, value);
+        }
+
+        /// <summary>
         /// Gets or sets the content for the control's header.
         /// </summary>
         public object Header
@@ -200,6 +287,18 @@ namespace MADE.UI.Controls
         {
             get => this.GetValue(ContentProperty);
             set => this.SetValue(ContentProperty, value);
+        }
+
+        /// <summary>
+        /// Gets or sets the delimiter used to present the content.
+        /// <para>
+        /// By default, the delimited is a comma followed by a space.
+        /// </para>
+        /// </summary>
+        public string ContentDelimiter
+        {
+            get => (string)GetValue(ContentDelimiterProperty);
+            set => SetValue(ContentDelimiterProperty, value);
         }
 
         /// <summary>
@@ -401,13 +500,14 @@ namespace MADE.UI.Controls
         private void OnDropDownOpened(object sender, object e)
         {
             this.DropDownOpened?.Invoke(this, e);
+            this.DropDownOpenCommand?.Execute(e);
 
-            if (!(Window.Current.Content is Frame frame) || this.DropDownButton == null)
+            if (!(Windows.UI.Xaml.Window.Current.Content is Frame frame) || this.DropDownButton == null)
             {
                 return;
             }
 
-            GeneralTransform positionTransform = this.TransformToVisual(Window.Current.Content);
+            GeneralTransform positionTransform = this.TransformToVisual(Windows.UI.Xaml.Window.Current.Content);
             Point position = positionTransform.TransformPoint(new Point(0, 0));
 
             // Gets the actual height of the control & the popup.
@@ -438,11 +538,13 @@ namespace MADE.UI.Controls
         private void OnDropDownClosed(object sender, object e)
         {
             this.DropDownClosed?.Invoke(this, e);
+            this.DropDownCloseCommand?.Execute(e);
         }
 
         private void OnDropDownContentSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             this.SelectionChanged?.Invoke(this, e);
+            this.SelectionChangeCommand?.Execute(e);
 
             if (this.SelectionMode == DropDownListSelectionMode.Single && this.DropDown != null)
             {
@@ -480,7 +582,10 @@ namespace MADE.UI.Controls
                     break;
             }
 
-            this.Content = string.Join(", ", result);
+            this.Content = string.Join(this.ContentDelimiter, result);
+
+            this.SelectedItemsUpdated?.Invoke(this, new DropDownListSelectedItemsUpdatedEventArgs(result));
+            this.SelectedItemsUpdateCommand?.Execute(result);
         }
 
         private void ResizeDropDownBorder()

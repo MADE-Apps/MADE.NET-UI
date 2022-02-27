@@ -5,7 +5,7 @@ title: Using the DropDownList control
 
 # Using the DropDownList control
 
-The `MADE.UI.Controls.DropDownList` element is a custom-built UI element for Windows (UWP) applications that provides a selection user experience, allowing a user to select one or multiple items from a list.
+The `MADE.UI.Controls.DropDownList` element is a custom-built UI element that works with [Uno's supported platforms](https://platform.uno/) that provides a selection user experience, allowing a user to select one or multiple items from a list.
 
 The control works in a similar way to the `ComboBox` element in the Windows SDK, with the added extensibility to change modes to select multiple items.
 
