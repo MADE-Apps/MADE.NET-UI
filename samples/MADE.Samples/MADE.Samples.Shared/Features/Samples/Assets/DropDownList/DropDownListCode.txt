@@ -1,0 +1,19 @@
+public ICommand SelectedItemsUpdateCommand => new RelayCommand<IEnumerable<object>>(selectedItems => this.OnSelectedItemsUpdated(selectedItems.Cast<string>()));
+
+public ObservableCollection<string> Items { get; } = new()
+{
+    "Red",
+    "Green",
+    "Blue",
+    "Cyan",
+    "Magenta",
+    "Yellow",
+    "White"
+};
+
+public ObservableCollection<string> SelectedItems { get; } = new();
+
+private void OnSelectedItemsUpdated(IEnumerable<string> obj)
+{
+    this.SelectedItems.MakeEqualTo(obj);
+}

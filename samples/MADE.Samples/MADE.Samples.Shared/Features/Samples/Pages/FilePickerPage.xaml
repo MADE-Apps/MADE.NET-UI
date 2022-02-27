@@ -43,7 +43,7 @@
 
             <TextBlock
                 Grid.Row="1"
-                Margin="0,0,0,48"
+                Margin="0,0,0,24"
                 Style="{StaticResource BaseTextBlockStyle}"
                 Text="The FilePicker is a custom-built UI element that provides a file selection user experience. The control works in a similar way to the file input element in web applications." />
 

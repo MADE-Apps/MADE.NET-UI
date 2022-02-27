@@ -1,7 +1,7 @@
 <Project Sdk="MSBuild.Sdk.Extras">
 
   <PropertyGroup>
-    <TargetFramework>uap10.0.19041</TargetFramework>
+    <TargetFrameworks>uap10.0.19041;MonoAndroid10.0;xamarinios10;netstandard2.0;xamarinmac20</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Product>MADE.NET UI DropDownList Control</Product>
     <Description>
@@ -12,6 +12,10 @@
     <GenerateLibraryLayout>true</GenerateLibraryLayout>
     <RootNamespace>MADE.UI.Controls.DropDownListControl</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFrameworkIdentifier)' == 'MonoAndroid' or '$(TargetFrameworkIdentifier)' == 'Xamarin.iOS' or '$(TargetFrameworkIdentifier)' == '.NETStandard' or '$(TargetFrameworkIdentifier)' == 'Xamarin.Mac'">
+    <PackageReference Include="Uno.UI" Version="4.0.13" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MADE.Collections" Version="1.4.0" />

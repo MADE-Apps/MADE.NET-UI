@@ -43,7 +43,7 @@
 
             <TextBlock
                 Grid.Row="1"
-                Margin="0,0,0,48"
+                Margin="0,0,0,24"
                 Style="{StaticResource BaseTextBlockStyle}"
                 Text="The InputValidator is a custom-built UI element wrapper for input controls that provides an input validation experience using MADE's in-built or custom built validators." />
 

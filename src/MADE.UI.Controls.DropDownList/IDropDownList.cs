@@ -5,6 +5,7 @@ namespace MADE.UI.Controls
 {
     using System;
     using System.Collections.Generic;
+    using System.Windows.Input;
     using Windows.UI.Xaml;
     using Windows.UI.Xaml.Controls;
 
@@ -42,6 +43,11 @@ namespace MADE.UI.Controls
         /// Gets or sets the content to display on the collapsed drop down.
         /// </summary>
         object Content { get; set; }
+
+        /// <summary>
+        /// Gets or sets the delimiter used to present the content.
+        /// </summary>
+        string ContentDelimiter { get; set; }
 
         /// <summary>
         /// Gets or sets the DataTemplate used to display the content on the collapsed drop down.
