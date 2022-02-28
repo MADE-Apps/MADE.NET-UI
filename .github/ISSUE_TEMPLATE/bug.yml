@@ -18,6 +18,7 @@ body:
       label: Package
       options:
         - "UI"
+        - "UI.Controls.ChipBox"
         - "UI.Controls.DropDownList"
         - "UI.Controls.FilePicker"
         - "UI.Controls.Validator"
