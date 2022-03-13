@@ -1,0 +1,24 @@
+// MADE Apps licenses this file to you under the MIT license.
+// See the LICENSE file in the project root for more information.
+
+namespace MADE.UI.Controls
+{
+    using System.Collections.Generic;
+    using Windows.UI.Xaml.Controls;
+
+    /// <summary>
+    /// Defines an interface for a customizable and extensible collection of buttons that activate rich text features in an associated <see cref="RichEditBox"/>.
+    /// </summary>
+    public interface IRichEditToolbar
+    {
+        /// <summary>
+        /// Gets or sets the associated <see cref="RichEditBox"/> control.
+        /// </summary>
+        RichEditBox TargetRichEditBox { get; set; }
+
+        /// <summary>
+        /// Gets or sets the additional custom font color options.
+        /// </summary>
+        IList<RichEditToolbarFontColorOption> CustomFontColorOptions { get; set; }
+    }
+}

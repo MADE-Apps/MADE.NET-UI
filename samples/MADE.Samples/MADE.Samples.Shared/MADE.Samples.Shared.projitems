@@ -39,6 +39,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\Pages\InputValidatorPage.xaml.cs">
       <DependentUpon>InputValidatorPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\Pages\RichEditToolbarPage.xaml.cs">
+      <DependentUpon>RichEditToolbarPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\Pages\WindowManagerPage.xaml.cs">
       <DependentUpon>WindowManagerPage.xaml</DependentUpon>
     </Compile>
@@ -47,6 +50,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\ViewModels\DropDownListPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\ViewModels\FilePickerPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\ViewModels\InputValidatorPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\ViewModels\RichEditToolbarPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\ViewModels\WindowManagerPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Infrastructure\Controls\SampleControl.xaml.cs">
       <DependentUpon>SampleControl.xaml</DependentUpon>
@@ -108,6 +112,16 @@
       <Generator>
       </Generator>
     </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\RichEditToolbar\RichEditToolbarCode.txt">
+      <SubType>Designer</SubType>
+      <Generator>
+      </Generator>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\RichEditToolbar\RichEditToolbarXaml.txt">
+      <SubType>Designer</SubType>
+      <Generator>
+      </Generator>
+    </Content>
     <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\WindowManager\WindowManagerCode.txt">
       <SubType>Designer</SubType>
       <Generator>
@@ -140,6 +154,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="$(MSBuildThisFileDirectory)Features\Samples\Pages\InputValidatorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Features\Samples\Pages\RichEditToolbarPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

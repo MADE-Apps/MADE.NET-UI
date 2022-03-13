@@ -1,0 +1,111 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MADE.UI.Controls"
+    xmlns:colors="using:MADE.UI.Styling.Colors">
+
+    <Style TargetType="local:RichEditToolbar">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:RichEditToolbar">
+                    <CommandBar x:Name="LayoutRoot" Background="{TemplateBinding Background}" OverflowButtonVisibility="Auto" DefaultLabelPosition="Collapsed">
+                        <CommandBar.PrimaryCommands>
+                            <AppBarButton x:Name="RichEditToolbarIncreaseTextSizeButton" Icon="FontIncrease" ToolTipService.ToolTip="Increase font size"  />
+                            <AppBarButton x:Name="RichEditToolbarDecreaseTextSizeButton" Icon="FontDecrease" ToolTipService.ToolTip="Decrease font size"  />
+                            <AppBarToggleButton x:Name="RichEditToolbarBoldButton" Icon="Bold" ToolTipService.ToolTip="Bold" />
+                            <AppBarToggleButton x:Name="RichEditToolbarItalicButton" Icon="Italic" ToolTipService.ToolTip="Italic" />
+                            <AppBarToggleButton x:Name="RichEditToolbarUnderlineButton" Icon="Underline" ToolTipService.ToolTip="Underline" />
+                            <AppBarButton x:Name="RichEditToolbarColorButton" Icon="FontColor" ToolTipService.ToolTip="Text color">
+                                <AppBarButton.Flyout>
+                                    <Flyout Placement="Bottom">
+                                        <VariableSizedWrapGrid x:Name="RichEditToolbarColorOptions" Orientation="Horizontal" MaximumRowsOrColumns="6">
+                                            <VariableSizedWrapGrid.Resources>
+                                                <colors:LightenColorBrushConverter x:Key="RichEditToolbarFlyoutLightenColorConverter" />
+
+                                                <Style TargetType="Button">
+                                                    <Setter Property="Padding" Value="0"/>
+                                                    <Setter Property="Height" Value="32"/>
+                                                    <Setter Property="Width" Value="32"/>
+                                                    <Setter Property="Margin" Value="6"/>
+                                                    <Setter Property="CornerRadius" Value="16" />
+                                                    <Setter Property="BorderBrush" Value="Transparent" />
+                                                    <Setter Property="BorderThickness" Value="2" />
+                                                    <Setter Property="Template">
+                                                        <Setter.Value>
+                                                            <ControlTemplate TargetType="Button">
+                                                                <ContentPresenter x:Name="ContentPresenter"
+                                                                    Background="{TemplateBinding Background}"
+                                                                    BackgroundSizing="{TemplateBinding BackgroundSizing}"
+                                                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                                                    Content="{TemplateBinding Content}"
+                                                                    ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                                    ContentTransitions="{TemplateBinding ContentTransitions}"
+                                                                    CornerRadius="{TemplateBinding CornerRadius}"
+                                                                    Padding="{TemplateBinding Padding}"
+                                                                    HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                                    VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                                                    AutomationProperties.AccessibilityView="Raw">
+
+                                                                    <VisualStateManager.VisualStateGroups>
+                                                                        <VisualStateGroup x:Name="CommonStates">
+                                                                            <VisualState x:Name="Normal">
+                                                                                <Storyboard>
+                                                                                    <PointerUpThemeAnimation Storyboard.TargetName="ContentPresenter" />
+                                                                                </Storyboard>
+                                                                            </VisualState>
+
+                                                                            <VisualState x:Name="PointerOver">
+                                                                                <VisualState.Setters>
+                                                                                    <Setter Target="ContentPresenter.BorderBrush" Value="{Binding Background, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource RichEditToolbarFlyoutLightenColorConverter}, ConverterParameter=50}" />
+                                                                                    <Setter Target="ContentPresenter.Foreground" Value="{ThemeResource ButtonForegroundPointerOver}" />
+                                                                                </VisualState.Setters>
+
+                                                                                <Storyboard>
+                                                                                    <PointerUpThemeAnimation Storyboard.TargetName="ContentPresenter" />
+                                                                                </Storyboard>
+                                                                            </VisualState>
+
+                                                                            <VisualState x:Name="Pressed">
+                                                                                <VisualState.Setters>
+                                                                                    <Setter Target="ContentPresenter.BorderBrush" Value="{Binding Background, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource RichEditToolbarFlyoutLightenColorConverter}, ConverterParameter=30}" />
+                                                                                    <Setter Target="ContentPresenter.Foreground" Value="{ThemeResource ButtonForegroundPressed}" />
+                                                                                </VisualState.Setters>
+
+                                                                                <Storyboard>
+                                                                                    <PointerDownThemeAnimation Storyboard.TargetName="ContentPresenter" />
+                                                                                </Storyboard>
+                                                                            </VisualState>
+
+                                                                            <VisualState x:Name="Disabled">
+                                                                                <Storyboard>
+                                                                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+                                                                                        <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonBackgroundDisabled}" />
+                                                                                    </ObjectAnimationUsingKeyFrames>
+                                                                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                                                                        <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonForegroundDisabled}" />
+                                                                                    </ObjectAnimationUsingKeyFrames>
+                                                                                </Storyboard>
+                                                                            </VisualState>
+                                                                        </VisualStateGroup>
+
+                                                                    </VisualStateManager.VisualStateGroups>
+                                                                </ContentPresenter>
+
+                                                            </ControlTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </VariableSizedWrapGrid.Resources>
+                                        </VariableSizedWrapGrid>
+                                    </Flyout>
+                                </AppBarButton.Flyout>
+                            </AppBarButton>
+                        </CommandBar.PrimaryCommands>
+                    </CommandBar>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

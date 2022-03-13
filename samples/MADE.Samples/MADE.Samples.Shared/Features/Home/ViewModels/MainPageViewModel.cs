@@ -47,7 +47,11 @@ namespace MADE.Samples.Features.Home.ViewModels
                     new Sample(
                         "InputValidator",
                         typeof(InputValidatorPage),
-                        "/Features/Samples/Assets/InputValidator/InputValidator.png")
+                        "/Features/Samples/Assets/InputValidator/InputValidator.png"),
+                    new Sample(
+                        "RichEditToolbar",
+                        typeof(RichEditToolbarPage),
+                        "/Features/Samples/Assets/RichEditToolbar/RichEditToolbar.png")
                 }
             };
 

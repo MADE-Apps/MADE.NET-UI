@@ -215,7 +215,7 @@ namespace MADE.UI.Controls
         public ListViewBase ItemsView { get; private set; }
 
         /// <summary>
-        /// Loads the relevant control template so that it's parts can be referenced.
+        /// Loads the relevant control template so that its parts can be referenced.
         /// </summary>
         protected override void OnApplyTemplate()
         {
