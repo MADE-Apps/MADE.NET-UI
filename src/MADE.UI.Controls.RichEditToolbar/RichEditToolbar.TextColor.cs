@@ -126,6 +126,7 @@ namespace MADE.UI.Controls
             }
         }
 
+#if WINDOWS_UWP
         private void UpdateActiveTextColorOptions()
         {
             if (this.TextColorButton != null)
@@ -138,6 +139,7 @@ namespace MADE.UI.Controls
                     .ToSolidColorBrush();
             }
         }
+#endif
 
         private void UpdateTextColorOptionsVisibility()
         {
@@ -164,7 +166,11 @@ namespace MADE.UI.Controls
 
         private void OnTextColorButtonClicked(object sender, RoutedEventArgs e)
         {
-            if (sender == null || this.TargetRichEditBox == null)
+            if (sender == null
+#if WINDOWS_UWP
+                || this.TargetRichEditBox == null
+#endif
+                )
             {
                 return;
             }
@@ -182,7 +188,9 @@ namespace MADE.UI.Controls
                 this.TextColorButton.Foreground = brush ?? Colors.Black.ToSolidColorBrush();
             }
 
+#if WINDOWS_UWP
             this.TargetRichEditBox.Document.Selection.CharacterFormat.ForegroundColor = color;
+#endif
         }
     }
 }

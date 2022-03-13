@@ -1,0 +1,13 @@
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    
+    <made:RichEditToolbar
+        x:Name="RichEditToolbarControl"
+        ShowFontSizeOptions="True"
+        ShowTextColorOptions="True" />
+
+    <win:RichEditBox x:Name="StandardRichEditBox" Grid.Row="1" />
+</Grid>

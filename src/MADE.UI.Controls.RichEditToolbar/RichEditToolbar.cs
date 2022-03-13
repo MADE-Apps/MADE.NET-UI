@@ -20,6 +20,7 @@ namespace MADE.UI.Controls
     [TemplatePart(Name = RichEditToolbarColorOptionsPart, Type = typeof(Panel))]
     public partial class RichEditToolbar : Control, IRichEditToolbar
     {
+#if WINDOWS_UWP
         /// <summary>
         /// Identifies the <see cref="TargetRichEditBox"/> dependency property.
         /// </summary>
@@ -28,6 +29,7 @@ namespace MADE.UI.Controls
             typeof(RichEditBox),
             typeof(RichEditToolbar),
             new PropertyMetadata(default(RichEditBox), (o, args) => ((RichEditToolbar)o).SetupRichEditBox()));
+#endif
 
         /// <summary>
         /// Initializes a new instance of the <see cref="RichEditToolbar"/> class.
@@ -37,6 +39,7 @@ namespace MADE.UI.Controls
             this.DefaultStyleKey = typeof(RichEditToolbar);
         }
 
+#if WINDOWS_UWP
         /// <summary>
         /// Gets or sets the associated <see cref="RichEditBox"/> control.
         /// </summary>
@@ -45,6 +48,7 @@ namespace MADE.UI.Controls
             get => (RichEditBox)GetValue(TargetRichEditBoxProperty);
             set => SetValue(TargetRichEditBoxProperty, value);
         }
+#endif
 
         /// <summary>
         /// Loads the relevant control template so that its parts can be referenced.
@@ -54,14 +58,19 @@ namespace MADE.UI.Controls
             this.ResetFontSizeOptions();
             this.ResetFontStyleOptions();
             this.ResetTextColorOptions();
+#if WINDOWS_UWP
             this.ResetRichEditBox();
+#endif
 
             base.OnApplyTemplate();
 
             this.SetupFontSizeOptions();
             this.SetupFontStyleOptions();
             this.SetupTextColorOptions();
+
+#if WINDOWS_UWP
             this.SetupRichEditBox();
+#endif
         }
 
         /// <summary>
@@ -73,6 +82,7 @@ namespace MADE.UI.Controls
             return new RichEditToolbarAutomationPeer(this);
         }
 
+#if WINDOWS_UWP
         private void SetupRichEditBox()
         {
             if (this.TargetRichEditBox == null)
@@ -93,6 +103,7 @@ namespace MADE.UI.Controls
             }
         }
 
+
         private void OnRichEditBoxSelectionChanged(object sender, RoutedEventArgs e)
         {
             this.UpdateActiveToolbarOptions();
@@ -103,5 +114,6 @@ namespace MADE.UI.Controls
             this.UpdateActiveFontStyleOptions();
             this.UpdateActiveTextColorOptions();
         }
+#endif
     }
 }

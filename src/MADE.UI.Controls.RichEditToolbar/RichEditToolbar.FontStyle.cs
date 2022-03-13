@@ -53,6 +53,7 @@ namespace MADE.UI.Controls
             }
         }
 
+#if WINDOWS_UWP
         private void UpdateActiveFontStyleOptions()
         {
             if (this.BoldButton != null)
@@ -82,6 +83,7 @@ namespace MADE.UI.Controls
                     .Underline == UnderlineType.Single;
             }
         }
+#endif
 
         private void ResetFontStyleOptions()
         {
@@ -106,38 +108,56 @@ namespace MADE.UI.Controls
 
         private void OnBoldButtonChecked(object sender, RoutedEventArgs e)
         {
-            if (this.BoldButton == null || this.TargetRichEditBox == null)
+            if (this.BoldButton == null
+#if WINDOWS_UWP
+                || this.TargetRichEditBox == null
+#endif
+                )
             {
                 return;
             }
 
+#if WINDOWS_UWP
             var isChecked = this.BoldButton.IsChecked ?? false;
             this.TargetRichEditBox.Document.Selection.CharacterFormat.Bold =
                 isChecked ? FormatEffect.On : FormatEffect.Off;
+#endif
         }
 
         private void OnItalicButtonChecked(object sender, RoutedEventArgs e)
         {
-            if (this.ItalicButton == null || this.TargetRichEditBox == null)
+            if (this.ItalicButton == null
+#if WINDOWS_UWP
+                || this.TargetRichEditBox == null
+#endif
+                )
             {
                 return;
             }
 
+#if WINDOWS_UWP
             var isChecked = this.ItalicButton.IsChecked ?? false;
             this.TargetRichEditBox.Document.Selection.CharacterFormat.Italic =
                 isChecked ? FormatEffect.On : FormatEffect.Off;
+#endif
         }
 
         private void OnUnderlineButtonChecked(object sender, RoutedEventArgs e)
         {
-            if (this.UnderlineButton == null || this.TargetRichEditBox == null)
+            if (this.UnderlineButton == null
+#if WINDOWS_UWP
+                || this.TargetRichEditBox == null
+#endif
+                )
             {
                 return;
             }
 
+#if WINDOWS_UWP
             var isChecked = this.UnderlineButton.IsChecked ?? false;
             this.TargetRichEditBox.Document.Selection.CharacterFormat.Underline =
                 isChecked ? UnderlineType.Single : UnderlineType.None;
+#endif
         }
     }
 }

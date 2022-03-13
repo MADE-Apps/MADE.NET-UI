@@ -61,10 +61,9 @@
                                 </Grid.RowDefinitions>
 
                                 <made:RichEditToolbar
-                                    x:Name="RichEditToolbarControl"
-                                    TargetRichEditBox="{x:Bind StandardRichEditBox}"/>
+                                    x:Name="RichEditToolbarControl"/>
 
-                                <RichEditBox x:Name="StandardRichEditBox" Grid.Row="1" />
+                                <win:RichEditBox x:Name="StandardRichEditBox" Grid.Row="1" />
                             </Grid>
                         </samples:SampleControl.Sample>
                     </samples:SampleControl>

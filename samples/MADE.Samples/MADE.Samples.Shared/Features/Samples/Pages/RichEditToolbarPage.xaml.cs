@@ -14,6 +14,10 @@ namespace MADE.Samples.Features.Samples.Pages
             this.DataContext = new RichEditToolbarPageViewModel(
                 App.Services.GetService<INavigationService>(),
                 App.Services.GetService<IMessenger>());
+
+#if WINDOWS_UWP
+            this.RichEditToolbarControl.TargetRichEditBox = this.StandardRichEditBox;
+#endif
         }
 
         public RichEditToolbarPageViewModel ViewModel => this.DataContext as RichEditToolbarPageViewModel;

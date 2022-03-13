@@ -78,22 +78,26 @@ namespace MADE.UI.Controls
 
         private void OnFontSizeIncreaseClicked(object sender, RoutedEventArgs e)
         {
+#if WINDOWS_UWP
             if (this.TargetRichEditBox == null || this.TargetRichEditBox.Document.Selection.CharacterFormat.Size <= 0)
             {
                 return;
             }
 
             this.TargetRichEditBox.Document.Selection.CharacterFormat.Size++;
+#endif
         }
 
         private void OnFontSizeDecreaseClicked(object sender, RoutedEventArgs e)
         {
+#if WINDOWS_UWP
             if (this.TargetRichEditBox == null || this.TargetRichEditBox.Document.Selection.CharacterFormat.Size <= 1)
             {
                 return;
             }
 
             this.TargetRichEditBox.Document.Selection.CharacterFormat.Size--;
+#endif
         }
     }
 }

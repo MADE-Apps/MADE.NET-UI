@@ -11,10 +11,12 @@ namespace MADE.UI.Controls
     /// </summary>
     public interface IRichEditToolbar
     {
+#if WINDOWS_UWP
         /// <summary>
         /// Gets or sets the associated <see cref="RichEditBox"/> control.
         /// </summary>
         RichEditBox TargetRichEditBox { get; set; }
+#endif
 
         /// <summary>
         /// Gets or sets the additional custom text color options.
