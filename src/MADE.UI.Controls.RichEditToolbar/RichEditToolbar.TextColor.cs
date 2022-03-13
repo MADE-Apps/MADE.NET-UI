@@ -2,6 +2,7 @@ namespace MADE.UI.Controls
 {
     using System.Collections.Generic;
     using System.Linq;
+    using MADE.UI.Extensions;
     using MADE.UI.Styling.Colors;
     using Windows.UI;
     using Windows.UI.Xaml;
@@ -14,19 +15,28 @@ namespace MADE.UI.Controls
     public partial class RichEditToolbar
     {
         /// <summary>
-        /// Identifies the <see cref="CustomFontColorOptions"/> dependency property.
+        /// Identifies the <see cref="ShowTextColorOptions"/> dependency property.
         /// </summary>
-        public static readonly DependencyProperty CustomFontColorOptionsProperty = DependencyProperty.Register(
-            nameof(CustomFontColorOptions),
-            typeof(IList<RichEditToolbarFontColorOption>),
+        public static readonly DependencyProperty ShowTextColorOptionsProperty = DependencyProperty.Register(
+            nameof(ShowTextColorOptions),
+            typeof(bool),
             typeof(RichEditToolbar),
-            new PropertyMetadata(default(IList<RichEditToolbarFontColorOption>)));
+            new PropertyMetadata(true, (o, args) => ((RichEditToolbar)o).UpdateTextColorOptionsVisibility()));
+
+        /// <summary>
+        /// Identifies the <see cref="CustomTextColorOptions"/> dependency property.
+        /// </summary>
+        public static readonly DependencyProperty CustomTextColorOptionsProperty = DependencyProperty.Register(
+            nameof(CustomTextColorOptions),
+            typeof(IList<RichEditToolbarTextColorOption>),
+            typeof(RichEditToolbar),
+            new PropertyMetadata(default(IList<RichEditToolbarTextColorOption>)));
 
         private const string RichEditToolbarColorButtonPart = "RichEditToolbarColorButton";
         private const string RichEditToolbarColorOptionsPart = "RichEditToolbarColorOptions";
 
-        private static readonly IList<RichEditToolbarFontColorOption> DefaultFontColorOptions =
-            new List<RichEditToolbarFontColorOption>
+        private static readonly IList<RichEditToolbarTextColorOption> DefaultTextColorOptions =
+            new List<RichEditToolbarTextColorOption>
             {
                 new() {Name = "Black", Color = "#000000"},
                 new() {Name = "White", Color = "#ffffff"},
@@ -61,57 +71,66 @@ namespace MADE.UI.Controls
             };
 
         /// <summary>
-        /// Gets or sets the additional custom font color options.
+        /// Gets or sets the additional custom text color options.
         /// </summary>
-        public IList<RichEditToolbarFontColorOption> CustomFontColorOptions
+        public IList<RichEditToolbarTextColorOption> CustomTextColorOptions
         {
-            get => (IList<RichEditToolbarFontColorOption>)GetValue(CustomFontColorOptionsProperty);
-            set => SetValue(CustomFontColorOptionsProperty, value);
+            get => (IList<RichEditToolbarTextColorOption>)GetValue(CustomTextColorOptionsProperty);
+            set => SetValue(CustomTextColorOptionsProperty, value);
         }
 
         /// <summary>
-        /// Gets the view representing the button for setting font color.
+        /// Gets or sets a value indicating whether to show text color options.
         /// </summary>
-        public Button FontColorButton { get; private set; }
+        public bool ShowTextColorOptions
+        {
+            get => (bool)GetValue(ShowTextColorOptionsProperty);
+            set => SetValue(ShowTextColorOptionsProperty, value);
+        }
 
         /// <summary>
-        /// Gets the view representing the panel for displaying font color options.
+        /// Gets the view representing the button for setting text color.
         /// </summary>
-        public Panel FontColorOptionsPanel { get; private set; }
+        public Button TextColorButton { get; private set; }
 
-        private void SetupFontColorOptions()
+        /// <summary>
+        /// Gets the view representing the panel for displaying text color options.
+        /// </summary>
+        public Panel TextColorOptionsPanel { get; private set; }
+
+        private void SetupTextColorOptions()
         {
-            this.FontColorButton = this.GetChildView<Button>(RichEditToolbarColorButtonPart);
-            this.FontColorOptionsPanel = this.GetChildView<Panel>(RichEditToolbarColorOptionsPart);
+            this.TextColorButton = this.GetChildView<Button>(RichEditToolbarColorButtonPart);
+            this.TextColorOptionsPanel = this.GetChildView<Panel>(RichEditToolbarColorOptionsPart);
 
-            if (this.FontColorOptionsPanel == null)
+            if (this.TextColorOptionsPanel == null)
             {
                 return;
             }
 
-            var fontColorOptions = this.CustomFontColorOptions == null
-                ? DefaultFontColorOptions
-                : DefaultFontColorOptions.Concat(this.CustomFontColorOptions);
+            var textColorOptions = this.CustomTextColorOptions == null
+                ? DefaultTextColorOptions
+                : DefaultTextColorOptions.Concat(this.CustomTextColorOptions);
 
-            foreach (var fontColorOption in fontColorOptions)
+            foreach (var textColorOption in textColorOptions)
             {
-                var fontColorButton = new Button {Background = fontColorOption.Color.ToSolidColorBrush()};
+                var textColorButton = new Button { Background = textColorOption.Color.ToSolidColorBrush() };
 
-                var fontColorButtonToolTip = new ToolTip {Content = fontColorOption.Name};
+                var textColorButtonToolTip = new ToolTip { Content = textColorOption.Name };
 
-                ToolTipService.SetToolTip(fontColorButton, fontColorButtonToolTip);
+                ToolTipService.SetToolTip(textColorButton, textColorButtonToolTip);
 
-                fontColorButton.Click += this.OnFontColorButtonClicked;
+                textColorButton.Click += this.OnTextColorButtonClicked;
 
-                this.FontColorOptionsPanel.Children.Add(fontColorButton);
+                this.TextColorOptionsPanel.Children.Add(textColorButton);
             }
         }
 
-        private void UpdateActiveFontColorOptions()
+        private void UpdateActiveTextColorOptions()
         {
-            if (this.FontColorButton != null)
+            if (this.TextColorButton != null)
             {
-                this.FontColorButton.Foreground = this.TargetRichEditBox
+                this.TextColorButton.Foreground = this.TargetRichEditBox
                     .Document
                     .Selection
                     .CharacterFormat
@@ -120,25 +139,30 @@ namespace MADE.UI.Controls
             }
         }
 
-        private void ResetFontColorOptions()
+        private void UpdateTextColorOptionsVisibility()
         {
-            if (this.FontColorOptionsPanel == null)
+            this.TextColorButton?.SetVisible(this.ShowTextColorOptions);
+        }
+
+        private void ResetTextColorOptions()
+        {
+            if (this.TextColorOptionsPanel == null)
             {
                 return;
             }
 
-            foreach (var element in this.FontColorOptionsPanel.Children)
+            foreach (var element in this.TextColorOptionsPanel.Children)
             {
-                if (element is Button fontColorButton)
+                if (element is Button textColorButton)
                 {
-                    fontColorButton.Click -= this.OnFontColorButtonClicked;
+                    textColorButton.Click -= this.OnTextColorButtonClicked;
                 }
             }
 
-            this.FontColorOptionsPanel.Children.Clear();
+            this.TextColorOptionsPanel.Children.Clear();
         }
 
-        private void OnFontColorButtonClicked(object sender, RoutedEventArgs e)
+        private void OnTextColorButtonClicked(object sender, RoutedEventArgs e)
         {
             if (sender == null || this.TargetRichEditBox == null)
             {
@@ -153,9 +177,9 @@ namespace MADE.UI.Controls
             var brush = colorElement.Background as SolidColorBrush;
             var color = brush?.Color ?? Colors.Black;
 
-            if (this.FontColorButton != null)
+            if (this.TextColorButton != null)
             {
-                this.FontColorButton.Foreground = brush ?? Colors.Black.ToSolidColorBrush();
+                this.TextColorButton.Foreground = brush ?? Colors.Black.ToSolidColorBrush();
             }
 
             this.TargetRichEditBox.Document.Selection.CharacterFormat.ForegroundColor = color;

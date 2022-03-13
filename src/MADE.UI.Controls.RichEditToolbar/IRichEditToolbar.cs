@@ -17,8 +17,18 @@ namespace MADE.UI.Controls
         RichEditBox TargetRichEditBox { get; set; }
 
         /// <summary>
-        /// Gets or sets the additional custom font color options.
+        /// Gets or sets the additional custom text color options.
         /// </summary>
-        IList<RichEditToolbarFontColorOption> CustomFontColorOptions { get; set; }
+        IList<RichEditToolbarTextColorOption> CustomTextColorOptions { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether to show font size options.
+        /// </summary>
+        bool ShowFontSizeOptions { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether to show text color options.
+        /// </summary>
+        bool ShowTextColorOptions { get; set; }
     }
 }

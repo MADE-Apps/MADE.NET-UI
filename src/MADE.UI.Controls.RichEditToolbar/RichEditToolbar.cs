@@ -53,14 +53,14 @@ namespace MADE.UI.Controls
         {
             this.ResetFontSizeOptions();
             this.ResetFontStyleOptions();
-            this.ResetFontColorOptions();
+            this.ResetTextColorOptions();
             this.ResetRichEditBox();
 
             base.OnApplyTemplate();
 
             this.SetupFontSizeOptions();
             this.SetupFontStyleOptions();
-            this.SetupFontColorOptions();
+            this.SetupTextColorOptions();
             this.SetupRichEditBox();
         }
 
@@ -101,7 +101,7 @@ namespace MADE.UI.Controls
         private void UpdateActiveToolbarOptions()
         {
             this.UpdateActiveFontStyleOptions();
-            this.UpdateActiveFontColorOptions();
+            this.UpdateActiveTextColorOptions();
         }
     }
 }

@@ -1,9 +1,9 @@
 namespace MADE.UI.Controls
 {
     /// <summary>
-    /// Defines a font color option for the <see cref="RichEditToolbar"/>.
+    /// Defines a text color option for the <see cref="RichEditToolbar"/>.
     /// </summary>
-    public class RichEditToolbarFontColorOption
+    public class RichEditToolbarTextColorOption
     {
         /// <summary>
         /// Gets or sets the name of the color.

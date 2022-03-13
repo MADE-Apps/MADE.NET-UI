@@ -1,5 +1,6 @@
 namespace MADE.UI.Controls
 {
+    using MADE.UI.Extensions;
     using Windows.UI.Xaml;
     using Windows.UI.Xaml.Controls;
 
@@ -8,9 +9,27 @@ namespace MADE.UI.Controls
     /// </summary>
     public partial class RichEditToolbar
     {
+        /// <summary>
+        /// Identifies the <see cref="ShowFontSizeOptions"/> dependency property.
+        /// </summary>
+        public static readonly DependencyProperty ShowFontSizeOptionsProperty = DependencyProperty.Register(
+            nameof(ShowFontSizeOptions),
+            typeof(bool),
+            typeof(RichEditToolbar),
+            new PropertyMetadata(true, (o, args) => ((RichEditToolbar)o).UpdateFontSizeOptionsVisibility()));
+
         private const string RichEditToolbarIncreaseTextSizeButtonPart = "RichEditToolbarIncreaseTextSizeButton";
         private const string RichEditToolbarDecreaseTextSizeButtonPart = "RichEditToolbarDecreaseTextSizeButton";
         private const int DefaultTextSize = 11;
+
+        /// <summary>
+        /// Gets or sets a value indicating whether to show font size options.
+        /// </summary>
+        public bool ShowFontSizeOptions
+        {
+            get => (bool)GetValue(ShowFontSizeOptionsProperty);
+            set => SetValue(ShowFontSizeOptionsProperty, value);
+        }
 
         /// <summary>
         /// Gets the view representing the button for increasing the font size.
@@ -36,6 +55,12 @@ namespace MADE.UI.Controls
             {
                 this.FontSizeIncreaseButton.Click += this.OnFontSizeIncreaseClicked;
             }
+        }
+
+        private void UpdateFontSizeOptionsVisibility()
+        {
+            this.FontSizeIncreaseButton?.SetVisible(this.ShowFontSizeOptions);
+            this.FontSizeDecreaseButton?.SetVisible(this.ShowFontSizeOptions);
         }
 
         private void ResetFontSizeOptions()
