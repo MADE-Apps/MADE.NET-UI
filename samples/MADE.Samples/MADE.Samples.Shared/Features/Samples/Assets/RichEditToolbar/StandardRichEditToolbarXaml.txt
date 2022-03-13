@@ -5,7 +5,7 @@
     </Grid.RowDefinitions>
     
     <made:RichEditToolbar
-        x:Name="RichEditToolbarControl"
+        x:Name="StandardRichEditToolbarControl"
         ShowFontSizeOptions="True"
         ShowTextColorOptions="True" />
 

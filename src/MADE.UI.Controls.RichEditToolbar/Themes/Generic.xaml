@@ -10,14 +10,14 @@
                 <ControlTemplate TargetType="local:RichEditToolbar">
                     <CommandBar x:Name="LayoutRoot" Background="{TemplateBinding Background}" OverflowButtonVisibility="Auto" DefaultLabelPosition="Collapsed">
                         <CommandBar.PrimaryCommands>
-                            <AppBarButton x:Name="RichEditToolbarIncreaseTextSizeButton" Icon="FontIncrease" ToolTipService.ToolTip="Increase font size"  />
-                            <AppBarButton x:Name="RichEditToolbarDecreaseTextSizeButton" Icon="FontDecrease" ToolTipService.ToolTip="Decrease font size"  />
-                            <AppBarToggleButton x:Name="RichEditToolbarBoldButton" Icon="Bold" ToolTipService.ToolTip="Bold" />
-                            <AppBarToggleButton x:Name="RichEditToolbarItalicButton" Icon="Italic" ToolTipService.ToolTip="Italic" />
-                            <AppBarToggleButton x:Name="RichEditToolbarUnderlineButton" Icon="Underline" ToolTipService.ToolTip="Underline" />
-                            <AppBarButton x:Name="RichEditToolbarColorButton" Icon="FontColor" ToolTipService.ToolTip="Text color">
+                            <AppBarButton x:Name="RichEditToolbarIncreaseTextSizeButton" Icon="FontIncrease" Label="Increase font size" ToolTipService.ToolTip="Increase font size"  />
+                            <AppBarButton x:Name="RichEditToolbarDecreaseTextSizeButton" Icon="FontDecrease" Label="Decrease font size" ToolTipService.ToolTip="Decrease font size"  />
+                            <AppBarToggleButton x:Name="RichEditToolbarBoldButton" Icon="Bold" Label="Bold" ToolTipService.ToolTip="Bold" />
+                            <AppBarToggleButton x:Name="RichEditToolbarItalicButton" Icon="Italic" Label="Italic" ToolTipService.ToolTip="Italic" />
+                            <AppBarToggleButton x:Name="RichEditToolbarUnderlineButton" Icon="Underline" Label="Underline" ToolTipService.ToolTip="Underline" />
+                            <AppBarButton x:Name="RichEditToolbarColorButton" Icon="FontColor" Label="Text color" ToolTipService.ToolTip="Text color">
                                 <AppBarButton.Flyout>
-                                    <Flyout Placement="Bottom">
+                                    <Flyout>
                                         <VariableSizedWrapGrid x:Name="RichEditToolbarColorOptions" Orientation="Horizontal" MaximumRowsOrColumns="6">
                                             <VariableSizedWrapGrid.Resources>
                                                 <colors:LightenColorBrushConverter x:Key="RichEditToolbarFlyoutLightenColorConverter" />

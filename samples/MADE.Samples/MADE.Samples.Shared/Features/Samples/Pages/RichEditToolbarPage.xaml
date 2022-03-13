@@ -49,10 +49,17 @@
 
             <ScrollViewer Grid.Row="2">
                 <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
                     <samples:SampleControl
-                        CodeSource="RichEditToolbar/RichEditToolbarCode.txt"
+                        Margin="0,0,0,32"
+                        CodeSource="RichEditToolbar/StandardRichEditToolbarCode.txt"
                         SampleName="A standard RichEditToolbar experience"
-                        XamlSource="RichEditToolbar/RichEditToolbarXaml.txt">
+                        XamlSource="RichEditToolbar/StandardRichEditToolbarXaml.txt">
                         <samples:SampleControl.Sample>
                             <Grid>
                                 <Grid.RowDefinitions>
@@ -60,10 +67,32 @@
                                     <RowDefinition Height="*" />
                                 </Grid.RowDefinitions>
 
-                                <made:RichEditToolbar
-                                    x:Name="RichEditToolbarControl"/>
+                                <made:RichEditToolbar x:Name="StandardRichEditToolbarControl" />
 
                                 <win:RichEditBox x:Name="StandardRichEditBox" Grid.Row="1" />
+                            </Grid>
+                        </samples:SampleControl.Sample>
+                    </samples:SampleControl>
+
+                    <samples:SampleControl
+                        Grid.Row="1"
+                        CodeSource="RichEditToolbar/CustomRichEditToolbarCode.txt"
+                        SampleName="A RichEditToolbar with custom buttons"
+                        XamlSource="RichEditToolbar/CustomRichEditToolbarXaml.txt">
+                        <samples:SampleControl.Sample>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+
+                                <made:RichEditToolbar x:Name="CustomRichEditToolbarControl">
+                                    <made:RichEditToolbar.CustomOptions>
+                                        <AppBarButton Icon="Save" />
+                                    </made:RichEditToolbar.CustomOptions>
+                                </made:RichEditToolbar>
+
+                                <win:RichEditBox x:Name="CustomRichEditBox" Grid.Row="1" />
                             </Grid>
                         </samples:SampleControl.Sample>
                     </samples:SampleControl>

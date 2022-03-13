@@ -4,6 +4,7 @@
 namespace MADE.UI.Controls
 {
     using System.Collections.Generic;
+    using Windows.UI.Xaml;
     using Windows.UI.Xaml.Controls;
 
     /// <summary>
@@ -32,6 +33,11 @@ namespace MADE.UI.Controls
         /// </summary>
         RichEditBox TargetRichEditBox { get; set; }
 #endif
+
+        /// <summary>
+        /// Gets or sets the additional custom options.
+        /// </summary>
+        IList<ICommandBarElement> CustomOptions { get; set; }
 
         /// <summary>
         /// Gets or sets the additional custom text color options.

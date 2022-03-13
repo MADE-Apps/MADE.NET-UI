@@ -1,0 +1,14 @@
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    
+    <made:RichEditToolbar x:Name="CustomRichEditToolbarControl">
+        <made:RichEditToolbar.CustomOptions>
+            <AppBarButton Icon="Save" Label="Save" />
+        </made:RichEditToolbar.CustomOptions>
+    </made:RichEditToolbar>
+
+    <win:RichEditBox x:Name="CustomRichEditBox" Grid.Row="1" />
+</Grid>

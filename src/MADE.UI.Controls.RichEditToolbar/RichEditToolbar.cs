@@ -3,6 +3,7 @@
 
 namespace MADE.UI.Controls
 {
+    using System.Collections.Generic;
     using Windows.UI.Xaml;
     using Windows.UI.Xaml.Automation.Peers;
     using Windows.UI.Xaml.Controls;
@@ -11,6 +12,7 @@ namespace MADE.UI.Controls
     /// <summary>
     /// Defines a customizable and extensible collection of buttons that activate rich text features in an associated <see cref="RichEditBox"/>.
     /// </summary>
+    [TemplatePart(Name = RichEditToolbarOptionsBarPart, Type = typeof(CommandBar))]
     [TemplatePart(Name = RichEditToolbarIncreaseTextSizeButtonPart, Type = typeof(Button))]
     [TemplatePart(Name = RichEditToolbarDecreaseTextSizeButtonPart, Type = typeof(Button))]
     [TemplatePart(Name = RichEditToolbarBoldButtonPart, Type = typeof(ToggleButton))]
@@ -32,6 +34,19 @@ namespace MADE.UI.Controls
 #endif
 
         /// <summary>
+        /// Identifies the <see cref="CustomOptions"/> dependency property.
+        /// </summary>
+        public static readonly DependencyProperty CustomOptionsProperty = DependencyProperty.Register(
+            nameof(CustomOptions),
+            typeof(IList<ICommandBarElement>),
+            typeof(RichEditToolbar),
+            new PropertyMetadata(
+                new List<ICommandBarElement>(),
+                (o, args) => ((RichEditToolbar)o).SetupCustomOptions()));
+
+        private const string RichEditToolbarOptionsBarPart = "LayoutRoot";
+
+        /// <summary>
         /// Initializes a new instance of the <see cref="RichEditToolbar"/> class.
         /// </summary>
         public RichEditToolbar()
@@ -51,6 +66,20 @@ namespace MADE.UI.Controls
 #endif
 
         /// <summary>
+        /// Gets or sets the additional custom options.
+        /// </summary>
+        public IList<ICommandBarElement> CustomOptions
+        {
+            get => (IList<ICommandBarElement>)GetValue(CustomOptionsProperty);
+            set => SetValue(CustomOptionsProperty, value);
+        }
+
+        /// <summary>
+        /// Gets the view representing the option button bar.
+        /// </summary>
+        public CommandBar Toolbar { get; private set; }
+
+        /// <summary>
         /// Loads the relevant control template so that its parts can be referenced.
         /// </summary>
         protected override void OnApplyTemplate()
@@ -64,6 +93,8 @@ namespace MADE.UI.Controls
 
             base.OnApplyTemplate();
 
+            this.Toolbar = this.GetChildView<CommandBar>(RichEditToolbarOptionsBarPart);
+
             this.SetupFontSizeOptions();
             this.SetupFontStyleOptions();
             this.SetupTextColorOptions();
@@ -71,6 +102,8 @@ namespace MADE.UI.Controls
 #if WINDOWS_UWP
             this.SetupRichEditBox();
 #endif
+
+            this.SetupCustomOptions();
         }
 
         /// <summary>
@@ -115,5 +148,21 @@ namespace MADE.UI.Controls
             this.UpdateActiveTextColorOptions();
         }
 #endif
+
+        private void SetupCustomOptions()
+        {
+            if (this.Toolbar == null || this.CustomOptions == null)
+            {
+                return;
+            }
+
+            foreach (var option in this.CustomOptions)
+            {
+                if (!this.Toolbar.PrimaryCommands.Contains(option))
+                {
+                    this.Toolbar.PrimaryCommands.Add(option);
+                }
+            }
+        }
     }
 }

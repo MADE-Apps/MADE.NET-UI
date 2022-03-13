@@ -1,2 +1,2 @@
 // When used in an Uno Platform app, RichEditBox is not supported so the TargetRichEditBox must be set in code.
-this.RichEditToolbarControl.TargetRichEditBox = this.StandardRichEditBox;
+this.StandardRichEditToolbarControl.TargetRichEditBox = this.StandardRichEditBox;
