@@ -14,6 +14,11 @@ namespace MADE.UI.Controls
         private const string RichEditToolbarUnderlineButtonPart = "RichEditToolbarUnderlineButton";
 
         /// <summary>
+        /// Occurs when the font style has changed.
+        /// </summary>
+        public event RichEditToolbarFontStyleChangedEventHandler FontStyleChanged;
+
+        /// <summary>
         /// Gets the view representing the button for toggling bold text.
         /// </summary>
         public ToggleButton BoldButton { get; private set; }
@@ -82,6 +87,8 @@ namespace MADE.UI.Controls
                     .CharacterFormat
                     .Underline == UnderlineType.Single;
             }
+
+            this.EmitFontStyleChanged();
         }
 #endif
 
@@ -122,6 +129,8 @@ namespace MADE.UI.Controls
             this.TargetRichEditBox.Document.Selection.CharacterFormat.Bold =
                 isChecked ? FormatEffect.On : FormatEffect.Off;
 #endif
+
+            this.EmitFontStyleChanged();
         }
 
         private void OnItalicButtonChecked(object sender, RoutedEventArgs e)
@@ -140,6 +149,8 @@ namespace MADE.UI.Controls
             this.TargetRichEditBox.Document.Selection.CharacterFormat.Italic =
                 isChecked ? FormatEffect.On : FormatEffect.Off;
 #endif
+
+            this.EmitFontStyleChanged();
         }
 
         private void OnUnderlineButtonChecked(object sender, RoutedEventArgs e)
@@ -158,6 +169,24 @@ namespace MADE.UI.Controls
             this.TargetRichEditBox.Document.Selection.CharacterFormat.Underline =
                 isChecked ? UnderlineType.Single : UnderlineType.None;
 #endif
+
+            this.EmitFontStyleChanged();
+        }
+
+        private void EmitFontStyleChanged()
+        {
+            if (this.FontStyleChanged == null)
+            {
+                return;
+            }
+
+            var bold = this.BoldButton?.IsChecked ?? false;
+            var italic = this.ItalicButton?.IsChecked ?? false;
+            var underline = this.UnderlineButton?.IsChecked ?? false;
+
+            this.FontStyleChanged.Invoke(
+                this,
+                new RichEditToolbarFontStyleChangedEventArgs(bold, italic, underline));
         }
     }
 }

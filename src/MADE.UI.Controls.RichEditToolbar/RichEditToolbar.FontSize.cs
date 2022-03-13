@@ -20,7 +20,16 @@ namespace MADE.UI.Controls
 
         private const string RichEditToolbarIncreaseTextSizeButtonPart = "RichEditToolbarIncreaseTextSizeButton";
         private const string RichEditToolbarDecreaseTextSizeButtonPart = "RichEditToolbarDecreaseTextSizeButton";
-        private const int DefaultTextSize = 11;
+        private const int DefaultFontSize = 11;
+
+#if !WINDOWS_UWP
+        private int currentFontSize = DefaultFontSize;
+#endif
+
+        /// <summary>
+        /// Occurs when the font size has changed.
+        /// </summary>
+        public event RichEditToolbarFontSizeChangedEventHandler FontSizeChanged;
 
         /// <summary>
         /// Gets or sets a value indicating whether to show font size options.
@@ -85,6 +94,11 @@ namespace MADE.UI.Controls
             }
 
             this.TargetRichEditBox.Document.Selection.CharacterFormat.Size++;
+
+            this.FontSizeChanged?.Invoke(this, new RichEditToolbarFontSizeChangedEventArgs(this.TargetRichEditBox.Document.Selection.CharacterFormat.Size));
+#else
+            currentFontSize++;
+            this.FontSizeChanged?.Invoke(this, new RichEditToolbarFontSizeChangedEventArgs(currentFontSize));
 #endif
         }
 
@@ -97,6 +111,9 @@ namespace MADE.UI.Controls
             }
 
             this.TargetRichEditBox.Document.Selection.CharacterFormat.Size--;
+#else
+            currentFontSize--;
+            this.FontSizeChanged?.Invoke(this, new RichEditToolbarFontSizeChangedEventArgs(currentFontSize));
 #endif
         }
     }

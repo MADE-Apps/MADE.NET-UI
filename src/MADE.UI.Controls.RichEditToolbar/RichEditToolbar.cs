@@ -91,7 +91,7 @@ namespace MADE.UI.Controls
             }
 
             this.UpdateActiveToolbarOptions();
-            this.TargetRichEditBox.Document.Selection.CharacterFormat.Size = DefaultTextSize;
+            this.TargetRichEditBox.Document.Selection.CharacterFormat.Size = DefaultFontSize;
             this.TargetRichEditBox.SelectionChanged += this.OnRichEditBoxSelectionChanged;
         }
 

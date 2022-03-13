@@ -71,6 +71,11 @@ namespace MADE.UI.Controls
             };
 
         /// <summary>
+        /// Occurs when the text color has changed.
+        /// </summary>
+        public event RichEditToolbarTextColorChangedEventHandler TextColorChanged;
+
+        /// <summary>
         /// Gets or sets the additional custom text color options.
         /// </summary>
         public IList<RichEditToolbarTextColorOption> CustomTextColorOptions
@@ -114,9 +119,9 @@ namespace MADE.UI.Controls
 
             foreach (var textColorOption in textColorOptions)
             {
-                var textColorButton = new Button { Background = textColorOption.Color.ToSolidColorBrush() };
+                var textColorButton = new Button {Background = textColorOption.Color.ToSolidColorBrush()};
 
-                var textColorButtonToolTip = new ToolTip { Content = textColorOption.Name };
+                var textColorButtonToolTip = new ToolTip {Content = textColorOption.Name};
 
                 ToolTipService.SetToolTip(textColorButton, textColorButtonToolTip);
 
@@ -129,15 +134,16 @@ namespace MADE.UI.Controls
 #if WINDOWS_UWP
         private void UpdateActiveTextColorOptions()
         {
-            if (this.TextColorButton != null)
+            if (this.TextColorButton == null)
             {
-                this.TextColorButton.Foreground = this.TargetRichEditBox
-                    .Document
-                    .Selection
-                    .CharacterFormat
-                    .ForegroundColor
-                    .ToSolidColorBrush();
+                return;
             }
+
+            var color = this.TargetRichEditBox.Document.Selection.CharacterFormat.ForegroundColor;
+
+            this.TextColorButton.Foreground = color.ToSolidColorBrush();
+
+            this.EmitTextColorChanged(color);
         }
 #endif
 
@@ -170,7 +176,7 @@ namespace MADE.UI.Controls
 #if WINDOWS_UWP
                 || this.TargetRichEditBox == null
 #endif
-                )
+               )
             {
                 return;
             }
@@ -191,6 +197,13 @@ namespace MADE.UI.Controls
 #if WINDOWS_UWP
             this.TargetRichEditBox.Document.Selection.CharacterFormat.ForegroundColor = color;
 #endif
+
+            this.EmitTextColorChanged(color);
+        }
+
+        private void EmitTextColorChanged(Color color)
+        {
+            this.TextColorChanged?.Invoke(this, new RichEditToolbarTextColorChangedEventArgs(color.ToHexString()));
         }
     }
 }

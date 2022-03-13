@@ -11,6 +11,21 @@ namespace MADE.UI.Controls
     /// </summary>
     public interface IRichEditToolbar
     {
+        /// <summary>
+        /// Occurs when the font size has changed.
+        /// </summary>
+        event RichEditToolbarFontSizeChangedEventHandler FontSizeChanged;
+
+        /// <summary>
+        /// Occurs when the font style has changed.
+        /// </summary>
+        event RichEditToolbarFontStyleChangedEventHandler FontStyleChanged;
+
+        /// <summary>
+        /// Occurs when the text color has changed.
+        /// </summary>
+        event RichEditToolbarTextColorChangedEventHandler TextColorChanged;
+
 #if WINDOWS_UWP
         /// <summary>
         /// Gets or sets the associated <see cref="RichEditBox"/> control.
