@@ -33,6 +33,20 @@ namespace MADE.UI.Styling.Colors
         }
 
         /// <summary>
+        /// Converts the specified <see cref="string" /> hex value to a <see cref="T:Windows.UI.Xaml.Media.SolidColorBrush" />.
+        /// </summary>
+        /// <param name="hexValue">
+        /// The <see cref="string" /> hex value to convert.
+        /// </param>
+        /// <returns>
+        /// A <see cref="T:Windows.UI.Xaml.Media.SolidColorBrush" /> representation of the specified color.
+        /// </returns>
+        public static SolidColorBrush ToSolidColorBrush(this string hexValue)
+        {
+            return hexValue.ToWindowsColor().ToSolidColorBrush();
+        }
+
+        /// <summary>
         /// Gets the hex representation of the specified <see cref="T:Windows.UI.Color" />.
         /// </summary>
         /// <param name="color">

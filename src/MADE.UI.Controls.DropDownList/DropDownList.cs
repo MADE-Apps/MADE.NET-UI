@@ -423,7 +423,7 @@ namespace MADE.UI.Controls
         public ListView DropDownContent { get; private set; }
 
         /// <summary>
-        /// Loads the relevant control template so that it's parts can be referenced.
+        /// Loads the relevant control template so that its parts can be referenced.
         /// </summary>
         protected override void OnApplyTemplate()
         {

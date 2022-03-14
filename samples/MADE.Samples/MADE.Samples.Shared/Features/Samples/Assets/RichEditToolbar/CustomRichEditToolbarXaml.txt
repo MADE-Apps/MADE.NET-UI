@@ -1,0 +1,21 @@
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    
+    <made:RichEditToolbar
+        x:Name="CustomRichEditToolbarControl"
+        ShowFontSizeOptions="True"
+        ShowTextColorOptions="True"
+        ShowListStyleOptions="True">
+        <made:RichEditToolbar.CustomOptions>
+            <AppBarSeparator />
+            <AppBarButton x:Name="SaveButton" Icon="Save" Label="Save" />
+            <AppBarButton x:Name="UndoButton" Icon="Undo" Label="Undo" />
+            <AppBarButton x:Name="RedoButton" Icon="Redo" Label="Redo" />
+        </made:RichEditToolbar.CustomOptions>
+    </made:RichEditToolbar>
+
+    <win:RichEditBox x:Name="CustomRichEditBox" Grid.Row="1" />
+</Grid>

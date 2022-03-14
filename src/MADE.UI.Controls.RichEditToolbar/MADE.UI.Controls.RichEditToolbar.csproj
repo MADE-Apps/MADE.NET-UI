@@ -3,18 +3,24 @@
   <PropertyGroup>
     <TargetFrameworks>uap10.0.19041;MonoAndroid11.0;xamarinios10;netstandard2.0;xamarinmac20</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Product>MADE.NET UI Styling</Product>
+    <Product>MADE.NET UI RichEditToolbar Control</Product>
     <Description>
       This package includes UI components for Windows and Uno Platform applications such as:
-      - SystemColorExtensions for extending System Color objects with helper methods, such as converting to Windows colors and checking luminosity.
-      - WindowsColorExtensions for extending Windows Color objects with helper methods, such as converting to System colors and converting to HEX values.
+      - RichEditToolbar for providing an extension bar for a RichEditBox to easily customize input text.
     </Description>
-    <PackageTags>MADE UI Views Styling Windows Android iOS macOS Xamarin Uno HEX Color Lux Lighten Darken</PackageTags>
+    <PackageTags>MADE UI Views Controls RichEditBox Input Toolbar Windows Android iOS macOS Xamarin Uno</PackageTags>
     <GenerateLibraryLayout>true</GenerateLibraryLayout>
+    <RootNamespace>MADE.UI.Controls.RichEditToolbarControl</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFrameworkIdentifier)' == 'MonoAndroid' or '$(TargetFrameworkIdentifier)' == 'Xamarin.iOS' or '$(TargetFrameworkIdentifier)' == '.NETStandard' or '$(TargetFrameworkIdentifier)' == 'Xamarin.Mac'">
     <PackageReference Include="Uno.UI" Version="4.1.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MADE.Collections" Version="1.4.0" />
+    <PackageReference Include="MADE.Data.Validation" Version="1.4.0" />
+    <PackageReference Include="MADE.Foundation" Version="1.4.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,11 +32,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MADE.Data.Validation" Version="1.4.0" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\MADE.UI\MADE.UI.csproj" />
+    <ProjectReference Include="..\MADE.UI.Styling\MADE.UI.Styling.csproj" />
   </ItemGroup>
 
 </Project>

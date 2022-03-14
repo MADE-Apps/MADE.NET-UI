@@ -170,6 +170,10 @@
       <Project>{774fd8d5-ccc1-4eed-aa14-f7069bfae5ce}</Project>
       <Name>MADE.UI.Controls.FilePicker</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\src\MADE.UI.Controls.RichEditToolbar\MADE.UI.Controls.RichEditToolbar.csproj">
+      <Project>{258fb310-dc02-488c-97c7-cd1226eaaec8}</Project>
+      <Name>MADE.UI.Controls.RichEditToolbar</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\src\MADE.UI.Controls.Validator\MADE.UI.Controls.Validator.csproj">
       <Project>{e2b20928-dae2-4a9c-bdaf-d787b4f48391}</Project>
       <Name>MADE.UI.Controls.Validator</Name>
