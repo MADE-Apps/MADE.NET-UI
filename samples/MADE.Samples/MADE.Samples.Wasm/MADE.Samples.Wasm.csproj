@@ -50,7 +50,7 @@
     <PackageReference Include="MADE.Networking" Version="1.4.0" />
     <PackageReference Include="MADE.Runtime" Version="1.4.0" />
     <PackageReference Include="MADE.Threading" Version="1.4.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
     <PackageReference Include="Microsoft.Windows.Compatibility" Version="5.0.0" />
     <PackageReference Include="Uno.ColorCode.UWP" Version="2.1.0-uno.32" />
