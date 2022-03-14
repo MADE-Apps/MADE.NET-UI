@@ -55,6 +55,8 @@ namespace MADE.UI.Controls
             this.FontSizeIncreaseButton = this.GetChildView<Button>(RichEditToolbarIncreaseTextSizeButtonPart);
             this.FontSizeDecreaseButton = this.GetChildView<Button>(RichEditToolbarDecreaseTextSizeButtonPart);
 
+            this.UpdateFontSizeOptionsVisibility();
+
             if (this.FontSizeDecreaseButton != null)
             {
                 this.FontSizeDecreaseButton.Click += this.OnFontSizeDecreaseClicked;

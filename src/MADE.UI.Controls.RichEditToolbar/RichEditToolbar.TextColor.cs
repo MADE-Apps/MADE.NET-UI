@@ -108,6 +108,8 @@ namespace MADE.UI.Controls
             this.TextColorButton = this.GetChildView<Button>(RichEditToolbarColorButtonPart);
             this.TextColorOptionsPanel = this.GetChildView<Panel>(RichEditToolbarColorOptionsPart);
 
+            this.UpdateTextColorOptionsVisibility();
+
             if (this.TextColorOptionsPanel == null)
             {
                 return;

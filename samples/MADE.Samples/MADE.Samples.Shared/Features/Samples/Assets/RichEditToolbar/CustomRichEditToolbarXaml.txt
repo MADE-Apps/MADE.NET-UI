@@ -7,7 +7,8 @@
     <made:RichEditToolbar
         x:Name="CustomRichEditToolbarControl"
         ShowFontSizeOptions="True"
-        ShowTextColorOptions="True">
+        ShowTextColorOptions="True"
+        ShowListStyleOptions="True">
         <made:RichEditToolbar.CustomOptions>
             <AppBarSeparator />
             <AppBarButton x:Name="SaveButton" Icon="Save" Label="Save" />

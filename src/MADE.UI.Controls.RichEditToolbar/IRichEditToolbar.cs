@@ -27,6 +27,11 @@ namespace MADE.UI.Controls
         /// </summary>
         event RichEditToolbarTextColorChangedEventHandler TextColorChanged;
 
+        /// <summary>
+        /// Occurs when the list style has changed.
+        /// </summary>
+        event RichEditToolbarListStyleChangedEventHandler ListStyleChanged;
+
 #if WINDOWS_UWP
         /// <summary>
         /// Gets or sets the associated <see cref="RichEditBox"/> control.
@@ -53,5 +58,10 @@ namespace MADE.UI.Controls
         /// Gets or sets a value indicating whether to show text color options.
         /// </summary>
         bool ShowTextColorOptions { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether to show list style options.
+        /// </summary>
+        bool ShowListStyleOptions { get; set; }
     }
 }

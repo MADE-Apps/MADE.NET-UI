@@ -85,6 +85,7 @@ namespace MADE.UI.Controls
             this.ResetFontSizeOptions();
             this.ResetFontStyleOptions();
             this.ResetTextColorOptions();
+            this.ResetListStyleOptions();
 #if WINDOWS_UWP
             this.ResetRichEditBox();
 #endif
@@ -96,6 +97,7 @@ namespace MADE.UI.Controls
             this.SetupFontSizeOptions();
             this.SetupFontStyleOptions();
             this.SetupTextColorOptions();
+            this.SetupListStyleOptions();
 
 #if WINDOWS_UWP
             this.SetupRichEditBox();
@@ -134,7 +136,6 @@ namespace MADE.UI.Controls
             }
         }
 
-
         private void OnRichEditBoxSelectionChanged(object sender, RoutedEventArgs e)
         {
             this.UpdateActiveToolbarOptions();
@@ -144,6 +145,7 @@ namespace MADE.UI.Controls
         {
             this.UpdateActiveFontStyleOptions();
             this.UpdateActiveTextColorOptions();
+            this.UpdateActiveListStyleOptions();
         }
 #endif
 
