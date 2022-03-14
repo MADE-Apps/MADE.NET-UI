@@ -40,9 +40,7 @@ namespace MADE.UI.Controls
             nameof(CustomOptions),
             typeof(IList<ICommandBarElement>),
             typeof(RichEditToolbar),
-            new PropertyMetadata(
-                new List<ICommandBarElement>(),
-                (o, args) => ((RichEditToolbar)o).SetupCustomOptions()));
+            new PropertyMetadata(new List<ICommandBarElement>()));
 
         private const string RichEditToolbarOptionsBarPart = "LayoutRoot";
 

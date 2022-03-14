@@ -117,21 +117,12 @@
       <Generator>
       </Generator>
     </Content>
-    <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\RichEditToolbar\StandardRichEditToolbarCode.txt">
-      <SubType>Designer</SubType>
-      <Generator>
-      </Generator>
-    </Content>
     <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\RichEditToolbar\CustomRichEditToolbarXaml.txt">
       <SubType>Designer</SubType>
       <Generator>
       </Generator>
     </Content>
-    <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\RichEditToolbar\StandardRichEditToolbarXaml.txt">
-      <SubType>Designer</SubType>
-      <Generator>
-      </Generator>
-    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\RichEditToolbar\RichEditToolbar.png" />
     <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\WindowManager\WindowManagerCode.txt">
       <SubType>Designer</SubType>
       <Generator>

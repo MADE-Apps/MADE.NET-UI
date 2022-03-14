@@ -16,7 +16,6 @@ namespace MADE.Samples.Features.Samples.Pages
                 App.Services.GetService<IMessenger>());
 
 #if WINDOWS_UWP
-            this.StandardRichEditToolbarControl.TargetRichEditBox = this.StandardRichEditBox;
             this.CustomRichEditToolbarControl.TargetRichEditBox = this.CustomRichEditBox;
 #endif
         }

@@ -49,35 +49,9 @@
 
             <ScrollViewer Grid.Row="2">
                 <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="*" />
-                    </Grid.RowDefinitions>
-
                     <samples:SampleControl
-                        Margin="0,0,0,32"
-                        CodeSource="RichEditToolbar/StandardRichEditToolbarCode.txt"
-                        SampleName="A standard RichEditToolbar experience"
-                        XamlSource="RichEditToolbar/StandardRichEditToolbarXaml.txt">
-                        <samples:SampleControl.Sample>
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="*" />
-                                </Grid.RowDefinitions>
-
-                                <made:RichEditToolbar x:Name="StandardRichEditToolbarControl" />
-
-                                <win:RichEditBox x:Name="StandardRichEditBox" Grid.Row="1" />
-                            </Grid>
-                        </samples:SampleControl.Sample>
-                    </samples:SampleControl>
-
-                    <samples:SampleControl
-                        Grid.Row="1"
                         CodeSource="RichEditToolbar/CustomRichEditToolbarCode.txt"
-                        SampleName="A RichEditToolbar with custom buttons"
+                        SampleName="A RichEditToolbar showing standard font style, size, and color options, plus additional buttons"
                         XamlSource="RichEditToolbar/CustomRichEditToolbarXaml.txt">
                         <samples:SampleControl.Sample>
                             <Grid>
@@ -88,7 +62,10 @@
 
                                 <made:RichEditToolbar x:Name="CustomRichEditToolbarControl">
                                     <made:RichEditToolbar.CustomOptions>
-                                        <AppBarButton Icon="Save" />
+                                        <AppBarSeparator />
+                                        <AppBarButton x:Name="SaveButton" Icon="Save" Label="Save" />
+                                        <AppBarButton x:Name="UndoButton" Icon="Undo" Label="Undo" />
+                                        <AppBarButton x:Name="RedoButton" Icon="Redo" Label="Redo" />
                                     </made:RichEditToolbar.CustomOptions>
                                 </made:RichEditToolbar>
 
