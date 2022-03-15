@@ -14,6 +14,8 @@
               href: features/ui-controls-dropdownlist.md
             - name: FilePicker
               href: features/ui-controls-filepicker.md
+            - name: RichEditToolbar
+              href: features/ui-controls-richedittoolbar.md
             - name: Validator
               href: features/ui-controls-validator.md
         - name: Styling

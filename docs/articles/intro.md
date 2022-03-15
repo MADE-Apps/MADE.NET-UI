@@ -23,13 +23,14 @@ dotnet add package MADE.UI
 | MADE.UI.Controls.ChipBox | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Controls.ChipBox)](https://www.nuget.org/packages/MADE.UI.Controls.ChipBox/) |
 | MADE.UI.Controls.DropDownList | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Controls.DropDownList)](https://www.nuget.org/packages/MADE.UI.Controls.DropDownList/) |
 | MADE.UI.Controls.FilePicker | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Controls.FilePicker)](https://www.nuget.org/packages/MADE.UI.Controls.FilePicker/) |
+| MADE.UI.Controls.RichEditToolbar | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Controls.RichEditToolbar)](https://www.nuget.org/packages/MADE.UI.Controls.RichEditToolbar/) |
 | MADE.UI.Controls.Validator | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Controls.Validator)](https://www.nuget.org/packages/MADE.UI.Controls.Validator/) |
 | MADE.UI.Styling | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Styling)](https://www.nuget.org/packages/MADE.UI.Styling/) |
 | MADE.UI.ViewManagement | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.ViewManagement)](https://www.nuget.org/packages/MADE.UI.ViewManagement/) |
 
 #### UI
 
-The UI package is a base library for building out great user experiences for applications built for Windows, Android, iOS, and the web. 
+The UI package is a base library for building out great user experiences for applications built for Windows, Android, iOS, and the web.
 
 Taking advantage of the Uno Platform, the UI packages provide extensible features such as:
 
@@ -67,13 +68,25 @@ The control works in a similar way to the `ComboBox` element in the Windows SDK,
 
 #### UI.Controls.FilePicker
 
-The UI Controls FilePicker library contains a cross-platform UI element that provides a web-like `<input type="file" />` equivalent for native applications. 
+The UI Controls FilePicker library contains a cross-platform UI element that provides a web-like `<input type="file" />` equivalent for native applications.
 
 The control provides the capability to select one or multiple files of given types and show them within the UI.
 
 <span class="button">
 
 [Discover UI.Controls.FilePicker](features/ui-controls-filepicker.md)
+
+</span>
+
+#### UI.Controls.RichEditToolbar
+
+The UI Controls RichEditToolbar library contains a cross-platform UI element that provides customizable and extensible collection of buttons that activate rich text features in an associated RichEditBox.
+
+Think the InkToolbar equivalent for RichEditBox controls!
+
+<span class="button">
+
+[Discover UI.Controls.RichEditToolbar](features/ui-controls-filepicker.md)
 
 </span>
 
