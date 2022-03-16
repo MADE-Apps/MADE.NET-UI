@@ -18,6 +18,8 @@
               href: features/ui-controls-richedittoolbar.md
             - name: Validator
               href: features/ui-controls-validator.md
+        - name: Data Converters
+          href: features/ui-data-converters.md
         - name: Styling
           href: features/ui-styling.md
         - name: View Management
