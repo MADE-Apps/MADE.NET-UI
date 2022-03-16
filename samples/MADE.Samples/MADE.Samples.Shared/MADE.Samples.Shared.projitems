@@ -137,7 +137,6 @@
       <Generator>
       </Generator>
     </Content>
-    <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\ValueConverters\ImageSource.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\ValueConverters\ValueConverters.png" />
     <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\WindowManager\WindowManagerCode.txt">
       <SubType>Designer</SubType>
