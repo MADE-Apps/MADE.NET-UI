@@ -25,6 +25,8 @@ namespace MADE.Samples.Features.Home.ViewModels
 
         public ICollection<SampleGroup> SampleGroups { get; } = GetSampleGroups();
 
+        public ICollection<Sample> Samples => SampleGroups.SelectMany(x => x.Samples).ToList();
+
         private static ICollection<SampleGroup> GetSampleGroups()
         {
             var controls = new SampleGroup
@@ -48,12 +50,17 @@ namespace MADE.Samples.Features.Home.ViewModels
                         "InputValidator",
                         typeof(InputValidatorPage),
                         "/Features/Samples/Assets/InputValidator/InputValidator.png"),
-                    new Sample(
-                        "RichEditToolbar",
-                        typeof(RichEditToolbarPage),
-                        "/Features/Samples/Assets/RichEditToolbar/RichEditToolbar.png")
                 }
             };
+
+#if WINDOWS_UWP
+            AddPlatformSpecificSample(
+                controls,
+                new Sample(
+                    "RichEditToolbar",
+                    typeof(RichEditToolbarPage),
+                    "/Features/Samples/Assets/RichEditToolbar/RichEditToolbar.png"));
+#endif
 
             var helpers = new SampleGroup
             {
@@ -63,26 +70,35 @@ namespace MADE.Samples.Features.Home.ViewModels
                     new Sample(
                         "AppDialog",
                         typeof(AppDialogPage),
-                        "/Features/Samples/Assets/AppDialog/AppDialog.png")
+                        "/Features/Samples/Assets/AppDialog/AppDialog.png"),
+                    new Sample(
+                        "Value Converters",
+                        typeof(ValueConvertersPage),
+                        "/Features/Samples/Assets/ValueConverters/ValueConverters.png")
                 }
             };
 
             if (PlatformApiHelper.IsTypeSupported(typeof(WindowManager)))
             {
-                helpers.Samples.InsertAtPotentialIndex(
+                AddPlatformSpecificSample(
+                    helpers,
                     new Sample(
                         "WindowManager",
                         typeof(WindowManagerPage),
-                        "/Features/Samples/Assets/WindowManager/WindowManager.png"),
-                    (item, compare) => compare.Name.IsLessThanOrEqualTo(item.Name));
+                        "/Features/Samples/Assets/WindowManager/WindowManager.png"));
             }
 
-            var list = new List<SampleGroup> { controls, helpers };
+            var list = new List<SampleGroup> {controls, helpers};
 
             return list;
         }
 
-        public ICollection<Sample> Samples => SampleGroups.SelectMany(x => x.Samples).ToList();
+        private static void AddPlatformSpecificSample(SampleGroup sampleGroup, Sample sample)
+        {
+            sampleGroup.Samples.InsertAtPotentialIndex(
+                sample,
+                (item, compare) => compare.Name.IsLessThanOrEqualTo(item.Name));
+        }
 
         private void NavigateToSample(Sample sample)
         {
