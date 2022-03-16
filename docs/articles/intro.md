@@ -25,6 +25,7 @@ dotnet add package MADE.UI
 | MADE.UI.Controls.FilePicker | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Controls.FilePicker)](https://www.nuget.org/packages/MADE.UI.Controls.FilePicker/) |
 | MADE.UI.Controls.RichEditToolbar | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Controls.RichEditToolbar)](https://www.nuget.org/packages/MADE.UI.Controls.RichEditToolbar/) |
 | MADE.UI.Controls.Validator | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Controls.Validator)](https://www.nuget.org/packages/MADE.UI.Controls.Validator/) |
+| MADE.UI.Data.Converters | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Data.Converters)](https://www.nuget.org/packages/MADE.UI.Data.Converters/) |
 | MADE.UI.Styling | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Styling)](https://www.nuget.org/packages/MADE.UI.Styling/) |
 | MADE.UI.ViewManagement | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.ViewManagement)](https://www.nuget.org/packages/MADE.UI.ViewManagement/) |
 
@@ -102,6 +103,16 @@ Taking advantage of the Data Validation library, you can simply and easily setup
 
 </span>
 
+#### UI.Data.Converters
+
+The UI Data Converters package is designed for making the conversion of data objects to a different type in native applications for Windows, Android, iOS, macOS, Linux, and the web easier.
+
+<span class="button">
+
+[Discover UI.Data.Converters](features/ui-data-converters.md)
+
+</span>
+
 #### UI.Styling
 
 The UI Styling library contains a collection of cross-platform UI styling components for improving the designing of applications.
@@ -109,5 +120,15 @@ The UI Styling library contains a collection of cross-platform UI styling compon
 <span class="button">
 
 [Discover UI.Styling](features/ui-styling.md)
+
+</span>
+
+#### UI.ViewManagement
+
+The UI View Management package is designed for improving how your applications can create and manage additional windows in Windows applications.
+
+<span class="button">
+
+[Discover UI.ViewManagement](features/ui-view-management.md)
 
 </span>
