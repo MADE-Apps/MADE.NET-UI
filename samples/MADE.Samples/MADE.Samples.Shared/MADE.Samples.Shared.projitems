@@ -42,6 +42,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\Pages\RichEditToolbarPage.xaml.cs">
       <DependentUpon>RichEditToolbarPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\Pages\ValueConvertersPage.xaml.cs">
+      <DependentUpon>ValueConvertersPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\Pages\WindowManagerPage.xaml.cs">
       <DependentUpon>WindowManagerPage.xaml</DependentUpon>
     </Compile>
@@ -51,6 +54,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\ViewModels\FilePickerPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\ViewModels\InputValidatorPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\ViewModels\RichEditToolbarPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\ViewModels\ValueConvertersPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Features\Samples\ViewModels\WindowManagerPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Infrastructure\Controls\SampleControl.xaml.cs">
       <DependentUpon>SampleControl.xaml</DependentUpon>
@@ -123,6 +127,17 @@
       </Generator>
     </Content>
     <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\RichEditToolbar\RichEditToolbar.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\ValueConverters\ByteArrayToImageSourceValueConverterXaml.txt">
+      <SubType>Designer</SubType>
+      <Generator>
+      </Generator>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\ValueConverters\BooleanToStringValueConverterXaml.txt">
+      <SubType>Designer</SubType>
+      <Generator>
+      </Generator>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\ValueConverters\ValueConverters.png" />
     <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\WindowManager\WindowManagerCode.txt">
       <SubType>Designer</SubType>
       <Generator>
@@ -159,6 +174,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="$(MSBuildThisFileDirectory)Features\Samples\Pages\RichEditToolbarPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Features\Samples\Pages\ValueConvertersPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

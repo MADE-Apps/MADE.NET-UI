@@ -3,14 +3,15 @@
   <PropertyGroup>
     <TargetFrameworks>uap10.0.19041;MonoAndroid11.0;xamarinios10;netstandard2.0;xamarinmac20</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Product>MADE.NET UI FilePicker Control</Product>
+    <Product>MADE.NET UI Data Converters</Product>
     <Description>
       This package includes UI components for Windows and Uno Platform applications such as:
-      - FilePicker for providing an input control that allows a user to pick files similar to a web file input.
+      - BooleanToStringValueConverter for converting between a boolean and a given string value.
+      - ByteArrayToImageSourceValueConverter for converting between a byte array and a BitmapSource for image source bindings.
+      - DateTimeToStringValueConverter for converting between a DateTime and string value.
     </Description>
-    <PackageTags>MADE UI Views Controls FilePicker Input File Windows Android iOS macOS Xamarin Uno</PackageTags>
+    <PackageTags>MADE UI Data Value Converter Windows Android iOS macOS Xamarin Uno MVVM</PackageTags>
     <GenerateLibraryLayout>true</GenerateLibraryLayout>
-    <RootNamespace>MADE.UI.Controls.FilePickerControl</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFrameworkIdentifier)' == 'MonoAndroid' or '$(TargetFrameworkIdentifier)' == 'Xamarin.iOS' or '$(TargetFrameworkIdentifier)' == '.NETStandard' or '$(TargetFrameworkIdentifier)' == 'Xamarin.Mac'">
@@ -18,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MADE.Data.Validation" Version="1.4.0" />
+    <PackageReference Include="MADE.Data.Converters" Version="1.4.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,10 +28,6 @@
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Page>
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\MADE.UI\MADE.UI.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,8 @@
+<Grid>
+    <Grid.Resources>
+        <converters:ByteArrayToImageSourceValueConverter x:Key="ByteArrayToImageSourceValueConverter" />
+    </Grid.Resources>
+
+    <!-- Converts the image's byte array into a source image that is loaded into the element -->
+    <Image Source="{x:Bind ViewModel.ImageBytes, Converter={StaticResource ByteArrayToImageSourceValueConverter}, Mode=OneWay}" />
+</Grid>

@@ -1,0 +1,11 @@
+<Grid>
+    <Grid.Resources>
+        <converters:BooleanToStringValueConverter x:Key="BooleanToStringValueConverter" TrueValue="Yes" FalseValue="No" />
+    </Grid.Resources>
+
+    <!-- A true boolean will return the TrueValue of the converter -->
+    <TextBlock Text="{x:Bind ViewModel.True, Converter={StaticResource BooleanToStringValueConverter}}" />
+
+    <!-- A false boolean will return the FalseValue of the converter -->
+    <TextBlock Text="{x:Bind ViewModel.False, Converter={StaticResource BooleanToStringValueConverter}}" />
+</Grid>

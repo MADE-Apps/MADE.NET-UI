@@ -132,6 +132,9 @@
     <PackageReference Include="Microsoft.Extensions.Logging">
       <Version>5.0.0</Version>
     </PackageReference>
+    <PackageReference Include="System.Net.Http">
+      <Version>4.3.4</Version>
+    </PackageReference>
     <PackageReference Include="Uno.ColorCode.UWP">
       <Version>2.1.0-uno.32</Version>
     </PackageReference>
@@ -197,6 +200,10 @@
     <ProjectReference Include="..\..\..\src\MADE.UI.Controls.Validator\MADE.UI.Controls.Validator.csproj">
       <Project>{e2b20928-dae2-4a9c-bdaf-d787b4f48391}</Project>
       <Name>MADE.UI.Controls.Validator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\src\MADE.UI.Data.Converters\MADE.UI.Data.Converters.csproj">
+      <Project>{55d12223-8b53-4ec7-8cd2-05fc8a84ba7c}</Project>
+      <Name>MADE.UI.Data.Converters</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\src\MADE.UI.Styling\MADE.UI.Styling.csproj">
       <Project>{f8d00106-0598-45e7-b92e-ef408249c02e}</Project>
