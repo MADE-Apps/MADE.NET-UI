@@ -68,6 +68,7 @@
     <ProjectReference Include="..\..\..\src\MADE.UI.Controls.FilePicker\MADE.UI.Controls.FilePicker.csproj" />
     <ProjectReference Include="..\..\..\src\MADE.UI.Controls.RichEditToolbar\MADE.UI.Controls.RichEditToolbar.csproj" />
     <ProjectReference Include="..\..\..\src\MADE.UI.Controls.Validator\MADE.UI.Controls.Validator.csproj" />
+    <ProjectReference Include="..\..\..\src\MADE.UI.Data.Converters\MADE.UI.Data.Converters.csproj" />
     <ProjectReference Include="..\..\..\src\MADE.UI.Styling\MADE.UI.Styling.csproj" />
     <ProjectReference Include="..\..\..\src\MADE.UI.ViewManagement\MADE.UI.ViewManagement.csproj" />
     <ProjectReference Include="..\..\..\src\MADE.UI.Views.Dialogs\MADE.UI.Views.Dialogs.csproj" />

@@ -178,6 +178,10 @@
       <Project>{e2b20928-dae2-4a9c-bdaf-d787b4f48391}</Project>
       <Name>MADE.UI.Controls.Validator</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\src\MADE.UI.Data.Converters\MADE.UI.Data.Converters.csproj">
+      <Project>{55d12223-8b53-4ec7-8cd2-05fc8a84ba7c}</Project>
+      <Name>MADE.UI.Data.Converters</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\src\MADE.UI.Styling\MADE.UI.Styling.csproj">
       <Project>{f8d00106-0598-45e7-b92e-ef408249c02e}</Project>
       <Name>MADE.UI.Styling</Name>
