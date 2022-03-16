@@ -19,16 +19,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MADE.Data.Converters" Version="1.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Page Include="**\*.xaml" Exclude="bin\**\*.xaml;obj\**\*.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Page>
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="MADE.Data.Converters" Version="1.4.0" />
-    <PackageReference Include="MADE.Foundation" Version="1.4.0" />
   </ItemGroup>
 
 </Project>

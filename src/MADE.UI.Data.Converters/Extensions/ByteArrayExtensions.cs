@@ -4,6 +4,7 @@
 namespace MADE.UI.Data.Converters.Extensions
 {
     using System;
+    using System.IO;
     using Windows.Storage.Streams;
     using Windows.UI.Xaml.Media.Imaging;
 
@@ -21,15 +22,11 @@ namespace MADE.UI.Data.Converters.Extensions
         /// <returns>
         /// Returns a <see cref="BitmapSource"/> of the specified bytes.
         /// </returns>
-#if __ANDROID__ || __WASM__ || __IOS__ || __MACOS__ || NETSTANDARD
-        [Foundation.Platform.PlatformNotSupported]
-#endif
         public static BitmapSource ToBitmapSource(this byte[] imageBytes)
         {
-#if __ANDROID__ || __WASM__ || __IOS__ || __MACOS__ || NETSTANDARD
-            throw new Foundation.Platform.PlatformNotSupportedException($"{nameof(ToBitmapSource)} is not supported yet by this platform.");
-#endif
+            BitmapSource bitmapSource = new BitmapImage();
 
+#if WINDOWS_UWP
             using var raStream = new InMemoryRandomAccessStream();
             using (var writer = new DataWriter(raStream))
             {
@@ -45,10 +42,12 @@ namespace MADE.UI.Data.Converters.Extensions
 
             raStream.Seek(0);
 
-            BitmapSource bitMapSource = new BitmapImage();
-            bitMapSource.SetSource(raStream);
+            bitmapSource.SetSource(raStream);
+#else
+            bitmapSource.SetSource(new MemoryStream(imageBytes) { Position = 0 });
+#endif
 
-            return bitMapSource;
+            return bitmapSource;
         }
     }
 }

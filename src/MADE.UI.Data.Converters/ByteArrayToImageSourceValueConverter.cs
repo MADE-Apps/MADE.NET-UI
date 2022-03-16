@@ -13,9 +13,6 @@ namespace MADE.UI.Data.Converters
     /// <summary>
     /// Defines a XAML value converter for converting from a <see cref="byte"/> array to <see cref="BitmapSource"/>.
     /// </summary>
-#if __ANDROID__ || __WASM__ || __IOS__ || __MACOS__ || NETSTANDARD
-    [Foundation.Platform.PlatformNotSupported]
-#endif
     public class ByteArrayToImageSourceValueConverter : IValueConverter, IValueConverter<byte[], BitmapSource>
     {
         /// <summary>
@@ -28,11 +25,6 @@ namespace MADE.UI.Data.Converters
         /// <returns>The converted <see cref="string"/> object.</returns>
         public object Convert(object value, Type targetType, object parameter, string language)
         {
-#if __ANDROID__ || __WASM__ || __IOS__ || __MACOS__ || NETSTANDARD
-            // This converted is not supported yet by this platform, returning original value.
-            return value;
-#endif
-
             return value switch
             {
                 byte[] bytes => this.Convert(bytes),
