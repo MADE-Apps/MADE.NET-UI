@@ -37,7 +37,7 @@
       <Version>7.1.2</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.UI.Xaml">
-      <Version>2.6.2</Version>
+      <Version>2.7.1</Version>
     </PackageReference>
     <PackageReference Include="Uno.Core.Extensions.Logging.Singleton">
       <Version>4.0.1</Version>
