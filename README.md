@@ -12,10 +12,10 @@ As many developers know, projects like MADE Uno are built and maintained in spar
 
 ## Build Status
 
-| Build | Status | Current Version |
+| Build | Status | View |
 | ------ | ------ | ------ |
-| Packages | [![CI](https://github.com/MADE-Apps/MADE-Uno/actions/workflows/ci.yml/badge.svg)](https://github.com/MADE-Apps/MADE-Uno/actions/workflows/ci.yml) | [![NuGet](https://img.shields.io/nuget/v/MADE.UI)](https://www.nuget.org/profiles/made-apps) |
-| Docs | [![Docs](https://github.com/MADE-Apps/MADE-Uno/actions/workflows/docs.yml/badge.svg)](https://github.com/MADE-Apps/MADE-Uno/actions/workflows/docs.yml) | N/A |
+| Packages | [![CI](https://github.com/MADE-Apps/MADE-Uno/actions/workflows/ci.yml/badge.svg)](https://github.com/MADE-Apps/MADE-Uno/actions/workflows/ci.yml) | [![NuGet](https://img.shields.io/nuget/v/MADE.UI)](https://www.nuget.org/packages?q=Tags%3A%22MADE%22+UI) |
+| Docs | [![Docs](https://github.com/MADE-Apps/MADE-Uno/actions/workflows/docs.yml/badge.svg)](https://github.com/MADE-Apps/MADE-Uno/actions/workflows/docs.yml) | [![Docs](https://img.shields.io/badge/Docs-GitHub%20Pages-blue?logo=readthedocs)](https://made-apps.github.io/MADE-Uno/) |
 
 ## Installation 💾
 
