@@ -87,7 +87,7 @@ Think the InkToolbar equivalent for RichEditBox controls!
 
 <span class="button">
 
-[Discover UI.Controls.RichEditToolbar](features/ui-controls-filepicker.md)
+[Discover UI.Controls.RichEditToolbar](features/ui-controls-richedittoolbar.md)
 
 </span>
 
