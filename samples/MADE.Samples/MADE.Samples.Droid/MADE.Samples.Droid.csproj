@@ -63,14 +63,14 @@
     <PackageReference Include="CommunityToolkit.Mvvm">
       <Version>7.1.2</Version>
     </PackageReference>
-    <PackageReference Include="MADE.Collections" Version="1.4.0" />
-    <PackageReference Include="MADE.Data.Converters" Version="1.4.0" />
-    <PackageReference Include="MADE.Data.Validation" Version="1.4.0" />
-    <PackageReference Include="MADE.Diagnostics" Version="1.4.0" />
-    <PackageReference Include="MADE.Foundation" Version="1.4.0" />
-    <PackageReference Include="MADE.Networking" Version="1.4.0" />
-    <PackageReference Include="MADE.Runtime" Version="1.4.0" />
-    <PackageReference Include="MADE.Threading" Version="1.4.0" />
+    <PackageReference Include="MADE.Collections" Version="1.5.0" />
+    <PackageReference Include="MADE.Data.Converters" Version="1.5.0" />
+    <PackageReference Include="MADE.Data.Validation" Version="1.5.0" />
+    <PackageReference Include="MADE.Diagnostics" Version="1.5.0" />
+    <PackageReference Include="MADE.Foundation" Version="1.5.0" />
+    <PackageReference Include="MADE.Networking" Version="1.5.0" />
+    <PackageReference Include="MADE.Runtime" Version="1.5.0" />
+    <PackageReference Include="MADE.Threading" Version="1.5.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection">
       <Version>5.0.2</Version>
     </PackageReference>
@@ -89,11 +89,11 @@
     <PackageReference Include="Uno.Microsoft.Toolkit.Uwp.UI.Controls.Primitives">
       <Version>7.1.11</Version>
     </PackageReference>
-    <PackageReference Include="Uno.UI" Version="4.1.8" />
+    <PackageReference Include="Uno.UI" Version="4.2.6" />
     <PackageReference Include="Uno.UI.Adapter.Microsoft.Extensions.Logging">
-      <Version>4.1.8</Version>
+      <Version>4.2.6</Version>
     </PackageReference>
-    <PackageReference Include="Uno.UI.RemoteControl" Version="4.1.8" Condition="'$(Configuration)'=='Debug'" />
+    <PackageReference Include="Uno.UI.RemoteControl" Version="4.2.6" Condition="'$(Configuration)'=='Debug'" />
     <PackageReference Include="Uno.UniversalImageLoader" Version="1.9.35" />
   </ItemGroup>
   <ItemGroup>
