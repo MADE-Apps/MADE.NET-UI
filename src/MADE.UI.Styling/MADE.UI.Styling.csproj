@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MADE.Data.Validation" Version="1.4.0" />
+    <PackageReference Include="MADE.Data.Validation" Version="1.5.0" />
   </ItemGroup>
 
   <ItemGroup>

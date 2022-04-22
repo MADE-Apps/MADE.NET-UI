@@ -42,14 +42,14 @@
   <ItemGroup>
     <!-- Note that for WebAssembly version 1.1.1 of the console logger required -->
     <PackageReference Include="CommunityToolkit.Mvvm" Version="7.1.2" />
-    <PackageReference Include="MADE.Collections" Version="1.4.0" />
-    <PackageReference Include="MADE.Data.Converters" Version="1.4.0" />
-    <PackageReference Include="MADE.Data.Validation" Version="1.4.0" />
-    <PackageReference Include="MADE.Diagnostics" Version="1.4.0" />
-    <PackageReference Include="MADE.Foundation" Version="1.4.0" />
-    <PackageReference Include="MADE.Networking" Version="1.4.0" />
-    <PackageReference Include="MADE.Runtime" Version="1.4.0" />
-    <PackageReference Include="MADE.Threading" Version="1.4.0" />
+    <PackageReference Include="MADE.Collections" Version="1.5.0" />
+    <PackageReference Include="MADE.Data.Converters" Version="1.5.0" />
+    <PackageReference Include="MADE.Data.Validation" Version="1.5.0" />
+    <PackageReference Include="MADE.Diagnostics" Version="1.5.0" />
+    <PackageReference Include="MADE.Foundation" Version="1.5.0" />
+    <PackageReference Include="MADE.Networking" Version="1.5.0" />
+    <PackageReference Include="MADE.Runtime" Version="1.5.0" />
+    <PackageReference Include="MADE.Threading" Version="1.5.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
     <PackageReference Include="Microsoft.Windows.Compatibility" Version="5.0.0" />
