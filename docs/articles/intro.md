@@ -19,6 +19,7 @@ dotnet add package MADE.UI
 
 | Package | Version |
 | --- | --- |
+| MADE.Media.Image | [![NuGet](https://img.shields.io/nuget/v/MADE.Media.Image)](https://www.nuget.org/packages/MADE.Media.Image/) |
 | MADE.UI | [![NuGet](https://img.shields.io/nuget/v/MADE.UI)](https://www.nuget.org/packages/MADE.UI/) |
 | MADE.UI.Controls.ChipBox | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Controls.ChipBox)](https://www.nuget.org/packages/MADE.UI.Controls.ChipBox/) |
 | MADE.UI.Controls.DropDownList | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Controls.DropDownList)](https://www.nuget.org/packages/MADE.UI.Controls.DropDownList/) |
@@ -28,6 +29,20 @@ dotnet add package MADE.UI
 | MADE.UI.Data.Converters | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Data.Converters)](https://www.nuget.org/packages/MADE.UI.Data.Converters/) |
 | MADE.UI.Styling | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Styling)](https://www.nuget.org/packages/MADE.UI.Styling/) |
 | MADE.UI.ViewManagement | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.ViewManagement)](https://www.nuget.org/packages/MADE.UI.ViewManagement/) |
+
+#### Media.Image
+
+The Media Image package is designed to be used in applications that require image processing.
+
+It provides capabilities, such as:
+
+- LoadStorageFileThumbnailImageBehavior, a XAML behavior for loading a thumbnail from a `StorageFile` on an `Image` element.
+
+<span class="button">
+
+[Discover Media.Image](features/media-image.md)
+
+</span>
 
 #### UI
 
