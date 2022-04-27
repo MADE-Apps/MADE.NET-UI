@@ -164,6 +164,10 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <ProjectReference Include="..\..\..\src\MADE.Media.Image\MADE.Media.Image.csproj">
+      <Project>{16e2f926-ddd8-4fbc-85dc-23acbfcd483c}</Project>
+      <Name>MADE.Media.Image</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\src\MADE.UI.Controls.ChipBox\MADE.UI.Controls.ChipBox.csproj">
       <Project>{d1a16208-5a34-4cc1-b175-01b5ac99e69e}</Project>
       <Name>MADE.UI.Controls.ChipBox</Name>
