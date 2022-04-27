@@ -17,6 +17,7 @@ body:
     attributes:
       label: Package
       options:
+        - "Media.Image"
         - "UI"
         - "UI.Controls.ChipBox"
         - "UI.Controls.DropDownList"
