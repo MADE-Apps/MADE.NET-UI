@@ -101,12 +101,22 @@
       <Generator>
       </Generator>
     </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\InputValidator\InputValidatorFluentValidationCode.txt">
+      <SubType>Designer</SubType>
+      <Generator>
+      </Generator>
+    </Content>
     <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\InputValidator\InputValidatorTextBoxCode.txt">
       <SubType>Designer</SubType>
       <Generator>
       </Generator>
     </Content>
     <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\InputValidator\InputValidatorDatePickerXaml.txt">
+      <SubType>Designer</SubType>
+      <Generator>
+      </Generator>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Features\Samples\Assets\InputValidator\InputValidatorFluentValidationXaml.txt">
       <SubType>Designer</SubType>
       <Generator>
       </Generator>

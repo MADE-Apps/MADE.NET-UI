@@ -30,9 +30,9 @@ namespace MADE.UI.Controls
         /// </summary>
         public static readonly DependencyProperty ValidatorsProperty = DependencyProperty.Register(
             nameof(Validators),
-            typeof(ValidatorCollection),
+            typeof(IValidatorCollection),
             typeof(InputValidator),
-            new PropertyMetadata(default(ValidatorCollection), (o, args) => ((InputValidator)o).InvokeValidators()));
+            new PropertyMetadata(default(IValidatorCollection), (o, args) => ((InputValidator)o).InvokeValidators()));
 
         /// <summary>
         /// Identifies the <see cref="FeedbackMessageStyle"/> dependency property.
@@ -79,9 +79,9 @@ namespace MADE.UI.Controls
         /// <summary>
         /// Gets or sets the validators to run on the input.
         /// </summary>
-        public ValidatorCollection Validators
+        public IValidatorCollection Validators
         {
-            get => (ValidatorCollection)this.GetValue(ValidatorsProperty);
+            get => (IValidatorCollection)this.GetValue(ValidatorsProperty);
             set => this.SetValue(ValidatorsProperty, value);
         }
 

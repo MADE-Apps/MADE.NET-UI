@@ -29,6 +29,6 @@ namespace MADE.UI.Controls
         /// <summary>
         /// Gets or sets the validators to run on the input.
         /// </summary>
-        ValidatorCollection Validators { get; set; }
+        IValidatorCollection Validators { get; set; }
     }
 }
