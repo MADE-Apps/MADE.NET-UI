@@ -52,6 +52,7 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
 
@@ -75,6 +76,7 @@
 
                     <samples:SampleControl
                         Grid.Row="1"
+                        Margin="0,0,0,32"
                         CodeSource="InputValidator/InputValidatorDatePickerCode.txt"
                         SampleName="A DatePicker wrapped with the InputValidator with a required value and date between the last 7 days and the next 7 days"
                         XamlSource="InputValidator/InputValidatorDatePickerXaml.txt">
@@ -87,6 +89,25 @@
                                     x:Name="DatePicker"
                                     Header="DatePicker with InputValidator"
                                     SelectedDate="{x:Bind ViewModel.InputDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                            </made:InputValidator>
+                        </samples:SampleControl.Sample>
+                    </samples:SampleControl>
+
+                    <samples:SampleControl
+                        Grid.Row="2"
+                        Margin="0,0,0,32"
+                        CodeSource="InputValidator/InputValidatorFluentValidationCode.txt"
+                        SampleName="An input validator using FluentValidation validators"
+                        XamlSource="InputValidator/InputValidatorFluentValidationXaml.txt">
+                        <samples:SampleControl.Sample>
+                            <made:InputValidator
+                                x:Name="FluentValidationValidator"
+                                Input="{x:Bind FluentValdiationTextBox.Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                Validators="{x:Bind ViewModel.FluentValidationValidators}">
+                                <TextBox
+                                    x:Name="FluentValdiationTextBox"
+                                    Header="TextBox with InputValidator using FluentValidation"
+                                    Text="{x:Bind ViewModel.FluentValidationInputText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                             </made:InputValidator>
                         </samples:SampleControl.Sample>
                     </samples:SampleControl>

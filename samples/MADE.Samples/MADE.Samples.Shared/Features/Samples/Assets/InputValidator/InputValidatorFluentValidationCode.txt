@@ -1,0 +1,24 @@
+public FluentValidatorCollection<string> FluentValidationValidators { get; } = new(GetFluentValidators());
+
+public string FluentValidationInputText
+{
+    get => fluentValidationInputText;
+    set => this.SetProperty(ref fluentValidationInputText, value);
+}
+
+private static IEnumerable<AbstractValidator<string>> GetFluentValidators()
+{
+    var requiredValidator = new InlineValidator<string>();
+    requiredValidator
+        .RuleFor(x => x)
+        .NotEmpty()
+        .WithMessage("A value is required.");
+
+    var maxLengthValidator = new InlineValidator<string>();
+    maxLengthValidator
+        .RuleFor(x => x.Length)
+        .LessThanOrEqualTo(16)
+        .WithMessage("The length of the value must be less than or equal to 16 characters.");
+
+    return new[] { requiredValidator, maxLengthValidator };
+}
