@@ -49,7 +49,7 @@ namespace MADE.Samples.Features.Samples.ViewModels
             set => this.SetProperty(ref fluentValidationInputText, value);
         }
 
-        private static IEnumerable<AbstractValidator<string>> GetFluentValidators()
+        private static IEnumerable<IValidator<string>> GetFluentValidators()
         {
             var requiredValidator = new InlineValidator<string>();
             requiredValidator
