@@ -74,7 +74,7 @@
     </PackageReference>
     <PackageReference Include="MADE.Diagnostics" Version="1.6.0-preview1" />
     <PackageReference Include="MADE.Foundation" Version="1.6.0-preview1" />
-    <PackageReference Include="MADE.Networking" Version="1.6.0-preview1" />
+    <PackageReference Include="MADE.Networking" Version="1.6.0-preview2" />
     <PackageReference Include="MADE.Runtime" Version="1.6.0-preview1" />
     <PackageReference Include="MADE.Threading" Version="1.6.0-preview1" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection">
