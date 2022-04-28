@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MADE.Foundation" Version="1.6.0-preview1" />
+    <PackageReference Include="MADE.Foundation" Version="1.6.0-preview2" />
   </ItemGroup>
 
   <ItemGroup>
