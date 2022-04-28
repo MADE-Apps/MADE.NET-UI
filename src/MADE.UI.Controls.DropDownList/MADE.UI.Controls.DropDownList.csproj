@@ -19,7 +19,7 @@
 
   <ItemGroup>
     <PackageReference Include="MADE.Collections" Version="1.6.0-preview1" />
-    <PackageReference Include="MADE.Data.Validation" Version="1.6.0-preview1" />
+    <PackageReference Include="MADE.Data.Validation" Version="1.6.0-preview2" />
   </ItemGroup>
 
   <ItemGroup>
