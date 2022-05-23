@@ -100,7 +100,7 @@
       <Version>4.2.6</Version>
     </PackageReference>
     <PackageReference Include="Uno.UI.RemoteControl" Version="4.2.6" Condition="'$(Configuration)'=='Debug'" />
-    <PackageReference Include="Uno.UniversalImageLoader" Version="1.9.35" />
+    <PackageReference Include="Uno.UniversalImageLoader" Version="1.9.36" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
