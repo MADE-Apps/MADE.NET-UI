@@ -47,7 +47,7 @@
     <PackageReference Include="MADE.Data.Converters" Version="1.6.0-preview2" />
     <PackageReference Include="MADE.Data.Validation" Version="1.6.0-preview2" />
     <PackageReference Include="MADE.Data.Validation.FluentValidation" Version="1.6.0-preview2" />
-    <PackageReference Include="MADE.Diagnostics" Version="1.6.0-preview2" />
+    <PackageReference Include="MADE.Diagnostics" Version="1.6.0" />
     <PackageReference Include="MADE.Foundation" Version="1.6.0-preview2" />
     <PackageReference Include="MADE.Networking" Version="1.6.0-preview2" />
     <PackageReference Include="MADE.Runtime" Version="1.6.0-preview2" />
