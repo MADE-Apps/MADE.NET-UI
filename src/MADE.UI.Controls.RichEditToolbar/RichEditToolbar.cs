@@ -51,6 +51,7 @@ namespace MADE.UI.Controls
         public RichEditToolbar()
         {
             this.DefaultStyleKey = typeof(RichEditToolbar);
+            this.Unloaded += OnUnloaded;
         }
 
 #if WINDOWS_UWP
@@ -165,6 +166,16 @@ namespace MADE.UI.Controls
                     this.Toolbar.PrimaryCommands.Add(option);
                 }
             }
+        }
+
+        private void OnUnloaded(object sender, RoutedEventArgs e)
+        {
+            this.ClearCustomOptions();
+        }
+
+        private void ClearCustomOptions()
+        {
+            this.CustomOptions?.Clear();
         }
 
         private void ResetCustomOptions()
