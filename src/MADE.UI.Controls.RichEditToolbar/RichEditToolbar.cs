@@ -4,6 +4,7 @@
 namespace MADE.UI.Controls
 {
     using System.Collections.Generic;
+    using System.Linq;
     using Windows.UI.Xaml;
     using Windows.UI.Xaml.Automation.Peers;
     using Windows.UI.Xaml.Controls;
@@ -82,6 +83,7 @@ namespace MADE.UI.Controls
         /// </summary>
         protected override void OnApplyTemplate()
         {
+            this.ResetCustomOptions();
             this.ResetFontSizeOptions();
             this.ResetFontStyleOptions();
             this.ResetTextColorOptions();
@@ -161,6 +163,22 @@ namespace MADE.UI.Controls
                 if (!this.Toolbar.PrimaryCommands.Contains(option))
                 {
                     this.Toolbar.PrimaryCommands.Add(option);
+                }
+            }
+        }
+
+        private void ResetCustomOptions()
+        {
+            if (this.Toolbar == null || this.CustomOptions == null)
+            {
+                return;
+            }
+
+            foreach (var option in this.CustomOptions)
+            {
+                if (this.Toolbar.PrimaryCommands.Contains(option))
+                {
+                    this.Toolbar.PrimaryCommands.Remove(option);
                 }
             }
         }
