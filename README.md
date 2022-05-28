@@ -1,25 +1,25 @@
 <img src="assets/ProjectBanner.png" alt="MADE project banner" />
 
-# MADE Uno
+# MADE.NET UI
 
-A library of Uno Platform UI components, supporting Windows, Android, iOS, and WebAssembly platforms.
+A library of UI components built on the Uno Platform supporting Windows, Android, iOS, and WebAssembly platforms.
 
 This is a collection of companion libraries to the [MADE.NET](https://github.com/MADE-Apps/MADE.NET) libraries.
 
-## Support MADE Uno ♥
+## Support MADE.NET UI ♥
 
-As many developers know, projects like MADE Uno are built and maintained in spare time. If you find this project useful, please **Star** the repo and if possible, sponsor the project development on GitHub.
+As many developers know, projects like MADE.NET UI are built and maintained in spare time. If you find this project useful, please **Star** the repo and if possible, sponsor the project development on GitHub.
 
 ## Build Status
 
 | Build | Status | View |
 | ------ | ------ | ------ |
-| Packages | [![CI](https://github.com/MADE-Apps/MADE-Uno/actions/workflows/ci.yml/badge.svg)](https://github.com/MADE-Apps/MADE-Uno/actions/workflows/ci.yml) | [![NuGet](https://img.shields.io/nuget/v/MADE.UI)](https://www.nuget.org/packages?q=Tags%3A%22MADE%22+UI) |
-| Docs | [![Docs](https://github.com/MADE-Apps/MADE-Uno/actions/workflows/docs.yml/badge.svg)](https://github.com/MADE-Apps/MADE-Uno/actions/workflows/docs.yml) | [![Docs](https://img.shields.io/badge/Docs-GitHub%20Pages-blue?logo=readthedocs)](https://made-apps.github.io/MADE-Uno/) |
+| Packages | [![CI](https://github.com/MADE-Apps/MADE.NET-UI/actions/workflows/ci.yml/badge.svg)](https://github.com/MADE-Apps/MADE.NET-UI/actions/workflows/ci.yml) | [![NuGet](https://img.shields.io/nuget/v/MADE.UI)](https://www.nuget.org/packages?q=Tags%3A%22MADE%22+UI) |
+| Docs | [![Docs](https://github.com/MADE-Apps/MADE.NET-UI/actions/workflows/docs.yml/badge.svg)](https://github.com/MADE-Apps/MADE.NET-UI/actions/workflows/docs.yml) | [![Docs](https://img.shields.io/badge/Docs-GitHub%20Pages-blue?logo=readthedocs)](https://made-apps.github.io/MADE.NET-UI/) |
 
 ## Installation 💾
 
-[MADE Uno](https://www.nuget.org/profiles/made-apps) components are publicly available via NuGet. Each available package is detailed below.
+[MADE.NET UI](https://www.nuget.org/profiles/made-apps) components are publicly available via NuGet. Each available package is detailed below.
 
 | Package | Current | Preview | Downloads |
 | ------ | ------ | ------ | ------ |
@@ -29,6 +29,7 @@ As many developers know, projects like MADE Uno are built and maintained in spar
 | UI.Controls.DropDownList | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Controls.DropDownList)](https://www.nuget.org/packages/MADE.UI.Controls.DropDownList/) | [![NuGet](https://img.shields.io/nuget/vpre/MADE.UI.Controls.DropDownList)](https://www.nuget.org/packages/MADE.UI.Controls.DropDownList/) | [![NuGet Downloads](https://img.shields.io/nuget/dt/MADE.UI.Controls.DropDownList.svg)](https://www.nuget.org/packages/MADE.UI.Controls.DropDownList) |
 | UI.Controls.FilePicker | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Controls.FilePicker)](https://www.nuget.org/packages/MADE.UI.Controls.FilePicker/) | [![NuGet](https://img.shields.io/nuget/vpre/MADE.UI.Controls.FilePicker)](https://www.nuget.org/packages/MADE.UI.Controls.FilePicker/) | [![NuGet Downloads](https://img.shields.io/nuget/dt/MADE.UI.Controls.FilePicker.svg)](https://www.nuget.org/packages/MADE.UI.Controls.FilePicker) |
 | UI.Controls.Validator | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Controls.Validator)](https://www.nuget.org/packages/MADE.UI.Controls.Validator/) | [![NuGet](https://img.shields.io/nuget/vpre/MADE.UI.Controls.Validator)](https://www.nuget.org/packages/MADE.UI.Controls.Validator/) | [![NuGet Downloads](https://img.shields.io/nuget/dt/MADE.UI.Controls.Validator.svg)](https://www.nuget.org/packages/MADE.UI.Controls.Validator) |
+| UI.Data.Converters | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Data.Converters)](https://www.nuget.org/packages/MADE.UI.Data.Converters/) | [![NuGet](https://img.shields.io/nuget/vpre/MADE.UI.Data.Converters)](https://www.nuget.org/packages/MADE.UI.Data.Converters/) | [![NuGet Downloads](https://img.shields.io/nuget/dt/MADE.UI.Data.Converters.svg)](https://www.nuget.org/packages/MADE.UI.Data.Converters) |
 | UI.Styling | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Styling)](https://www.nuget.org/packages/MADE.UI.Styling/) | [![NuGet](https://img.shields.io/nuget/vpre/MADE.UI.Styling)](https://www.nuget.org/packages/MADE.UI.Styling/) | [![NuGet Downloads](https://img.shields.io/nuget/dt/MADE.UI.Styling.svg)](https://www.nuget.org/packages/MADE.UI.Styling) |
 | UI.ViewManagement | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.ViewManagement)](https://www.nuget.org/packages/MADE.UI.ViewManagement/) | [![NuGet](https://img.shields.io/nuget/vpre/MADE.UI.ViewManagement)](https://www.nuget.org/packages/MADE.UI.ViewManagement/) | [![NuGet Downloads](https://img.shields.io/nuget/dt/MADE.UI.ViewManagement.svg)](https://www.nuget.org/packages/MADE.UI.ViewManagement) |
 | UI.Views.Dialogs | [![NuGet](https://img.shields.io/nuget/v/MADE.UI.Views.Dialogs)](https://www.nuget.org/packages/MADE.UI.Views.Dialogs/) | [![NuGet](https://img.shields.io/nuget/vpre/MADE.UI.Views.Dialogs)](https://www.nuget.org/packages/MADE.UI.Views.Dialogs/) | [![NuGet Downloads](https://img.shields.io/nuget/dt/MADE.UI.Views.Dialogs.svg)](https://www.nuget.org/packages/MADE.UI.Views.Dialogs) |
@@ -37,11 +38,11 @@ As many developers know, projects like MADE Uno are built and maintained in spar
 
 ## Contributing 🚀
 
-Looking to help build MADE Uno? Take a look through our [contribution guidelines](CONTRIBUTING.md). We actively encourage you to jump in and help with any issues!
+Looking to help build MADE.NET UI? Take a look through our [contribution guidelines](CONTRIBUTING.md). We actively encourage you to jump in and help with any issues!
 
-## Building MADE Uno 🛠
+## Building MADE.NET UI 🛠
 
-MADE Uno is built using .NET Standard, taking advantage of the new SDK-style projects and multi-targeting enabled with the help of [MSBuild.Sdk.Extras](https://github.com/novotnyllc/MSBuildSdkExtras).
+MADE.NET UI is built using .NET Standard, taking advantage of the new SDK-style projects and multi-targeting enabled with the help of [MSBuild.Sdk.Extras](https://github.com/novotnyllc/MSBuildSdkExtras).
 
 Each library is configured to take advantage of the Uno Platform libraries to provide cross-platform components.
 
@@ -54,4 +55,4 @@ You can build the solution using Visual Studio with the following workloads inst
 
 ## License
 
-MADE Uno is made available under the terms and conditions of the [MIT license](LICENSE).
+MADE.NET UI is made available under the terms and conditions of the [MIT license](LICENSE).

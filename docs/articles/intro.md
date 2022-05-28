@@ -5,7 +5,7 @@ title: Getting Started
 
 # Getting Started
 
-MADE Uno is a collection of components designed for building applications with the Uno Platform on Windows, Android, iOS, and WebAssembly.
+MADE.NET UI is a collection of components designed for building applications with the Uno Platform on Windows, Android, iOS, and WebAssembly.
 
 ## Installation
 

@@ -10,10 +10,10 @@
     <Authors>MADE Apps</Authors>
     <Company>MADE Apps</Company>
     <Copyright>Copyright (C) MADE Apps. All rights reserved.</Copyright>
-    <PackageProjectUrl>https://github.com/MADE-Apps/MADE-Uno</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/MADE-Apps/MADE.NET-UI</PackageProjectUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageIcon>ProjectIcon.jpg</PackageIcon>
-    <PackageReleaseNotes>https://github.com/MADE-Apps/MADE-Uno/releases</PackageReleaseNotes>
+    <PackageReleaseNotes>https://github.com/MADE-Apps/MADE.NET-UI/releases</PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <LangVersion>latest</LangVersion>
