@@ -7,7 +7,7 @@ title: Using the UI package
 
 The UI package is a base package for building out UI components for native applications for Windows, Android, iOS, macOS, Linux, and the web.
 
-Its main purpose is to be used by the additional MADE Uno UI packages. However, it can be used to build your own custom UI elements for your own applications.
+Its main purpose is to be used by the additional MADE.NET UI UI packages. However, it can be used to build your own custom UI elements for your own applications.
 
 ## Building custom controls for Windows or Uno Platform applications
 

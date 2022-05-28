@@ -1,6 +1,6 @@
-# MADE Uno Documentation
+# MADE.NET UI Documentation
 
-This folder contains source code for the generation of MADE Uno's documentation.
+This folder contains source code for the generation of MADE.NET UI's documentation.
 
 ## Contributing to the docs
 
