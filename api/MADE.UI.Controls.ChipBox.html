@@ -1,0 +1,1113 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ChipBox
+   | MADE.NET UI </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title" content="Class ChipBox
+   | MADE.NET UI ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../images/Logo.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap-grid.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-87DrmpqHRiY8hPLIr7ByqhPIywuSsjuQAfMXAE0sMUpY3BM7nXjf+mLIUSvhDArs" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/Logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MADE.UI.Controls.ChipBox">
+  
+  
+  <h1 id="MADE_UI_Controls_ChipBox" data-uid="MADE.UI.Controls.ChipBox" class="text-break">Class ChipBox
+  </h1>
+  <div class="markdown level0 summary"><p>Defines a control for providing multi value input for a text box.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="MADE.UI.Controls.Control.html">Control</a></div>
+    <div class="level2"><span class="xref">ChipBox</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MADE.UI.Controls.IControl.html">IControl</a></div>
+    <div><a class="xref" href="MADE.UI.IView.html">IView</a></div>
+    <div><a class="xref" href="MADE.UI.Controls.IChipBox.html">IChipBox</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="MADE.UI.Controls.Control.html#MADE_UI_Controls_Control_ViewLoaded">Control.ViewLoaded</a>
+    </div>
+    <div>
+      <a class="xref" href="MADE.UI.Controls.Control.html#MADE_UI_Controls_Control_IsVisibleChanged">Control.IsVisibleChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="MADE.UI.Controls.Control.html#MADE_UI_Controls_Control_IsVisible">Control.IsVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="MADE.UI.Controls.Control.html#MADE_UI_Controls_Control_GetChildView__1_System_String_">Control.GetChildView&lt;TView&gt;(String)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MADE.UI.Controls.html">MADE.UI.Controls</a></h6>
+  <h6><strong>Assembly</strong>: MADE.UI.Controls.ChipBox.dll</h6>
+  <h5 id="MADE_UI_Controls_ChipBox_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ChipBox : Control, IControl, IView, IChipBox</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox__ctor.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L138">View Source</a>
+  </span>
+  <a id="MADE_UI_Controls_ChipBox__ctor_" data-uid="MADE.UI.Controls.ChipBox.#ctor*"></a>
+  <h4 id="MADE_UI_Controls_ChipBox__ctor" data-uid="MADE.UI.Controls.ChipBox.#ctor">ChipBox()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MADE.UI.Controls.ChipBox.html">ChipBox</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChipBox()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_AllowDuplicateProperty.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.AllowDuplicateProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L89">View Source</a>
+  </span>
+  <h4 id="MADE_UI_Controls_ChipBox_AllowDuplicateProperty" data-uid="MADE.UI.Controls.ChipBox.AllowDuplicateProperty">AllowDuplicateProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="MADE.UI.Controls.ChipBox.html#MADE_UI_Controls_ChipBox_AllowDuplicate">AllowDuplicate</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty AllowDuplicateProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_AllowFreeTextProperty.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.AllowFreeTextProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L98">View Source</a>
+  </span>
+  <h4 id="MADE_UI_Controls_ChipBox_AllowFreeTextProperty" data-uid="MADE.UI.Controls.ChipBox.AllowFreeTextProperty">AllowFreeTextProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="MADE.UI.Controls.ChipBox.html#MADE_UI_Controls_ChipBox_AllowFreeText">AllowFreeText</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty AllowFreeTextProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_ChipContentTemplateProperty.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.ChipContentTemplateProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L53">View Source</a>
+  </span>
+  <h4 id="MADE_UI_Controls_ChipBox_ChipContentTemplateProperty" data-uid="MADE.UI.Controls.ChipBox.ChipContentTemplateProperty">ChipContentTemplateProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="MADE.UI.Controls.ChipBox.html#MADE_UI_Controls_ChipBox_ChipContentTemplate">ChipContentTemplate</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty ChipContentTemplateProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_ChipItemsViewStyleProperty.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.ChipItemsViewStyleProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L62">View Source</a>
+  </span>
+  <h4 id="MADE_UI_Controls_ChipBox_ChipItemsViewStyleProperty" data-uid="MADE.UI.Controls.ChipBox.ChipItemsViewStyleProperty">ChipItemsViewStyleProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="MADE.UI.Controls.ChipBox.html#MADE_UI_Controls_ChipBox_ChipItemsViewStyle">ChipItemsViewStyle</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty ChipItemsViewStyleProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_ChipRemoveCommandProperty.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.ChipRemoveCommandProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L125">View Source</a>
+  </span>
+  <h4 id="MADE_UI_Controls_ChipBox_ChipRemoveCommandProperty" data-uid="MADE.UI.Controls.ChipBox.ChipRemoveCommandProperty">ChipRemoveCommandProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="MADE.UI.Controls.ChipBox.html#MADE_UI_Controls_ChipBox_ChipRemoveCommand">ChipRemoveCommand</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty ChipRemoveCommandProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_ChipsProperty.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.ChipsProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L44">View Source</a>
+  </span>
+  <h4 id="MADE_UI_Controls_ChipBox_ChipsProperty" data-uid="MADE.UI.Controls.ChipBox.ChipsProperty">ChipsProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="MADE.UI.Controls.ChipBox.html#MADE_UI_Controls_ChipBox_Chips">Chips</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty ChipsProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_HeaderProperty.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.HeaderProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L26">View Source</a>
+  </span>
+  <h4 id="MADE_UI_Controls_ChipBox_HeaderProperty" data-uid="MADE.UI.Controls.ChipBox.HeaderProperty">HeaderProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="MADE.UI.Controls.ChipBox.html#MADE_UI_Controls_ChipBox_Header">Header</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty HeaderProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_HeaderTemplateProperty.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.HeaderTemplateProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L35">View Source</a>
+  </span>
+  <h4 id="MADE_UI_Controls_ChipBox_HeaderTemplateProperty" data-uid="MADE.UI.Controls.ChipBox.HeaderTemplateProperty">HeaderTemplateProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="MADE.UI.Controls.ChipBox.html#MADE_UI_Controls_ChipBox_HeaderTemplate">HeaderTemplate</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty HeaderTemplateProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_IsReadonlyProperty.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.IsReadonlyProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L107">View Source</a>
+  </span>
+  <h4 id="MADE_UI_Controls_ChipBox_IsReadonlyProperty" data-uid="MADE.UI.Controls.ChipBox.IsReadonlyProperty">IsReadonlyProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="MADE.UI.Controls.ChipBox.html#MADE_UI_Controls_ChipBox_IsReadonly">IsReadonly</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty IsReadonlyProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_SuggestionsItemTemplateProperty.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.SuggestionsItemTemplateProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L80">View Source</a>
+  </span>
+  <h4 id="MADE_UI_Controls_ChipBox_SuggestionsItemTemplateProperty" data-uid="MADE.UI.Controls.ChipBox.SuggestionsItemTemplateProperty">SuggestionsItemTemplateProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="MADE.UI.Controls.ChipBox.html#MADE_UI_Controls_ChipBox_SuggestionsItemTemplate">SuggestionsItemTemplate</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty SuggestionsItemTemplateProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_SuggestionsProperty.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.SuggestionsProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L71">View Source</a>
+  </span>
+  <h4 id="MADE_UI_Controls_ChipBox_SuggestionsProperty" data-uid="MADE.UI.Controls.ChipBox.SuggestionsProperty">SuggestionsProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="MADE.UI.Controls.ChipBox.html#MADE_UI_Controls_ChipBox_Suggestions">Suggestions</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty SuggestionsProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_TextChangeCommandProperty.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.TextChangeCommandProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L116">View Source</a>
+  </span>
+  <h4 id="MADE_UI_Controls_ChipBox_TextChangeCommandProperty" data-uid="MADE.UI.Controls.ChipBox.TextChangeCommandProperty">TextChangeCommandProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="MADE.UI.Controls.ChipBox.html#MADE_UI_Controls_ChipBox_TextChangeCommand">TextChangeCommand</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty TextChangeCommandProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_AllowDuplicate.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.AllowDuplicate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L222">View Source</a>
+  </span>
+  <a id="MADE_UI_Controls_ChipBox_AllowDuplicate_" data-uid="MADE.UI.Controls.ChipBox.AllowDuplicate*"></a>
+  <h4 id="MADE_UI_Controls_ChipBox_AllowDuplicate" data-uid="MADE.UI.Controls.ChipBox.AllowDuplicate">AllowDuplicate</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether to allow duplicate values to be accepted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowDuplicate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MADE_UI_Controls_ChipBox_AllowDuplicate_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default value is True.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_AllowFreeText.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.AllowFreeText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L234">View Source</a>
+  </span>
+  <a id="MADE_UI_Controls_ChipBox_AllowFreeText_" data-uid="MADE.UI.Controls.ChipBox.AllowFreeText*"></a>
+  <h4 id="MADE_UI_Controls_ChipBox_AllowFreeText" data-uid="MADE.UI.Controls.ChipBox.AllowFreeText">AllowFreeText</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether to allow free text input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowFreeText { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MADE_UI_Controls_ChipBox_AllowFreeText_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default value is True.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_ChipContentTemplate.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.ChipContentTemplate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L183">View Source</a>
+  </span>
+  <a id="MADE_UI_Controls_ChipBox_ChipContentTemplate_" data-uid="MADE.UI.Controls.ChipBox.ChipContentTemplate*"></a>
+  <h4 id="MADE_UI_Controls_ChipBox_ChipContentTemplate" data-uid="MADE.UI.Controls.ChipBox.ChipContentTemplate">ChipContentTemplate</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the template associated with the content displayed in the chip.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataTemplate ChipContentTemplate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DataTemplate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_ChipItemsView.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.ChipItemsView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L278">View Source</a>
+  </span>
+  <a id="MADE_UI_Controls_ChipBox_ChipItemsView_" data-uid="MADE.UI.Controls.ChipBox.ChipItemsView*"></a>
+  <h4 id="MADE_UI_Controls_ChipBox_ChipItemsView" data-uid="MADE.UI.Controls.ChipBox.ChipItemsView">ChipItemsView</h4>
+  <div class="markdown level1 summary"><p>Gets the view representing the chip items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ItemsControl ChipItemsView { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ItemsControl</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_ChipItemsViewStyle.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.ChipItemsViewStyle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L192">View Source</a>
+  </span>
+  <a id="MADE_UI_Controls_ChipBox_ChipItemsViewStyle_" data-uid="MADE.UI.Controls.ChipBox.ChipItemsViewStyle*"></a>
+  <h4 id="MADE_UI_Controls_ChipBox_ChipItemsViewStyle" data-uid="MADE.UI.Controls.ChipBox.ChipItemsViewStyle">ChipItemsViewStyle</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the style of the items view.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Style ChipItemsViewStyle { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Style</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_ChipRemoveCommand.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.ChipRemoveCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L264">View Source</a>
+  </span>
+  <a id="MADE_UI_Controls_ChipBox_ChipRemoveCommand_" data-uid="MADE.UI.Controls.ChipBox.ChipRemoveCommand*"></a>
+  <h4 id="MADE_UI_Controls_ChipBox_ChipRemoveCommand" data-uid="MADE.UI.Controls.ChipBox.ChipRemoveCommand">ChipRemoveCommand</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the <see cref="!:ICommand"></see> associated with when a chip has been removed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICommand ChipRemoveCommand { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ICommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_Chips.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.Chips%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L174">View Source</a>
+  </span>
+  <a id="MADE_UI_Controls_ChipBox_Chips_" data-uid="MADE.UI.Controls.ChipBox.Chips*"></a>
+  <h4 id="MADE_UI_Controls_ChipBox_Chips" data-uid="MADE.UI.Controls.ChipBox.Chips">Chips</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an object source used to generate the chip content of the control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;ChipItem&gt; Chips { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="MADE.UI.Controls.ChipItem.html">ChipItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_Header.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.Header%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L156">View Source</a>
+  </span>
+  <a id="MADE_UI_Controls_ChipBox_Header_" data-uid="MADE.UI.Controls.ChipBox.Header*"></a>
+  <h4 id="MADE_UI_Controls_ChipBox_Header" data-uid="MADE.UI.Controls.ChipBox.Header">Header</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the content for the control's header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Header { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_HeaderTemplate.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.HeaderTemplate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L165">View Source</a>
+  </span>
+  <a id="MADE_UI_Controls_ChipBox_HeaderTemplate_" data-uid="MADE.UI.Controls.ChipBox.HeaderTemplate*"></a>
+  <h4 id="MADE_UI_Controls_ChipBox_HeaderTemplate" data-uid="MADE.UI.Controls.ChipBox.HeaderTemplate">HeaderTemplate</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the template used to display the content of the control's header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataTemplate HeaderTemplate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DataTemplate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_IsReadonly.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.IsReadonly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L246">View Source</a>
+  </span>
+  <a id="MADE_UI_Controls_ChipBox_IsReadonly_" data-uid="MADE.UI.Controls.ChipBox.IsReadonly*"></a>
+  <h4 id="MADE_UI_Controls_ChipBox_IsReadonly" data-uid="MADE.UI.Controls.ChipBox.IsReadonly">IsReadonly</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the control is in a read-only state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadonly { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MADE_UI_Controls_ChipBox_IsReadonly_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default value is False.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_Suggestions.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.Suggestions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L201">View Source</a>
+  </span>
+  <a id="MADE_UI_Controls_ChipBox_Suggestions_" data-uid="MADE.UI.Controls.ChipBox.Suggestions*"></a>
+  <h4 id="MADE_UI_Controls_ChipBox_Suggestions" data-uid="MADE.UI.Controls.ChipBox.Suggestions">Suggestions</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the suggestions that are displayed to the user when typing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Suggestions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_SuggestionsItemTemplate.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.SuggestionsItemTemplate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L210">View Source</a>
+  </span>
+  <a id="MADE_UI_Controls_ChipBox_SuggestionsItemTemplate_" data-uid="MADE.UI.Controls.ChipBox.SuggestionsItemTemplate*"></a>
+  <h4 id="MADE_UI_Controls_ChipBox_SuggestionsItemTemplate" data-uid="MADE.UI.Controls.ChipBox.SuggestionsItemTemplate">SuggestionsItemTemplate</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the template used to display the suggestions that are displayed to the user when typing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataTemplate SuggestionsItemTemplate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DataTemplate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_TextBox.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.TextBox%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L273">View Source</a>
+  </span>
+  <a id="MADE_UI_Controls_ChipBox_TextBox_" data-uid="MADE.UI.Controls.ChipBox.TextBox*"></a>
+  <h4 id="MADE_UI_Controls_ChipBox_TextBox" data-uid="MADE.UI.Controls.ChipBox.TextBox">TextBox</h4>
+  <div class="markdown level1 summary"><p>Gets the view representing the text input for chips.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AutoSuggestBox TextBox { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AutoSuggestBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_TextChangeCommand.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.TextChangeCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L255">View Source</a>
+  </span>
+  <a id="MADE_UI_Controls_ChipBox_TextChangeCommand_" data-uid="MADE.UI.Controls.ChipBox.TextChangeCommand*"></a>
+  <h4 id="MADE_UI_Controls_ChipBox_TextChangeCommand" data-uid="MADE.UI.Controls.ChipBox.TextChangeCommand">TextChangeCommand</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the <see cref="!:ICommand"></see> associated with when the text has changed within the suggestion box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICommand TextChangeCommand { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ICommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_OnApplyTemplate.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.OnApplyTemplate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L283">View Source</a>
+  </span>
+  <a id="MADE_UI_Controls_ChipBox_OnApplyTemplate_" data-uid="MADE.UI.Controls.ChipBox.OnApplyTemplate*"></a>
+  <h4 id="MADE_UI_Controls_ChipBox_OnApplyTemplate" data-uid="MADE.UI.Controls.ChipBox.OnApplyTemplate">OnApplyTemplate()</h4>
+  <div class="markdown level1 summary"><p>Loads the relevant control template so that its parts can be referenced.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnApplyTemplate()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_OnCreateAutomationPeer.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.OnCreateAutomationPeer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L310">View Source</a>
+  </span>
+  <a id="MADE_UI_Controls_ChipBox_OnCreateAutomationPeer_" data-uid="MADE.UI.Controls.ChipBox.OnCreateAutomationPeer*"></a>
+  <h4 id="MADE_UI_Controls_ChipBox_OnCreateAutomationPeer" data-uid="MADE.UI.Controls.ChipBox.OnCreateAutomationPeer">OnCreateAutomationPeer()</h4>
+  <div class="markdown level1 summary"><p>Provides the class-specific <a class="xref" href="MADE.UI.Controls.ChipBoxAutomationPeer.html">ChipBoxAutomationPeer</a> implementation for the Microsoft UI Automation infrastructure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override AutomationPeer OnCreateAutomationPeer()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AutomationPeer</span></td>
+        <td><p>The class-specific <a class="xref" href="MADE.UI.Controls.ChipBoxAutomationPeer.html">ChipBoxAutomationPeer</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_ChipRemoved.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.ChipRemoved%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L151">View Source</a>
+  </span>
+  <h4 id="MADE_UI_Controls_ChipBox_ChipRemoved" data-uid="MADE.UI.Controls.ChipBox.ChipRemoved">ChipRemoved</h4>
+  <div class="markdown level1 summary"><p>Occurs when a chip has been removed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ChipBoxChipRemovedEventHandler ChipRemoved</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MADE.UI.Controls.ChipBoxChipRemovedEventHandler.html">ChipBoxChipRemovedEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox_TextChanged.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox.TextChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L146">View Source</a>
+  </span>
+  <h4 id="MADE_UI_Controls_ChipBox_TextChanged" data-uid="MADE.UI.Controls.ChipBox.TextChanged">TextChanged</h4>
+  <div class="markdown level1 summary"><p>Occurs when the text has changed within the suggestion box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ChipBoxTextChangedEventHandler TextChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MADE.UI.Controls.ChipBoxTextChangedEventHandler.html">ChipBoxTextChangedEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MADE.UI.Controls.IControl.html">IControl</a>
+  </div>
+  <div>
+      <a class="xref" href="MADE.UI.IView.html">IView</a>
+  </div>
+  <div>
+      <a class="xref" href="MADE.UI.Controls.IChipBox.html">IChipBox</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/MADE-Apps/MADE.NET-UI/new/main/apiSpec/new?filename=MADE_UI_Controls_ChipBox.md&amp;value=---%0Auid%3A%20MADE.UI.Controls.ChipBox%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/MADE-Apps/MADE.NET-UI/blob/main/src/MADE.UI.Controls.ChipBox/ChipBox.cs/#L19" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) MADE Apps
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

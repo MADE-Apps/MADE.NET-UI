@@ -1,0 +1,1556 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/a/MADE.NET-UI/MADE.NET-UI/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "aQmgWrlb2M01KhlF2u+qy6Bl7nIctRSq95LmcYZ78+Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.Media.Image.Behaviors.LoadStorageFileThumbnailImageBehavior.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.Media.Image.Behaviors.LoadStorageFileThumbnailImageBehavior.html",
+          "hash": "GUxE7TEFkmsqyPdLL8y6BUlphGfVYaQLES/WKx4lhlU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.Media.Image.Behaviors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.Media.Image.Behaviors.html",
+          "hash": "jJNcOSw74s5jEnOK0SAzkTJv+28hGCCaJQ2gT+p19TY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.Chip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.Chip.html",
+          "hash": "IMQIWBDZroGFc4P42mnRGcdyhSM8lqYE+iZe3aTHGQk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.ChipAutomationPeer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.ChipAutomationPeer.html",
+          "hash": "0hXazvc6vPJdkRQbv4dUGe7Y2aQAg1zKBCz2w4fatec="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.ChipBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.ChipBox.html",
+          "hash": "fp1dQe8yQDDZK1D33nEwW5v5pphm/pK24ncV0kiDZvE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.ChipBoxAutomationPeer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.ChipBoxAutomationPeer.html",
+          "hash": "iWZw1PnxVvBl0lisV6gwT/Exkjx8Zuc8II/sqAC57mA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.ChipBoxChipRemovedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.ChipBoxChipRemovedEventArgs.html",
+          "hash": "kzU0pvOS9qVUCuAQgPVgQxAMjxV4hAkktvWIY4wlqAE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.ChipBoxChipRemovedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.ChipBoxChipRemovedEventHandler.html",
+          "hash": "VSAuzMcbzBjCColL6MXk53xxUJk84zY/jnDV1hXwQjU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.ChipBoxTextChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.ChipBoxTextChangedEventArgs.html",
+          "hash": "qpmbd370pC2FrFzD5SlhOJOIFFUXuFaQl85QSkKMdZg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.ChipBoxTextChangedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.ChipBoxTextChangedEventHandler.html",
+          "hash": "0s1VatKbktISJpsZRldsvAiGff02qfHfNSP3b8cIY3E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.ChipItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.ChipItem.html",
+          "hash": "P6/wXnHcC8YPZp8evoITm9UntsjN9jDYb1LNcIPyR/A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.ChipRemovedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.ChipRemovedEventArgs.html",
+          "hash": "/XQ15IMoy+XpkHdNJdMdoZ48yD+R/WWUaPT5e1rcDuU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.ChipRemovedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.ChipRemovedEventHandler.html",
+          "hash": "rpLk+9wUJO2MbQNh4GhI0yjSRZm/4osAklwMgqNavTw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.ContentControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.ContentControl.html",
+          "hash": "2JIJZnnK5m8fpJougLD2k1XNJdti4BuXj42Uh2pXcj0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.Control.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.Control.html",
+          "hash": "P5238oukaQKJeMxklM7xASL51mpq39iOGd3JLciP8eo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.DropDownList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.DropDownList.html",
+          "hash": "FAPwSQtIxRuNmi9PmvGqZ4xChJECyK1nv5chnPPhMwI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.DropDownListAutomationPeer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.DropDownListAutomationPeer.html",
+          "hash": "bPaOmzhv8hcDQndc42V5HgJdZNiBj4JX/uTR0Jcm7E0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.DropDownListSelectedItemsUpdatedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.DropDownListSelectedItemsUpdatedEventArgs.html",
+          "hash": "8edNC1iFTTxqyJiCrewEC3gSG8llvgED6T5t3am3XQw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.DropDownListSelectedItemsUpdatedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.DropDownListSelectedItemsUpdatedEventHandler.html",
+          "hash": "bakabtP8HP906sEfmzzMd1D3GE9r/H/lp4nzJjw+Z2s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.DropDownListSelectionMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.DropDownListSelectionMode.html",
+          "hash": "UUn30zndzRVy1/PRvbmbLoD/bFYmf8TvKD/GhZEGIjg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.FilePicker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.FilePicker.html",
+          "hash": "JCDNd8BuS+ikoluQGPQBzUxRPpdIUK8jA1EgV8+UYF8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.FilePickerAutomationPeer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.FilePickerAutomationPeer.html",
+          "hash": "cV9axOBxAZbMK/RBCkA0Ln8ILECBzZcwopT1GqCy94E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.FilePickerItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.FilePickerItem.html",
+          "hash": "EYVBJ2bJL17umLUTsjNtkgdtcs9LWsY5QKu2oL/L89Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.FilePickerItemClickEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.FilePickerItemClickEventArgs.html",
+          "hash": "XT7DbzUyMxZtriHAe/M6i+c9f1FwZbc/HJDt80ictfk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.FilePickerItemClickEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.FilePickerItemClickEventHandler.html",
+          "hash": "oSsgCUXBANsEG7Ydl4MdZfCuJKZCWKZ8dp20aERgMlA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.FilePickerSelectionMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.FilePickerSelectionMode.html",
+          "hash": "IXiXoBGen2xH7hzuEt93hCEIpWB6HABCikLTdbtuctM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.IChip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.IChip.html",
+          "hash": "DJk5wR8VRHcVMTG11TFGasEe5i3rUC55Gx6SvTbuY6Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.IChipBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.IChipBox.html",
+          "hash": "mdod8oL869PstsmcC69hL6YEnUehml3NbMmEnlSUevk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.IControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.IControl.html",
+          "hash": "2tgclcwNESYhDf506Mg8dK+Mk7Yzo6rUp8+Pwvflm1c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.IDropDownList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.IDropDownList.html",
+          "hash": "idEAnLs9KL9ESUg5n+Ooj5dsMX3/IZofjXshxOO11DY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.IDropDownList2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.IDropDownList2.html",
+          "hash": "jjWG3O31amqrDt62R8sH2wVjoATXSUwjlIjSt/UrVuY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.IFilePicker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.IFilePicker.html",
+          "hash": "RHsERJlJCMJQbEY2FPt/NLkvXtvEFSRbIiOebYBKN9s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.IInputValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.IInputValidator.html",
+          "hash": "TI4rz0eU6+RjXONbXNUAWHmIY6OTLe2tyPpuOdRehDQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.IRichEditToolbar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.IRichEditToolbar.html",
+          "hash": "lLh8NJAk02sUClq80oT3+l94FlemkB+1pvcuHMI6I3U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.InputValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.InputValidator.html",
+          "hash": "gJKF5V6DhwTyQDd71DnLTERxMMNcUoE31t/ARjR2Lxg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.InputValidatorAutomationPeer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.InputValidatorAutomationPeer.html",
+          "hash": "uGP3IBpbm/v3HjiK7QUQvszH1cdNrAyhYExNnJwNWz0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.RichEditToolbar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.RichEditToolbar.html",
+          "hash": "MpN7o6THkNJ4PcJt0tgiEeRlzJGpaW30uIygWw4pbL4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.RichEditToolbarAutomationPeer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.RichEditToolbarAutomationPeer.html",
+          "hash": "E1kiso5vUQiZj1vY29Ev0LTMFqpKZzYIS9c6cdykAe8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.RichEditToolbarFontSizeChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.RichEditToolbarFontSizeChangedEventArgs.html",
+          "hash": "U62PRSJorpFlZKRrIPK8bGvgPM8KEtLN8ETNjstDZ/0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.RichEditToolbarFontSizeChangedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.RichEditToolbarFontSizeChangedEventHandler.html",
+          "hash": "WgbQABa+33fo0VmbhbvLGR7nU6ElAhkrFRaoSUpLaoE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.RichEditToolbarFontStyleChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.RichEditToolbarFontStyleChangedEventArgs.html",
+          "hash": "DAMoBeB3T6whwCeyNCg8yCFHd6BTGV07hl3GAvbAm8k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.RichEditToolbarFontStyleChangedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.RichEditToolbarFontStyleChangedEventHandler.html",
+          "hash": "OQO9eAk+/wg4rQcaIGBMMzrT/gl0+J3uZTu9ZcYPuic="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.RichEditToolbarListStyleChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.RichEditToolbarListStyleChangedEventArgs.html",
+          "hash": "9zvauIh8B2aUVHTiHYv0wda2Y3Br0TU1V7mBI2oHIlU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.RichEditToolbarListStyleChangedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.RichEditToolbarListStyleChangedEventHandler.html",
+          "hash": "i0+5sOsZdxRk2YVcuFO6EOtGchzFd1x/CEgyM7RVoLE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.RichEditToolbarTextColorChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.RichEditToolbarTextColorChangedEventArgs.html",
+          "hash": "HCfgxwZGqah8gto/ZNKxi3I3GudHR/vfh0Lnluos3jc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.RichEditToolbarTextColorChangedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.RichEditToolbarTextColorChangedEventHandler.html",
+          "hash": "4cc5Rc6tKlp9TvCtWG6tsemNaGMqmulUdbH0kPa5iTg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.RichEditToolbarTextColorOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.RichEditToolbarTextColorOption.html",
+          "hash": "PAqSWTPtLqEL7wSsJezOQo+8Y/WgC8A3nAWWJ1VGfTs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Controls.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Controls.html",
+          "hash": "NqudXStBheSx6Q/2c9xktFGEyc0AblJ1dZKHQBAwZhQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Data.Converters.BooleanToStringValueConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Data.Converters.BooleanToStringValueConverter.html",
+          "hash": "OPVD8eSw/0pS0EGJRW7gESmwHFM1bpv40biB7KpjTbY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Data.Converters.ByteArrayToImageSourceValueConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Data.Converters.ByteArrayToImageSourceValueConverter.html",
+          "hash": "Cam4n2qSKGHrfVQ+gkp7onBW91+XuKq6Dvb6sjSHipM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Data.Converters.DateTimeToStringValueConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Data.Converters.DateTimeToStringValueConverter.html",
+          "hash": "HkYk4R7tAolN4LbGiXBI1EFNuoDrk4UVw5Jm1V7DLH8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Data.Converters.EmptyStringFormatValueConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Data.Converters.EmptyStringFormatValueConverter.html",
+          "hash": "p7b5DPTSGxSy8o7mMEx2puMFpHRRr770lDqK6Lx/8FI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Data.Converters.Extensions.ByteArrayExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Data.Converters.Extensions.ByteArrayExtensions.html",
+          "hash": "d/ZKqORzSOln6abyqTMxpd4VIzzwLkrTCSAWR9osXyA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Data.Converters.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Data.Converters.Extensions.html",
+          "hash": "py3tyWZxEUsYCM8B6GmV2eYbnhaswt8c6hc9jWfSFP8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Data.Converters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Data.Converters.html",
+          "hash": "l/ppblGDQ/yyOStVzUJaPNG2wY0DoaciOriVcS+i4AM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Extensions.ListViewBaseExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Extensions.ListViewBaseExtensions.html",
+          "hash": "B1nrWGtFI3WFO/1BhLOdWgAZR5whVaF2HrizgUd5p0s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Extensions.ViewExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Extensions.ViewExtensions.html",
+          "hash": "1kP2yIAzuSHIYBLTe/OW8O8K+k2uOzX24sKvpCdDv30="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Extensions.html",
+          "hash": "M9Woha6d92pjUsfhju+EfE07UVbylqT7em2rIMV2KHU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.IView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.IView.html",
+          "hash": "ZAWdhOUt4V61nQoR1E81jw9M0++jxsbNISY9IgK9R1k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Styling.Colors.DarkenColorBrushConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Styling.Colors.DarkenColorBrushConverter.html",
+          "hash": "CdEzicKKD5xA4fw8aFtri5lekpY/ykOcn32rnKBkmdo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Styling.Colors.LightenColorBrushConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Styling.Colors.LightenColorBrushConverter.html",
+          "hash": "ntuLRw+Y+soLvbJ7pfpo9YAQh7Mtk6ANeimiuBEphIg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Styling.Colors.SystemColorExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Styling.Colors.SystemColorExtensions.html",
+          "hash": "bW0x2nXLj9GesQjfv8ZGwjkbIrKMhRDHswJxo4LE7To="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Styling.Colors.WindowsColorExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Styling.Colors.WindowsColorExtensions.html",
+          "hash": "hOkD05sDCQihm0vmq/YMedcfsQjkugJhak9p/h6hmds="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Styling.Colors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Styling.Colors.html",
+          "hash": "+uDebdyb2jHhMPszinxmFhBjNGmU6o+L0+bt/2DVaZU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.ViewLoadedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.ViewLoadedEventArgs.html",
+          "hash": "z05V5S5wznC4iW6thImAlNXdREUFI/qZZmrCkgsnHGI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.ViewLoadedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.ViewLoadedEventHandler.html",
+          "hash": "xuWaDs1PmwefRXHsJ9F4g/afYiFhPpBGIR2OToQc+pI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.ViewManagement.IViewServiceManager-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.ViewManagement.IViewServiceManager-1.html",
+          "hash": "nasiGuLQcaoFitSktfDR9WcOAQKjZLXsvSD8AByow1k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.ViewManagement.ViewCoreDispatcherManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.ViewManagement.ViewCoreDispatcherManager.html",
+          "hash": "9v1z0qStK8/qosoTtLDbDRWmp6V3SfvZrdEOwE5UkNc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.ViewManagement.ViewServiceChangedEventArgs-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.ViewManagement.ViewServiceChangedEventArgs-1.html",
+          "hash": "WU7xoXMJgFl7U+GqozktbI1H1hgnriFbOtNWMy+WrIQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.ViewManagement.ViewServiceChangedEventHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.ViewManagement.ViewServiceChangedEventHandler-1.html",
+          "hash": "0gFGhymL1SRWFp3AJBz47a5CJqtUD7Ieu99cNBvJMxI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.ViewManagement.ViewServiceManager-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.ViewManagement.ViewServiceManager-1.html",
+          "hash": "gHnJuEA1/bR2Uli6KuooXrkRnRgDe6+VOIQt798D3qw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.ViewManagement.WindowManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.ViewManagement.WindowManager.html",
+          "hash": "nrKmLFR7u+pwSbjhl+AyhR4cptBc7Dpkg/w3EZFX6XA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.ViewManagement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.ViewManagement.html",
+          "hash": "xZsOVvP7eodwfjnLCdVI658F0g+3vdbRnGQgTP3Iji8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Views.Dialogs.AppDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Views.Dialogs.AppDialog.html",
+          "hash": "U82+rXaQ8hnHubNTjpQt4ZWi+ttL0B2nURoe+MMuQoM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Views.Dialogs.Buttons.DialogButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Views.Dialogs.Buttons.DialogButton.html",
+          "hash": "3KeYWERNVQMu7+D0IKNtUZaV2JbvMDG79nmxbVO2iwA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Views.Dialogs.Buttons.DialogButtonInvokedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Views.Dialogs.Buttons.DialogButtonInvokedHandler.html",
+          "hash": "Fntvd0DkRYpYCVk/cc6CRagDUu07W5VCfoj59OfihoU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Views.Dialogs.Buttons.DialogButtonType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Views.Dialogs.Buttons.DialogButtonType.html",
+          "hash": "IwMULtr1xsRpY7Ujkyie7q7aT6mZXFDEsrSJBRngTpQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Views.Dialogs.Buttons.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Views.Dialogs.Buttons.html",
+          "hash": "R4v84Ja+2uYvP0oOOZvYAJvLtZu5AIgagABxQoqHJ44="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Views.Dialogs.IAppDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Views.Dialogs.IAppDialog.html",
+          "hash": "3R+YQ8VLCwIKGdrIqQ0aRaZumVwzdUWZ9/VDeTSssgY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Views.Dialogs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Views.Dialogs.html",
+          "hash": "XqIWRjjAvDccTEs24tdg40g8rsfZ/wOJuERgRZQ8K00="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Views.Navigation.INavigationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Views.Navigation.INavigationService.html",
+          "hash": "OkPFsTJK2P1CnNl4DFf29VqR73ADDSwH3u4BVLHAAdg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Views.Navigation.NavigationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Views.Navigation.NavigationService.html",
+          "hash": "fzy87gj33dYkSUKzUO5M5Z9a+LsJwclWpz7+4rtOUaI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Views.Navigation.Pages.MvvmPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Views.Navigation.Pages.MvvmPage.html",
+          "hash": "wmvNPjwKzQCumUpc7huNqDNyVgvDalOup1iCtrCsWLc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Views.Navigation.Pages.Page.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Views.Navigation.Pages.Page.html",
+          "hash": "1bqIXGGho1s9v/Bpr0fg2O93opcSOU1L6GafM2NvjxY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Views.Navigation.Pages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Views.Navigation.Pages.html",
+          "hash": "nyHmGRi4m9GdssndiPU/CKFCXjzCHyvrm/h18WNGj/E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Views.Navigation.ViewModels.PageViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Views.Navigation.ViewModels.PageViewModel.html",
+          "hash": "THfzQh6S7zBwXZJMUufD02ALaIL9l151VxSCnLFYvw8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Views.Navigation.ViewModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Views.Navigation.ViewModels.html",
+          "hash": "2QGmQcEh5pEWPJJuqix0pthnvp7/A9h9QmsmPHOShZQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.Views.Navigation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.Views.Navigation.html",
+          "hash": "63quw7zj5eNvZ+mnGrF5LGgpn3fkyPZJLFIpU1yT7sg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MADE.UI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MADE.UI.html",
+          "hash": "z+s9hvk92iKFesDgnkghfaU4ssFAYpisX7FwGyTNmSA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "UIEDsiScqxhFWMmGnk9gnTL1MmfNqa3325+YRX/LgNU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "qcrWuZ/+VLuZ95X39I1kVguZxvqxmejSfFuLbZxRT6U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/features/media-image.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/features/media-image.html",
+          "hash": "tPk3j7Q6iNebwe+mOtmExG8J4umru9Qlo9jrXgdWde0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/features/ui-controls-chipbox.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/features/ui-controls-chipbox.html",
+          "hash": "BlAGb1BQjM3lizTdr4uj9GtKRfpvuarpcoXAbvRp//8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/features/ui-controls-dropdownlist.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/features/ui-controls-dropdownlist.html",
+          "hash": "U3MRoNutQ4NwXxsEeAF70kggz3DPT2EO9tq+4I8xuTw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/features/ui-controls-filepicker.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/features/ui-controls-filepicker.html",
+          "hash": "O1uC+9wobVBgprOdcX5Z9Jnu3gmUngvSOLM6v1u8tgc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/features/ui-controls-richedittoolbar.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/features/ui-controls-richedittoolbar.html",
+          "hash": "+iR922sDBXILGAjmwE628aF1UGcn3ZOV6/Wgr2h3q8I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/features/ui-controls-validator.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/features/ui-controls-validator.html",
+          "hash": "adnyxSUL/HB3gQNJdn61NwFmZgnhYGKygM1k+2t+r5w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/features/ui-data-converters.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/features/ui-data-converters.html",
+          "hash": "NS/6JL9IkmhondwvToRdaI6Y9RtqA3TjWyhRHSVbsPg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/features/ui-styling.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/features/ui-styling.html",
+          "hash": "/TiUQ/ll/zsHLuogijJHrPDp4N4XOfw6wrk/e7gWf08="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/features/ui-view-management.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/features/ui-view-management.html",
+          "hash": "Ry0AHj4N1ecp3dyvP0xIXV2v8jlZDBkB3XOoVxWaUxg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/features/ui.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/features/ui.html",
+          "hash": "vR4agd6X/E06nEuflCH3WVdeyLjLz6vohBwgOY8JhPs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "9RmQ0JvJUWxViPGpyKF7SDn+0ImoSe0FgsktcpZKt9s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "i/Uyw/Ib3o3rILkA0A/7u9mtVKGCjcPvupyzxjrh3Bw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ChipBox.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ChipBox.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/FilePicker.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/FilePicker.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/FilePickerSample.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/FilePickerSample.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ImageBehavior.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ImageBehavior.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/InputValidator.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/InputValidator.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/MultiSelectDropDownListCollapsed.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/MultiSelectDropDownListCollapsed.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/MultiSelectDropDownListExpanded.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/MultiSelectDropDownListExpanded.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/MultiWindow.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/MultiWindow.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ProjectBanner.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ProjectBanner.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/RichEditToolbar.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RichEditToolbar.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icons/data.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icons/data.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icons/github.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icons/github.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icons/love.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icons/love.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icons/model.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icons/model.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icons/network.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icons/network.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icons/theme.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icons/theme.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icons/validation.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icons/validation.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icons/windows.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icons/windows.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "JAFbgNcAb1aKLUQ3PNyUad1qIdLHFSIcjpbHaPCIPnY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "yBU4uklLL+kY2p7fT8JBSgu644FFfZWo+y68T72lSZM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 14,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 89,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
