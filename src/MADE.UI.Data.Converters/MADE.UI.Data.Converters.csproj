@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <PackageReference Include="MADE.Data.Converters" Version="1.6.0" />
+    <PackageReference Include="Uno.UI" Version="4.4.13" />
   </ItemGroup>
 
   <ItemGroup>

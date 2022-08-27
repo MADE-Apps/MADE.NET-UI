@@ -26,6 +26,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Uno.UI" Version="4.4.13" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\MADE.UI\MADE.UI.csproj" />
     <ProjectReference Include="..\MADE.UI.Styling\MADE.UI.Styling.csproj" />
   </ItemGroup>

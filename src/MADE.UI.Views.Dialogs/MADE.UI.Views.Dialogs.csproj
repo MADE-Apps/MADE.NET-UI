@@ -24,4 +24,8 @@
     </Page>
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Uno.UI" Version="4.4.13" />
+  </ItemGroup>
+
 </Project>
