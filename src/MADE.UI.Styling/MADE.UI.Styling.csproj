@@ -14,7 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFrameworkIdentifier)' == 'MonoAndroid' or '$(TargetFrameworkIdentifier)' == 'Xamarin.iOS' or '$(TargetFrameworkIdentifier)' == '.NETStandard' or '$(TargetFrameworkIdentifier)' == 'Xamarin.Mac'">
-    <PackageReference Include="Uno.UI" Version="4.3.8" />
+    <PackageReference Include="Uno.UI" Version="4.4.13" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,7 +27,6 @@
 
   <ItemGroup>
     <PackageReference Include="MADE.Data.Validation" Version="1.6.0" />
-    <PackageReference Include="Uno.UI" Version="4.4.13" />
   </ItemGroup>
 
   <ItemGroup>
