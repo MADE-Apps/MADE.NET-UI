@@ -1,0 +1,42 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: api-docs
+  name: Explore the APIs
+  href: api/index.html
+- uid: front-page
+  name: Make App Development Easier
+  href: index.html
+- uid: made-intro
+  name: Getting Started
+  href: articles/intro.html
+- uid: package-media-image
+  name: Using the Media Image package
+  href: articles/features/media-image.html
+- uid: package-ui
+  name: Using the UI package
+  href: articles/features/ui.html
+- uid: package-ui-controls-chipbox
+  name: Using the ChipBox control
+  href: articles/features/ui-controls-chipbox.html
+- uid: package-ui-controls-dropdownlist
+  name: Using the DropDownList control
+  href: articles/features/ui-controls-dropdownlist.html
+- uid: package-ui-controls-filepicker
+  name: Using the FilePicker control
+  href: articles/features/ui-controls-filepicker.html
+- uid: package-ui-controls-richedittoolbar
+  name: Using the RichEditToolbar control
+  href: articles/features/ui-controls-richedittoolbar.html
+- uid: package-ui-controls-validator
+  name: Using the InputValidator control
+  href: articles/features/ui-controls-validator.html
+- uid: package-ui-data-converters
+  name: Using the UI Data Converters package
+  href: articles/features/ui-data-converters.html
+- uid: package-ui-styling
+  name: Using the UI Styling package
+  href: articles/features/ui-styling.html
+- uid: package-ui-view-management
+  name: Using the UI View Management package
+  href: articles/features/ui-view-management.html
