@@ -52,7 +52,7 @@
     <PackageReference Include="MADE.Networking" Version="1.6.0" />
     <PackageReference Include="MADE.Runtime" Version="1.6.0" />
     <PackageReference Include="MADE.Threading" Version="1.6.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
     <PackageReference Include="Microsoft.Windows.Compatibility" Version="6.0.0" />
     <PackageReference Include="Uno.ColorCode.UWP" Version="2.1.0-uno.36" />
