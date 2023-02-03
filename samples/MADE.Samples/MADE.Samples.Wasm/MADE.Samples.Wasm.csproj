@@ -62,7 +62,7 @@
     <PackageReference Include="Uno.UI.RemoteControl" Version="4.4.13" Condition="'$(Configuration)'=='Debug'" />
     <PackageReference Include="Uno.UI.Adapter.Microsoft.Extensions.Logging" Version="4.4.13" />
     <PackageReference Include="Uno.Wasm.Bootstrap" Version="3.3.1" />
-    <PackageReference Include="Uno.Wasm.Bootstrap.DevServer" Version="3.3.1" />
+    <PackageReference Include="Uno.Wasm.Bootstrap.DevServer" Version="7.0.15" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\src\MADE.Media.Image\MADE.Media.Image.csproj" />
