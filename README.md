@@ -1,3 +1,12 @@
+> [!IMPORTANT]
+> MADE.NET-UI is archived and no longer actively maintained.
+>
+> The repository remains available for reference, but no new features, bug fixes, dependency updates, issue triage, or pull request reviews are planned.
+>
+> The core MADE.NET utility libraries are continuing here:
+>
+> - [MADE.NET](https://github.com/MADE-Apps/MADE.NET)
+
 <img src="assets/ProjectBanner.png" alt="MADE project banner" />
 
 # MADE.NET UI
